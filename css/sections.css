@@ -304,6 +304,11 @@
   .why-grid {
     grid-template-columns: 1fr;
   }
+
+  /* stacked layout: a pinned headline would slide over the points below it */
+  .why-headline {
+    position: static;
+  }
 }
 
 .why-headline {

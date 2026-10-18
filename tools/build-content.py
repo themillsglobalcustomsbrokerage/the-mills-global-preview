@@ -269,7 +269,7 @@ NAV, FOOT = chrome()
 HEAD_SCRIPTS = '''  <script src="../js/loader.js?v=6"></script>'''
 TAIL_SCRIPTS = '''  <script src="../js/vendor/lenis.min.js"></script>
   <script src="../js/smooth.js?v=1"></script>
-  <script src="../js/cursor.js?v=5"></script>
+  <script src="../js/cursor.js?v=6"></script>
   <script src="../js/analytics.js"></script>
   <script src="../js/animations.js?v=2"></script>'''
 GTM_NOSCRIPT = '''  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3QFNL94" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'''
@@ -340,7 +340,7 @@ def post_page(p, posts):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/base.css?v=13">
-  <link rel="stylesheet" href="../css/sections.css?v=4">
+  <link rel="stylesheet" href="../css/sections.css?v=5">
   <link rel="stylesheet" href="../css/service-page.css?v=3">
   <link rel="stylesheet" href="../css/content.css?v=3">
   <script type="application/ld+json">{ld}</script>
