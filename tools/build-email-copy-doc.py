@@ -110,7 +110,7 @@ Send Tuesday to Thursday, mornings in Manila time where the tool allows. The ser
 
 ## Merge fields
 
-`{{first_name}}` and `{{company}}` come from the form (fall back to "there" and "your team" if blank). `{{first_name_lc}}` is the first name in lowercase, for the lowercase subject lines. `{{sender_name}}` is a real person's name, ideally the sender, because replies to a named person perform better than to a team address. Links: `[Download the checklist]` is the segment's Google Drive download link (all 27 are listed in docs/AUTOMATION-HANDOFF.md); `[Book a time]` is `https://themillsglobal.com/book-a-call.html`.
+`{{first_name}}` and `{{company}}` come from the form (fall back to "there" and "your team" if blank). `{{first_name_lc}}` is the first name in lowercase, for the lowercase subject lines. `{{sender_name}}` is **Ari or Joshua**, picked per lead (from the lead's email address, so the same person signs all three emails). Replies to a named person perform better than to a team address, and the Gmail sender name reads "Ari from The Mills Global" or "Joshua from The Mills Global". Links: `[Download the checklist]` is the segment's Google Drive download link (all 27 are listed in docs/AUTOMATION-HANDOFF.md); `[Book a time]` is `https://themillsglobal.com/book-a-call.html`.
 
 ## Design
 

@@ -1219,3 +1219,187 @@ html.cursor-texty .mills-cursor-dot {
     inset: -6%;
   }
 }
+
+/* Keyword tags at the bottom of each page */
+.page-tags {
+  background: #F5F5F5;
+  border-top: 1px solid #D6D7D7;
+  padding-block: 28px;
+}
+
+.page-tags__line {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.9;
+  color: #4F5D75;
+}
+
+.page-tags__label {
+  margin-right: 4px;
+  font-weight: 700;
+  color: #212431;
+}
+
+.page-tags a {
+  color: #212431;
+  text-decoration: underline;
+  text-decoration-color: rgba(234, 92, 31, 0.6);
+  text-underline-offset: 3px;
+}
+
+.page-tags a:hover {
+  color: #B8430F;
+}
+
+/* Globe: service legend, country chips and the hover card */
+.globe-panel {
+  display: grid;
+  gap: 16px;
+  margin-top: var(--space-xl);
+}
+
+.globe-panel__hint {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: #D6D7D7;
+}
+
+.globe-legend,
+.globe-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.globe-legend__btn,
+.globe-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border: 1px solid rgba(245, 245, 245, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: #F5F5F5;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.globe-legend__btn:hover,
+.globe-chip:hover,
+.globe-chip.is-active {
+  background: #F5F5F5;
+  border-color: #F5F5F5;
+  color: #212431;
+}
+
+.globe-legend__btn[aria-pressed="true"] {
+  background: #F5F5F5;
+  border-color: #F5F5F5;
+  color: #212431;
+}
+
+.globe-legend__btn:focus-visible,
+.globe-chip:focus-visible {
+  outline: 3px solid #F5F5F5;
+  outline-offset: 2px;
+}
+
+.globe-chip.is-home {
+  background: #C94A12;
+  border-color: #C94A12;
+  color: #FFFFFF;
+}
+
+.globe-chip.is-home:hover,
+.globe-chip.is-home.is-active {
+  background: #F5F5F5;
+  color: #212431;
+}
+
+.globe-chip.is-dim {
+  opacity: 0.35;
+}
+
+.globe-dot {
+  width: 10px;
+  height: 10px;
+  flex: none;
+  border-radius: 50%;
+}
+
+.globe-chip__dots {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.globe-chip__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.globe-card {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  z-index: 3;
+  width: min(86%, 330px);
+  padding: 14px 16px;
+  border: 1px solid rgba(245, 245, 245, 0.2);
+  border-radius: 16px;
+  background: rgba(14, 17, 26, 0.94);
+  color: #F5F5F5;
+  pointer-events: none;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.globe-card__title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 800;
+  color: #F5F5F5;
+}
+
+.globe-card__sub {
+  margin: 2px 0 10px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D6D7D7;
+}
+
+.globe-card__list {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.globe-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.35;
+  color: #F5F5F5;
+}
+
+.globe-card__list .globe-dot {
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .globe-card { left: 4px; bottom: 4px; width: min(94%, 330px); padding: 12px 14px; }
+}

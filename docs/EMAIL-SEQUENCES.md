@@ -43,7 +43,7 @@ Send Tuesday to Thursday, mornings in Manila time where the tool allows. The ser
 
 ## Merge fields
 
-`{{first_name}}` and `{{company}}` come from the form (fall back to "there" and "your team" if blank). `{{first_name_lc}}` is the first name in lowercase, for the lowercase subject lines. `{{sender_name}}` is a real person's name, ideally the sender, because replies to a named person perform better than to a team address. Links: `[Download the checklist]` is the segment's Google Drive download link (all 27 are listed in docs/AUTOMATION-HANDOFF.md); `[Book a time]` is `https://themillsglobal.com/book-a-call.html`.
+`{{first_name}}` and `{{company}}` come from the form (fall back to "there" and "your team" if blank). `{{first_name_lc}}` is the first name in lowercase, for the lowercase subject lines. `{{sender_name}}` is **Ari or Joshua**, picked per lead (from the lead's email address, so the same person signs all three emails). Replies to a named person perform better than to a team address, and the Gmail sender name reads "Ari from The Mills Global" or "Joshua from The Mills Global". Links: `[Download the checklist]` is the segment's Google Drive download link (all 27 are listed in docs/AUTOMATION-HANDOFF.md); `[Book a time]` is `https://themillsglobal.com/book-a-call.html`.
 
 ## Design
 
@@ -59,7 +59,7 @@ The HTML shell (brand colors with accessible contrast, dark-mode safe, single co
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 29 characters (sample names) | Body: 95 words*
+*Subject length: 29 characters (sample names) | Body: 96 words*
 
 ```
 Subject: {{first_name_lc}}, your checklist is here
@@ -76,7 +76,7 @@ That is exactly what this checklist is for. Here it is:
 Three things to check first:
 
 1. Buying before the structure is ready
-2. Registrations in the wrong order
+2. Registration steps in the wrong order
 3. A first shipment that becomes a test
 
 Skim it with your own shipment in mind. If something looks off, hit reply and send me the product you plan to bring in and where you plan to sell it. I will tell you what I would check first.
@@ -423,7 +423,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 83 words*
+*Subject length: 31 characters (sample names) | Body: 86 words*
 
 ```
 Subject: {{first_name_lc}}, before you ship anything
@@ -437,7 +437,7 @@ Is it clear which agencies are involved for the vessel or equipment before it is
 
 If you had to think about it, that is usually where vessel and marine equipment starts to wobble.
 
-Here is why it matters: Customs, MARINA, port and registration requirements all apply, and each has its own paperwork.
+Here is why it matters: Customs, Maritime Industry Authority (MARINA), port and registration requirements all apply, and each has its own paperwork.
 
 Not sure about {{company}}? Reply with the vessel or equipment details and I will tell you where I would look first.
 
@@ -1254,8 +1254,8 @@ Delivered, as promised:
 Three things to check first:
 
 1. The substance decides everything
-2. Controlled-chemical authority
-3. Dangerous-goods acceptance
+2. Controlled-Chemical authority
+3. Dangerous-Goods acceptance
 
 Skim it with your own shipment in mind. If something looks off, hit reply and send me the chemical name and its safety data sheet. I will tell you what I would check first.
 
@@ -1421,7 +1421,7 @@ That is exactly what this checklist is for. Here it is:
 
 Three things to check first:
 
-1. Machinery and used-equipment rules
+1. Machinery and Used-Equipment rules
 2. Oversized pieces
 3. Project schedules that cannot slip
 
@@ -1507,7 +1507,7 @@ Three things to check first:
 
 1. Many categories in one project
 2. Batteries and dangerous goods
-3. Fit-out dates
+3. Fit-Out dates
 
 Skim it with your own shipment in mind. If something looks off, hit reply and send me the bill of materials and the fit-out date. I will tell you what I would check first.
 
@@ -1825,7 +1825,7 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 33 characters (sample names) | Body: 76 words*
+*Subject length: 33 characters (sample names) | Body: 77 words*
 
 ```
 Subject: {{first_name_lc}}, as promised, the checklist
@@ -1841,8 +1841,8 @@ As promised, here it is:
 
 Three things to check first:
 
-1. Authorization before arrival
-2. Controlled and temperature-sensitive products
+1. Unregistered or mismatched documents
+2. Controlled and Temperature-Sensitive products
 3. Urgent medical cargo
 
 Skim it with your own shipment in mind. If something looks off, hit reply and send me the product and its authorization details. I will tell you what I would check first.
@@ -1853,7 +1853,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 84 words*
+*Subject length: 31 characters (sample names) | Body: 87 words*
 
 ```
 Subject: can i ask you something, {{first_name_lc}}?
@@ -1867,7 +1867,7 @@ Is the FDA authorization in place, and does it match what is on the shipment bef
 
 If your honest answer is "um... probably?", that is the part of healthcare imports where things tend to go sideways.
 
-Here is why it matters: FDA approvals must be in place and match the shipment.
+Here is why it matters: FDA authorization must be in place and match what is on the shipment.
 
 Not sure about {{company}}? Reply with the product and its authorization details and I will tell you where I would look first.
 
@@ -1937,7 +1937,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 33 characters (sample names) | Body: 78 words*
+*Subject length: 33 characters (sample names) | Body: 83 words*
 
 ```
 Subject: {{first_name_lc}}, gut check on manufacturing
@@ -1951,7 +1951,7 @@ Has the machinery been classified and valued, and is the packing sequence planne
 
 If you had to think about it, that is usually where manufacturing equipment imports starts to wobble.
 
-Here is why it matters: Complex equipment and spare parts are easy to misclassify or undervalue.
+Here is why it matters: Complex equipment with no proper classification or valuation is easy to undervalue, which causes customs delays.
 
 Not sure about {{company}}? Reply with the machine list and the installation date and I will tell you where I would look first.
 

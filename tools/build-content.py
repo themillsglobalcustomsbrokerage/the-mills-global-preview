@@ -292,6 +292,18 @@ def card(p, prefix=''):
         </a>'''
 
 
+def tags_block(p):
+    kws = ['#TheMillsGlobal', f"{p['cat']} Philippines", 'Philippine Customs Guide' if p['type'] == 'article' else 'Philippine Customs News', 'Customs Clearance Philippines', 'Customs Broker Philippines']
+    links = ', '.join(f'<a href="../{"index.html" if k.startswith("#") else "services-mills-customs.html"}">{escape(k)}</a>' for k in kws)
+    return f'''  <section class="page-tags" aria-label="Related topics">
+    <div class="container">
+      <p class="page-tags__line"><span class="page-tags__label">Tagged</span> {links}</p>
+    </div>
+  </section>
+
+'''
+
+
 def post_page(p, posts):
     kind_dir = 'articles' if p['type'] == 'article' else 'news'
     kind_label = 'Article' if p['type'] == 'article' else 'News'
@@ -327,7 +339,7 @@ def post_page(p, posts):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=11">
+  <link rel="stylesheet" href="../css/base.css?v=13">
   <link rel="stylesheet" href="../css/sections.css?v=4">
   <link rel="stylesheet" href="../css/service-page.css?v=3">
   <link rel="stylesheet" href="../css/content.css?v=3">
@@ -386,7 +398,7 @@ def post_page(p, posts):
     </div>
   </section>
 
-  {FOOT}
+  {tags_block(p)}  {FOOT}
 
   <!-- Scripts -->
 {TAIL_SCRIPTS}

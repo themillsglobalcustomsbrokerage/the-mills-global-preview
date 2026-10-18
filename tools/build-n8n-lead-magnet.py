@@ -52,8 +52,11 @@ def page_facts(slug, kind):
         i = h.find('usually get stuck')
         stuck = re.findall(r'<h4 class="info-card__title">(.*?)</h4><p class="info-card__text">(.*?)</p>', h[i:i + 2500], re.S) if i > 0 else []
     clean = lambda t: html.unescape(re.sub(r'<[^>]+>', '', t)).strip()
+    def sentence(t):   # the pages now use Title Case for card titles; emails read better in sentence case
+        w = clean(t).split(' ')
+        return ' '.join(x if (i == 0 and x[:1].isupper()) or any(c.isupper() for c in x[1:]) or x.isupper() else x.lower() for i, x in enumerate(w))
     return {'summary': clean(sub.group(1)) if sub else '', 'url': 'https://themillsglobal.com/' + f,
-            'stuck': [{'t': clean(a), 'd': clean(b)} for a, b in stuck][:3]}
+            'stuck': [{'t': sentence(a), 'd': clean(b)} for a, b in stuck][:3]}
 
 
 nid = lambda: str(uuid.uuid4())
@@ -170,6 +173,11 @@ const b = $input.first().json.body || {};
 const clean = (v) => String(v == null ? '' : v).trim();
 const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const email = clean(b.email).toLowerCase();
+// Each lead is signed by Ari or Joshua, chosen from the email address so the same person signs all three emails
+const SENDERS = ['Ari', 'Joshua'];
+let hsh = 0;
+for (const ch of email) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
+const sender = SENDERS[hsh %% SENDERS.length];
 const valid = clean(b.token) === TOKEN && /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email) && !!clean(b.lead_id);
 const out = {
   valid,
@@ -184,7 +192,7 @@ const out = {
   check: SEG.check,
   send: SEG.send,
   v: SEG.v,
-  sender_name: 'The Mills Global team',   // change to a real person's name
+  sender_name: sender,
   first_name: clean(b.first_name),
   guide_title: SEG.guide_title,
   pdf_url: SEG.drive,   // Google Drive direct download link (works before the website domain is live)
@@ -203,7 +211,7 @@ def build_followup(k, slug, name, idx):
     P = 'Prepare lead'
     R = lambda f: "{{ $('%s').item.json.%s }}" % (P, f)
     mail = lambda nm, n, pos: {'parameters': {'sendTo': '=' + R('email'), 'subject': '=' + R('subject%d' % n), 'emailType': 'html', 'message': '=' + R('html%d' % n),
-            'options': {'appendAttribution': False, 'senderName': 'The Mills Global', 'replyTo': 'inquiry@themillsglobal.com'}},
+            'options': {'appendAttribution': False, 'senderName': '=' + R('sender_name') + ' from The Mills Global', 'replyTo': 'inquiry@themillsglobal.com'}},
             'id': nid(), 'name': nm, 'type': 'n8n-nodes-base.gmail', 'typeVersion': 2.1, 'position': pos}
     wait = lambda nm, days, pos: {'parameters': {'amount': days, 'unit': 'days'}, 'id': nid(), 'name': nm, 'type': 'n8n-nodes-base.wait', 'typeVersion': 1.1, 'position': pos, 'webhookId': nid()}
     getlead = lambda nm, pos: {'parameters': {'resource': 'lead', 'operation': 'get', 'leadId': '=' + R('lead_id')}, 'id': nid(), 'name': nm,

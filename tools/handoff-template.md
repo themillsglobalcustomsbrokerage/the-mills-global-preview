@@ -2,6 +2,10 @@
 
 **Audience:** whoever is building the n8n and Zoho automations for The Mills Global website. The email copy is being prepared separately and will be handed over; everything else is specified here.
 
+## Ownership
+
+**Ken owns the Zoho and n8n setup:** creating the three custom Lead fields (section 3), the 27 Zoho Workflow Rules that call the follow-up webhooks (section 5), and setting the shared `TOKEN` in every follow-up workflow. Emails are signed by Ari or Joshua (picked per lead, the same person for all three emails). Email content is prepared separately and handed over.
+
 ## 1. What this is
 
 The website offers 27 free readiness checklists (PDFs): 11 for services, 16 for industries. A visitor fills in a popup (name, email, phone, company) and downloads the checklist. We need:
@@ -43,7 +47,7 @@ Reject unknown `guide` values with a 400.
 
 ## 3. Zoho CRM setup
 
-Create these **custom Lead fields**:
+Create these **custom Lead fields** (Ken):
 
 | Field | Type | API name | Values |
 |---|---|---|---|
