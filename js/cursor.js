@@ -24,7 +24,7 @@
     var scale = 1, scaleTarget = 1;
     var seen = false;
 
-    var FOLLOW = 0.32;      // the ring eases toward the dot: always behind it, never past it
+    var FOLLOW = 0.55;      // the ring eases toward the dot: always behind it, never past it
 
     var INTERACTIVE = 'a, button, [data-open], [role="button"], summary, label, .content-card, .faq-question, .service-slide, .cta-pair *';
     var TEXTY = 'input, textarea, select';

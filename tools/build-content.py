@@ -269,7 +269,7 @@ NAV, FOOT = chrome()
 HEAD_SCRIPTS = '''  <script src="../js/loader.js?v=6"></script>'''
 TAIL_SCRIPTS = '''  <script src="../js/vendor/lenis.min.js"></script>
   <script src="../js/smooth.js?v=1"></script>
-  <script src="../js/cursor.js?v=6"></script>
+  <script src="../js/cursor.js?v=7"></script>
   <script src="../js/analytics.js"></script>
   <script src="../js/animations.js?v=2"></script>'''
 GTM_NOSCRIPT = '''  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3QFNL94" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'''
