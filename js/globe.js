@@ -68,15 +68,20 @@
     // The service legend and country chips next to the globe
     function buildPanel(panel, api) {
         panel.innerHTML = '';
+        // the service legend lives in its own glass card, so it reads differently from the location pills below it
+        var card = el('div', 'globe-legend-card');
+        card.appendChild(el('p', 'globe-legend-card__title', 'Services our network offers'));
+        card.appendChild(el('p', 'globe-legend-card__hint', 'Pick a service to see which countries offer it.'));
         var legend = el('div', 'globe-legend'); legend.setAttribute('role', 'group'); legend.setAttribute('aria-label', 'Filter countries by service');
-        var intro = el('p', 'globe-panel__hint', 'Hover a country to see what our network offers there, or pick a service to see where it is available.');
         var legendBtns = {};
         ORDER.forEach(function (code) {
             var b = el('button', 'globe-legend__btn'); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
-            b.appendChild(dot(code)); b.appendChild(document.createTextNode(SERVICES[code].n));
+            b.appendChild(dot(code)); b.appendChild(el('span', 'globe-legend__label', SERVICES[code].n));
             b.addEventListener('click', function () { api.setFilter(api.state.filter === code ? null : code); });
             legend.appendChild(b); legendBtns[code] = b;
         });
+        card.appendChild(legend);
+        var chipsLabel = el('p', 'globe-chips__label', 'Where we work. Hover a country to see what the network offers there.');
         var chips = el('div', 'globe-chips'); var chipEls = {};
         COUNTRIES.forEach(function (c, idx) {
             var b = el('button', 'globe-chip' + (c.hq ? ' is-home' : '')); b.type = 'button';
@@ -91,7 +96,7 @@
             b.addEventListener('click', function () { api.pin(idx); });
             chips.appendChild(b); chipEls[idx] = b;
         });
-        panel.appendChild(intro); panel.appendChild(legend); panel.appendChild(chips);
+        panel.appendChild(card); panel.appendChild(chipsLabel); panel.appendChild(chips);
         return { legendBtns: legendBtns, chipEls: chipEls };
     }
 
@@ -178,7 +183,7 @@
             function focusOn(i) {
                 var c = COUNTRIES[i];
                 controls.autoRotate = false;
-                g.pointOfView({ lat: c.lat, lng: c.lng, altitude: 1.9 }, reduce ? 0 : 900);
+                g.pointOfView({ lat: c.lat, lng: c.lng, altitude: 1.6 }, reduce ? 0 : 900);
             }
             function resume() { clearTimeout(resumeTimer); resumeTimer = setTimeout(function () { if (state.pinned < 0 && state.hover < 0) controls.autoRotate = !reduce; }, 2500); }
 
@@ -208,7 +213,7 @@
             if (panelEl) ui = buildPanel(panelEl, api);
             styles();
             g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
-            g.pointOfView({ lat: 14, lng: 121, altitude: 1.8 });
+            g.pointOfView({ lat: 14, lng: 121, altitude: 1.5 });
 
             if (window.ResizeObserver) {
                 new ResizeObserver(function () { g.width(el0.clientWidth).height(el0.clientWidth); }).observe(el0);

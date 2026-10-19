@@ -9,7 +9,7 @@ ih = open('industries.html').read()
 INDUSTRIES = [(a, html.unescape(b)) for a, b in re.findall(r'<a href="(industries-[\w-]+\.html)"[^>]*>.*?<h3[^>]*>(.*?)</h3>', ih, re.S)]
 assert len(INDUSTRIES) == 16, len(INDUSTRIES)
 STATS = [('15+', 'years of experience'), ('50K+', 'shipments cleared annually'), ('98.7%', 'compliance rate'), ('24/7', 'support availability'),
-         ('33+', 'partners abroad'), ('50+', 'partners in Russia'), ('37', 'countries and territories')]
+         ('150+', 'offices world wide'), ('50+', 'partners in Russia'), ('37', 'countries and territories')]
 LEAD = ('The Mills Global is a Philippine customs brokerage and trade-execution firm based in Manila. It offers 11 core services, from customs clearance and import permits to project cargo, marine, dangerous goods and logistics, for 16 core industries.')
 
 def block():
@@ -63,8 +63,8 @@ def edit(f, fn):
     h = open(f).read(); n = fn(h)
     if n != h: open(f, 'w').write(n); print('updated', f)
 
-TITLE_HOME = 'The Mills Global | Philippine Customs Broker: 33+ Partners Abroad, 11 Core Services'
-DESC_HOME = ('Philippine customs brokerage with 33+ partners abroad across 37 countries and territories. 15+ years, 50K+ shipments cleared annually, 98.7% compliance, '
+TITLE_HOME = 'The Mills Global | Philippine Customs Broker: 150+ Offices World Wide, 11 Core Services'
+DESC_HOME = ('Philippine customs brokerage with 150+ offices world wide across 37 countries and territories. 15+ years, 50K+ shipments cleared annually, 98.7% compliance, '
              '24/7 support. 11 core services across 16 industries.')
 
 def home(h):
@@ -74,13 +74,13 @@ def home(h):
     return update_org(h)
 def about(h):
     h = setmeta(h, 'About The Mills Global | Philippine Customs Broker with a Global Partner Network',
-                'The Mills Global is a Philippine customs brokerage and trade-execution firm with 33+ partners abroad, 11 core services and 16 core industries.')
+                'The Mills Global is a Philippine customs brokerage and trade-execution firm with 150+ offices world wide, 11 core services and 16 core industries.')
     if 'id="at-a-glance"' not in h:
         i = h.index('<section class="section section--sky">')
         h = h[:i] + block() + '  ' + h[i:]
     return update_org(h)
 def loc(h):
-    h = setmeta(h, 'Customs Broker Locations: 33+ Partners Abroad in 37 Countries and Territories | The Mills Global',
+    h = setmeta(h, 'Customs Broker Locations: 150+ Offices Across 37 Countries and Territories | The Mills Global',
                 'The Mills Global is based in Manila (BGC and Binondo) with a partner network across 37 countries and territories, including Singapore, Dubai, London and New York.')
     return update_org(h)
 def hub_services(h): return h
