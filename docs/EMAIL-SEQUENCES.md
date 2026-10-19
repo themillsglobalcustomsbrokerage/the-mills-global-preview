@@ -305,13 +305,13 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Mills Projects
+## Mills Marine
 
-`projects` | topic: project cargo | checklist: Project Cargo Readiness Checklist
+`marine` | topic: vessel and marine equipment | checklist: Vessel and Marine Equipment Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 23 characters (sample names) | Body: 88 words*
+*Subject length: 23 characters (sample names) | Body: 81 words*
 
 ```
 Subject: checklist inside, {{first_name_lc}}
@@ -319,93 +319,9 @@ Preview text: short read, three things to check first
 
 Hi {{first_name}},
 
-One missing requirement and the whole project schedule slips... sound familiar?
-
-Here is the checklist you asked for:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. One missed requirement stops the schedule
-2. Cargo that does not fit the route
-3. Many parties, no single plan
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment list and the date it is needed on site. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 31 characters (sample names) | Body: 97 words*
-
-```
-Subject: one thing about projects, {{first_name_lc}}
-Preview text: the part that is easy to skip...
-
-Hi {{first_name}},
-
-Here is the one I always start with...
-
-Has someone confirmed that every piece of the cargo can actually travel the planned route, from port to site?
-
-If your honest answer is "um... probably?", that is the part of project cargo where things tend to go sideways.
-
-Here is why it matters: A permit, route restriction or lifting limit discovered late can delay an entire project.
-
-Not sure about {{company}}? Reply with the equipment list and the date it is needed on site and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 18 characters (sample names) | Body: 95 words*
-
-```
-Subject: no pressure, {{first_name_lc}}
-Preview text: one last thing, then I will leave you alone...
-
-Hi {{first_name}},
-
-One last thing, then I will leave you alone.
-
-Here is the thing about project cargo... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Mills Marine
-
-`marine` | topic: vessel and marine equipment | checklist: Vessel and Marine Equipment Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 26 characters (sample names) | Body: 83 words*
-
-```
-Subject: {{first_name_lc}}, this one is for you
-Preview text: your checklist, plus three things to check first...
-
-Hi {{first_name}},
-
 A vessel part that needs three different agencies to say yes... sound familiar?
 
-If that rings a bell, this is for you:
+Here is the checklist you asked for:
 
 [Download the checklist]
 
@@ -423,19 +339,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 86 words*
+*Subject length: 29 characters (sample names) | Body: 95 words*
 
 ```
-Subject: {{first_name_lc}}, before you ship anything
-Preview text: a 10 second check for {{company}}...
+Subject: one thing about marine, {{first_name_lc}}
+Preview text: the part that is easy to skip...
 
 Hi {{first_name}},
 
-Before anything ships...
+Here is the one I always start with...
 
 Is it clear which agencies are involved for the vessel or equipment before it is bought or shipped?
 
-If you had to think about it, that is usually where vessel and marine equipment starts to wobble.
+If your honest answer is "um... probably?", that is the part of vessel and marine equipment where things tend to go sideways.
 
 Here is why it matters: Customs, Maritime Industry Authority (MARINA), port and registration requirements all apply, and each has its own paperwork.
 
@@ -447,15 +363,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 22 characters (sample names) | Body: 97 words*
+*Subject length: 18 characters (sample names) | Body: 97 words*
 
 ```
-Subject: {{first_name_lc}}, parting thought
-Preview text: one more thing, then I am out of your inbox...
+Subject: no pressure, {{first_name_lc}}
+Preview text: one last thing, then I will leave you alone...
 
 Hi {{first_name}},
 
-Parting thought, then I am out of your inbox.
+One last thing, then I will leave you alone.
 
 Here is the thing about vessel and marine equipment... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -479,17 +395,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 33 characters (sample names) | Body: 81 words*
+*Subject length: 26 characters (sample names) | Body: 85 words*
 
 ```
-Subject: {{first_name_lc}}, as promised, the checklist
-Preview text: no fluff, just the list...
+Subject: {{first_name_lc}}, this one is for you
+Preview text: your checklist, plus three things to check first...
 
 Hi {{first_name}},
 
 Cargo booked as ordinary freight that turns out to be dangerous goods... sound familiar?
 
-As promised, here it is:
+If that rings a bell, this is for you:
 
 [Download the checklist]
 
@@ -507,19 +423,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 26 characters (sample names) | Body: 82 words*
+*Subject length: 31 characters (sample names) | Body: 81 words*
 
 ```
-Subject: did you check this, {{first_name_lc}}?
-Preview text: one for {{company}}, and you can answer in your head...
+Subject: {{first_name_lc}}, before you ship anything
+Preview text: a 10 second check for {{company}}...
 
 Hi {{first_name}},
 
-Okay, here goes...
+Before anything ships...
 
 Has the cargo been identified as dangerous goods before it was booked with the carrier?
 
-A "hmm, not sure" is common here. It is also where dangerous goods shipping tends to get stuck.
+If you had to think about it, that is usually where dangerous goods shipping starts to wobble.
 
 Here is why it matters: Products with batteries, solvents or compressed gas are often shipped without being identified as dangerous goods.
 
@@ -531,15 +447,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 19 characters (sample names) | Body: 96 words*
+*Subject length: 22 characters (sample names) | Body: 96 words*
 
 ```
-Subject: {{first_name_lc}}, door is open
-Preview text: no hard feelings, either way...
+Subject: {{first_name_lc}}, parting thought
+Preview text: one more thing, then I am out of your inbox...
 
 Hi {{first_name}},
 
-I will leave the door open and stop here.
+Parting thought, then I am out of your inbox.
 
 Here is the thing about dangerous goods shipping... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -563,17 +479,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 27 characters (sample names) | Body: 84 words*
+*Subject length: 33 characters (sample names) | Body: 86 words*
 
 ```
-Subject: {{first_name_lc}}, checklist, delivered
-Preview text: fresh off the press, three things to check first
+Subject: {{first_name_lc}}, as promised, the checklist
+Preview text: no fluff, just the list...
 
 Hi {{first_name}},
 
 Customs releases the cargo, and then nothing, because nobody owns the last mile... sound familiar?
 
-Delivered, as promised:
+As promised, here it is:
 
 [Download the checklist]
 
@@ -591,19 +507,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 29 characters (sample names) | Body: 82 words*
+*Subject length: 26 characters (sample names) | Body: 77 words*
 
 ```
-Subject: {{first_name_lc}}, is this on your radar?
-Preview text: about logistics, and worth a minute...
+Subject: did you check this, {{first_name_lc}}?
+Preview text: one for {{company}}, and you can answer in your head...
 
 Hi {{first_name}},
 
-Something I always ask first...
+Okay, here goes...
 
 Is one named person responsible between customs release and the consignee's door?
 
-If your honest answer is "um... probably?", that is the part of post-clearance delivery where things tend to go sideways.
+A "hmm, not sure" is common here. It is also where post-clearance delivery tends to get stuck.
 
 Here is why it matters: Cargo is cleared but nobody owns the trucking, storage and receiving that follow.
 
@@ -615,15 +531,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 23 characters (sample names) | Body: 96 words*
+*Subject length: 19 characters (sample names) | Body: 95 words*
 
 ```
-Subject: last one from me, {{first_name_lc}}
-Preview text: no hard feelings either way...
+Subject: {{first_name_lc}}, door is open
+Preview text: no hard feelings, either way...
 
 Hi {{first_name}},
 
-I will stop filling your inbox after this one, promise.
+I will leave the door open and stop here.
 
 Here is the thing about post-clearance delivery... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -647,17 +563,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 17 characters (sample names) | Body: 74 words*
+*Subject length: 27 characters (sample names) | Body: 74 words*
 
 ```
-Subject: {{first_name_lc}}, start here
-Preview text: the checklist, plus where to look first...
+Subject: {{first_name_lc}}, checklist, delivered
+Preview text: fresh off the press, three things to check first
 
 Hi {{first_name}},
 
 Packing picked after the quote, then the crate shows up damaged... sound familiar?
 
-Start with this:
+Delivered, as promised:
 
 [Download the checklist]
 
@@ -675,19 +591,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 24 characters (sample names) | Body: 83 words*
+*Subject length: 29 characters (sample names) | Body: 87 words*
 
 ```
-Subject: {{first_name_lc}}, spot the problem?
-Preview text: see if you can spot it before we do...
+Subject: {{first_name_lc}}, is this on your radar?
+Preview text: about packaging, and worth a minute...
 
 Hi {{first_name}},
 
-Let me ask you this...
+Something I always ask first...
 
 Was the packing specified for this cargo and this route, or chosen after the quote?
 
-If you had to think about it, that is usually where export packaging starts to wobble.
+If your honest answer is "um... probably?", that is the part of export packaging where things tend to go sideways.
 
 Here is why it matters: Crating is treated as an afterthought, then falls short on weight, lifting points or route conditions.
 
@@ -699,15 +615,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 23 characters (sample names) | Body: 92 words*
+*Subject length: 23 characters (sample names) | Body: 96 words*
 
 ```
-Subject: {{first_name_lc}}, closing the loop
-Preview text: one last note, and an easy way to say not now
+Subject: last one from me, {{first_name_lc}}
+Preview text: no hard feelings either way...
 
 Hi {{first_name}},
 
-Last note from me, I promise.
+I will stop filling your inbox after this one, promise.
 
 Here is the thing about export packaging... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -731,17 +647,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 29 characters (sample names) | Body: 90 words*
+*Subject length: 17 characters (sample names) | Body: 82 words*
 
 ```
-Subject: {{first_name_lc}}, your checklist is here
-Preview text: ready when you are... plus 3 things to check first
+Subject: {{first_name_lc}}, start here
+Preview text: the checklist, plus where to look first...
 
 Hi {{first_name}},
 
 Assuming the carrier's liability has you covered, right up until you need to claim... sound familiar?
 
-That is exactly what this checklist is for. Here it is:
+Start with this:
 
 [Download the checklist]
 
@@ -759,19 +675,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 32 characters (sample names) | Body: 81 words*
+*Subject length: 24 characters (sample names) | Body: 83 words*
 
 ```
-Subject: {{first_name_lc}}, real talk about insurance
-Preview text: no fluff, just one question...
+Subject: {{first_name_lc}}, spot the problem?
+Preview text: see if you can spot it before we do...
 
 Hi {{first_name}},
 
-Real talk...
+Let me ask you this...
 
 If the cargo were damaged, would the carrier's liability cover its value, and would you have the paperwork to claim?
 
-A "hmm, not sure" is common here. It is also where cargo insurance tends to get stuck.
+If you had to think about it, that is usually where cargo insurance starts to wobble.
 
 Here is why it matters: Standard carrier limits rarely match the value of the cargo being moved.
 
@@ -783,15 +699,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 32 characters (sample names) | Body: 103 words*
+*Subject length: 23 characters (sample names) | Body: 92 words*
 
 ```
-Subject: should i close your file, {{first_name_lc}}?
-Preview text: no pressure either way...
+Subject: {{first_name_lc}}, closing the loop
+Preview text: one last note, and an easy way to say not now
 
 Hi {{first_name}},
 
-I do not want to be the person who keeps emailing, so this is the last one.
+Last note from me, I promise.
 
 Here is the thing about cargo insurance... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -815,17 +731,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 29 characters (sample names) | Body: 92 words*
+*Subject length: 29 characters (sample names) | Body: 91 words*
 
 ```
-Subject: here is that checklist, {{first_name_lc}}
-Preview text: inside: 3 spots worth a look first
+Subject: {{first_name_lc}}, your checklist is here
+Preview text: ready when you are... plus 3 things to check first
 
 Hi {{first_name}},
 
 Cargo that needs to move now, stuck behind one missing document... sound familiar?
 
-So we put together a checklist for exactly that. Here you go:
+That is exactly what this checklist is for. Here it is:
 
 [Download the checklist]
 
@@ -843,19 +759,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 22 characters (sample names) | Body: 95 words*
+*Subject length: 36 characters (sample names) | Body: 86 words*
 
 ```
-Subject: {{first_name_lc}}, sound familiar?
-Preview text: think about your last shipment...
+Subject: {{first_name_lc}}, real talk about time critical
+Preview text: no fluff, just one question...
 
 Hi {{first_name}},
 
-Think about your last shipment for a second...
+Real talk...
 
 If this cargo had to move this week, would you know exactly which document could hold it up?
 
-If your honest answer is "um... probably?", that is the part of time-critical cargo where things tend to go sideways.
+A "hmm, not sure" is common here. It is also where time-critical cargo tends to get stuck.
 
 Here is why it matters: A single missing paper can turn hours into days when the clock is already running.
 
@@ -867,15 +783,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 18 characters (sample names) | Body: 95 words*
+*Subject length: 32 characters (sample names) | Body: 103 words*
 
 ```
-Subject: no pressure, {{first_name_lc}}
-Preview text: one last thing, then I will leave you alone...
+Subject: should i close your file, {{first_name_lc}}?
+Preview text: no pressure either way...
 
 Hi {{first_name}},
 
-One last thing, then I will leave you alone.
+I do not want to be the person who keeps emailing, so this is the last one.
 
 Here is the thing about time-critical cargo... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -899,17 +815,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 30 characters (sample names) | Body: 91 words*
+*Subject length: 29 characters (sample names) | Body: 92 words*
 
 ```
-Subject: {{first_name_lc}}, your advisory checklist
-Preview text: grab it now, skim it later...
+Subject: here is that checklist, {{first_name_lc}}
+Preview text: inside: 3 spots worth a look first
 
 Hi {{first_name}},
 
 Making big decisions before anyone has mapped the rules behind them... sound familiar?
 
-Good news, we built a checklist for it. It is yours:
+So we put together a checklist for exactly that. Here you go:
 
 [Download the checklist]
 
@@ -927,19 +843,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 37 characters (sample names) | Body: 91 words*
+*Subject length: 22 characters (sample names) | Body: 101 words*
 
 ```
-Subject: {{first_name_lc}}, honest question about advisory
-Preview text: a 10 second gut check for {{company}}...
+Subject: {{first_name_lc}}, sound familiar?
+Preview text: think about your last shipment...
 
 Hi {{first_name}},
 
-Honest question...
+Think about your last shipment for a second...
 
 Which decisions have you already made that depend on rules you have not yet mapped?
 
-If you had to think about it, that is usually where Philippine trade compliance starts to wobble.
+If your honest answer is "um... probably?", that is the part of Philippine trade compliance where things tend to go sideways.
 
 Here is why it matters: Management knows a transaction needs regulatory clearance but not which agencies apply, in what order, or how customs fits in.
 
@@ -951,15 +867,15 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 22 characters (sample names) | Body: 96 words*
+*Subject length: 18 characters (sample names) | Body: 96 words*
 
 ```
-Subject: {{first_name_lc}}, parting thought
-Preview text: one more thing, then I am out of your inbox...
+Subject: no pressure, {{first_name_lc}}
+Preview text: one last thing, then I will leave you alone...
 
 Hi {{first_name}},
 
-Parting thought, then I am out of your inbox.
+One last thing, then I will leave you alone.
 
 Here is the thing about Philippine trade compliance... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
@@ -977,35 +893,33 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-# Industries
+## Mills Projects
 
-## Agriculture
-
-`industry-agriculture` | topic: agricultural imports | checklist: Agriculture, Plants, Animals and Fisheries Import Readiness Checklist
+`projects` | topic: project cargo | checklist: Project Cargo Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 23 characters (sample names) | Body: 83 words*
+*Subject length: 30 characters (sample names) | Body: 92 words*
 
 ```
-Subject: checklist inside, {{first_name_lc}}
-Preview text: short read, three things to check first
+Subject: {{first_name_lc}}, your projects checklist
+Preview text: grab it now, skim it later...
 
 Hi {{first_name}},
 
-One shipment, three agencies, and clearances that do not quite match... sound familiar?
+One missing requirement and the whole project schedule slips... sound familiar?
 
-Here is the checklist you asked for:
+Good news, we built a checklist for it. It is yours:
 
 [Download the checklist]
 
 Three things to check first:
 
-1. Several agencies, one shipment
-2. Clearances that do not match
-3. Perishable cargo on the clock
+1. One missed requirement stops the schedule
+2. Cargo that does not fit the route
+3. Many parties, no single plan
 
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the product, its origin and the arrival date. I will tell you what I would check first.
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment list and the date it is needed on site. I will tell you what I would check first.
 
 {{sender_name}}
 The Mills Global
@@ -1013,23 +927,23 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 92 words*
+*Subject length: 37 characters (sample names) | Body: 87 words*
 
 ```
-Subject: can i ask you something, {{first_name_lc}}?
-Preview text: it is about agriculture, and it is a short one
+Subject: {{first_name_lc}}, honest question about projects
+Preview text: a 10 second gut check for {{company}}...
 
 Hi {{first_name}},
 
-Can I ask you something?
+Honest question...
 
-Do you know every agency that needs to clear this product, and do their clearances describe the shipment the same way?
+Has someone confirmed that every piece of the cargo can actually travel the planned route, from port to site?
 
-A "hmm, not sure" is common here. It is also where agricultural imports tends to get stuck.
+If you had to think about it, that is usually where project cargo starts to wobble.
 
-Here is why it matters: BAI, BPI, BFAR, NMIS and other bodies can each have a say, depending on the product.
+Here is why it matters: A permit, route restriction or lifting limit discovered late can delay an entire project.
 
-Not sure about {{company}}? Reply with the product, its origin and the arrival date and I will tell you where I would look first.
+Not sure about {{company}}? Reply with the equipment list and the date it is needed on site and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -1037,17 +951,17 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 19 characters (sample names) | Body: 95 words*
+*Subject length: 22 characters (sample names) | Body: 95 words*
 
 ```
-Subject: {{first_name_lc}}, door is open
-Preview text: no hard feelings, either way...
+Subject: {{first_name_lc}}, parting thought
+Preview text: one more thing, then I am out of your inbox...
 
 Hi {{first_name}},
 
-I will leave the door open and stop here.
+Parting thought, then I am out of your inbox.
 
-Here is the thing about agricultural imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about project cargo... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -1063,33 +977,35 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Automotive
+# Industries
 
-`industry-automotive` | topic: vehicle and equipment imports | checklist: Automotive, Heavy Equipment and Special-Purpose Vehicles Import Readiness Checklist
+## Construction
+
+`industry-construction` | topic: construction equipment imports | checklist: Construction and Infrastructure Import Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 26 characters (sample names) | Body: 84 words*
+*Subject length: 23 characters (sample names) | Body: 83 words*
 
 ```
-Subject: {{first_name_lc}}, this one is for you
-Preview text: your checklist, plus three things to check first...
+Subject: checklist inside, {{first_name_lc}}
+Preview text: short read, three things to check first
 
 Hi {{first_name}},
 
-Buying the vehicle first and finding out it is not admissible after... sound familiar?
+A machine that is too big for the route, or too used for the rules... sound familiar?
 
-If that rings a bell, this is for you:
+Here is the checklist you asked for:
 
 [Download the checklist]
 
 Three things to check first:
 
-1. Buying before checking admissibility
-2. Taxes and permits that change the real cost
-3. Delivery after release
+1. Machinery and Used-Equipment rules
+2. Oversized pieces
+3. Project schedules that cannot slip
 
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the make, model and year. I will tell you what I would check first.
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment list and the site schedule. I will tell you what I would check first.
 
 {{sender_name}}
 The Mills Global
@@ -1097,23 +1013,107 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 30 characters (sample names) | Body: 92 words*
+*Subject length: 31 characters (sample names) | Body: 83 words*
 
 ```
-Subject: {{first_name_lc}}, gut check on automotive
+Subject: can i ask you something, {{first_name_lc}}?
+Preview text: it is about construction, and it is a short one
+
+Hi {{first_name}},
+
+Can I ask you something?
+
+Is any of the machinery used, and does any piece exceed what the planned route can handle?
+
+A "hmm, not sure" is common here. It is also where construction equipment imports tends to get stuck.
+
+Here is why it matters: Eligibility, standards and permits can differ for new and used equipment.
+
+Not sure about {{company}}? Reply with the equipment list and the site schedule and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 19 characters (sample names) | Body: 96 words*
+
+```
+Subject: {{first_name_lc}}, door is open
+Preview text: no hard feelings, either way...
+
+Hi {{first_name}},
+
+I will leave the door open and stop here.
+
+Here is the thing about construction equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Renewable Energy
+
+`industry-renewable-energy` | topic: renewable energy equipment imports | checklist: Renewable Energy and Power Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 26 characters (sample names) | Body: 81 words*
+
+```
+Subject: {{first_name_lc}}, this one is for you
+Preview text: your checklist, plus three things to check first...
+
+Hi {{first_name}},
+
+Solar and storage gear on a project clock, waiting on approvals... sound familiar?
+
+If that rings a bell, this is for you:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. Incentives and approvals
+2. Batteries and large components
+3. Project delivery windows
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment list and the project delivery window. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 36 characters (sample names) | Body: 86 words*
+
+```
+Subject: {{first_name_lc}}, gut check on renewable energy
 Preview text: answer in your head, no need to reply yet...
 
 Hi {{first_name}},
 
 Gut check time...
 
-Has someone confirmed the vehicle or equipment can be imported, and what it will really cost with taxes and permits, before you buy?
+Are the incentive approvals secured before the equipment arrives, and are batteries and large components planned for?
 
-If your honest answer is "um... probably?", that is the part of vehicle and equipment imports where things tend to go sideways.
+If your honest answer is "um... probably?", that is the part of renewable energy equipment imports where things tend to go sideways.
 
-Here is why it matters: Used or special-purpose units may face eligibility limits that are best checked before purchase.
+Here is why it matters: DOE, BOI or PEZA treatment depends on documents prepared before arrival.
 
-Not sure about {{company}}? Reply with the make, model and year and I will tell you where I would look first.
+Not sure about {{company}}? Reply with the equipment list and the project delivery window and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -1131,7 +1131,7 @@ Hi {{first_name}},
 
 I will stop filling your inbox after this one, promise.
 
-Here is the thing about vehicle and equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about renewable energy equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -1147,13 +1147,13 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Aviation
+## Data Centers
 
-`industry-aviation` | topic: aviation parts imports | checklist: Aviation and Aerospace Import Readiness Checklist
+`industry-data-centers` | topic: data center equipment imports | checklist: Data Centers and Digital Infrastructure Import Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 33 characters (sample names) | Body: 87 words*
+*Subject length: 33 characters (sample names) | Body: 79 words*
 
 ```
 Subject: {{first_name_lc}}, as promised, the checklist
@@ -1161,7 +1161,7 @@ Preview text: no fluff, just the list...
 
 Hi {{first_name}},
 
-An aircraft on the ground, waiting on a part that is waiting on paperwork... sound familiar?
+Servers, cooling, batteries and power gear in one project, each clearing differently... sound familiar?
 
 As promised, here it is:
 
@@ -1169,11 +1169,11 @@ As promised, here it is:
 
 Three things to check first:
 
-1. Aircraft on the ground waiting for parts
-2. Technical paperwork that must match
-3. Regulated items inside the shipment
+1. Many categories in one project
+2. Batteries and dangerous goods
+3. Fit-Out dates
 
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the part numbers and how urgent they are. I will tell you what I would check first.
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the bill of materials and the fit-out date. I will tell you what I would check first.
 
 {{sender_name}}
 The Mills Global
@@ -1181,23 +1181,23 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 88 words*
+*Subject length: 35 characters (sample names) | Body: 88 words*
 
 ```
-Subject: one thing about aviation, {{first_name_lc}}
+Subject: one thing about data centers, {{first_name_lc}}
 Preview text: the part that is easy to skip...
 
 Hi {{first_name}},
 
 Here is the one I always start with...
 
-For urgent parts, are the technical documents ready to match the shipment before it lands?
+Have the categories in the project (servers, cooling, power, batteries) been separated by what each one needs to clear?
 
-If you had to think about it, that is usually where aviation parts imports starts to wobble.
+If you had to think about it, that is usually where data center equipment imports starts to wobble.
 
-Here is why it matters: Every hour of delay has a cost, so documents must be right the first time.
+Here is why it matters: Servers, batteries, generators and cooling can each follow different rules.
 
-Not sure about {{company}}? Reply with the part numbers and how urgent they are and I will tell you where I would look first.
+Not sure about {{company}}? Reply with the bill of materials and the fit-out date and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -1205,7 +1205,7 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 23 characters (sample names) | Body: 93 words*
+*Subject length: 23 characters (sample names) | Body: 94 words*
 
 ```
 Subject: {{first_name_lc}}, closing the loop
@@ -1215,7 +1215,7 @@ Hi {{first_name}},
 
 Last note from me, I promise.
 
-Here is the thing about aviation parts imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about data center equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -1315,13 +1315,13 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Cold Chain
+## Food & Beverage
 
-`industry-cold-chain` | topic: cold chain cargo | checklist: Cold Chain and Temperature-Sensitive Cargo Import Readiness Checklist
+`industry-food-beverage` | topic: food and beverage imports | checklist: Food, Beverage and FMCG Import Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 17 characters (sample names) | Body: 84 words*
+*Subject length: 17 characters (sample names) | Body: 74 words*
 
 ```
 Subject: {{first_name_lc}}, start here
@@ -1329,345 +1329,9 @@ Preview text: the checklist, plus where to look first...
 
 Hi {{first_name}},
 
-The temperature clock that starts ticking the second the cargo hits the port... sound familiar?
-
-Start with this:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. The temperature clock starts at the port
-2. Permits and storage must line up
-3. Proof of temperature
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the product, its temperature range and the arrival date. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 26 characters (sample names) | Body: 91 words*
-
-```
-Subject: did you check this, {{first_name_lc}}?
-Preview text: one for {{company}}, and you can answer in your head...
-
-Hi {{first_name}},
-
-Okay, here goes...
-
-From the moment the cargo reaches the port, are the cold storage and the permit timing lined up?
-
-If your honest answer is "um... probably?", that is the part of cold chain cargo where things tend to go sideways.
-
-Here is why it matters: Time in customs counts against shelf life, so release and pickup must be planned together.
-
-Not sure about {{company}}? Reply with the product, its temperature range and the arrival date and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 18 characters (sample names) | Body: 96 words*
-
-```
-Subject: no pressure, {{first_name_lc}}
-Preview text: one last thing, then I will leave you alone...
-
-Hi {{first_name}},
-
-One last thing, then I will leave you alone.
-
-Here is the thing about cold chain cargo... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Construction
-
-`industry-construction` | topic: construction equipment imports | checklist: Construction and Infrastructure Import Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 29 characters (sample names) | Body: 87 words*
-
-```
-Subject: {{first_name_lc}}, your checklist is here
-Preview text: ready when you are... plus 3 things to check first
-
-Hi {{first_name}},
-
-A machine that is too big for the route, or too used for the rules... sound familiar?
-
-That is exactly what this checklist is for. Here it is:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. Machinery and Used-Equipment rules
-2. Oversized pieces
-3. Project schedules that cannot slip
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment list and the site schedule. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 29 characters (sample names) | Body: 82 words*
-
-```
-Subject: {{first_name_lc}}, is this on your radar?
-Preview text: about construction, and worth a minute...
-
-Hi {{first_name}},
-
-Something I always ask first...
-
-Is any of the machinery used, and does any piece exceed what the planned route can handle?
-
-If you had to think about it, that is usually where construction equipment imports starts to wobble.
-
-Here is why it matters: Eligibility, standards and permits can differ for new and used equipment.
-
-Not sure about {{company}}? Reply with the equipment list and the site schedule and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 22 characters (sample names) | Body: 96 words*
-
-```
-Subject: {{first_name_lc}}, parting thought
-Preview text: one more thing, then I am out of your inbox...
-
-Hi {{first_name}},
-
-Parting thought, then I am out of your inbox.
-
-Here is the thing about construction equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Data Centers
-
-`industry-data-centers` | topic: data center equipment imports | checklist: Data Centers and Digital Infrastructure Import Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 29 characters (sample names) | Body: 86 words*
-
-```
-Subject: here is that checklist, {{first_name_lc}}
-Preview text: inside: 3 spots worth a look first
-
-Hi {{first_name}},
-
-Servers, cooling, batteries and power gear in one project, each clearing differently... sound familiar?
-
-So we put together a checklist for exactly that. Here you go:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. Many categories in one project
-2. Batteries and dangerous goods
-3. Fit-Out dates
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the bill of materials and the fit-out date. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 24 characters (sample names) | Body: 86 words*
-
-```
-Subject: {{first_name_lc}}, spot the problem?
-Preview text: see if you can spot it before we do...
-
-Hi {{first_name}},
-
-Let me ask you this...
-
-Have the categories in the project (servers, cooling, power, batteries) been separated by what each one needs to clear?
-
-A "hmm, not sure" is common here. It is also where data center equipment imports tends to get stuck.
-
-Here is why it matters: Servers, batteries, generators and cooling can each follow different rules.
-
-Not sure about {{company}}? Reply with the bill of materials and the fit-out date and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 19 characters (sample names) | Body: 97 words*
-
-```
-Subject: {{first_name_lc}}, door is open
-Preview text: no hard feelings, either way...
-
-Hi {{first_name}},
-
-I will leave the door open and stop here.
-
-Here is the thing about data center equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Electronics & Telecom
-
-`industry-electronics-telecom` | topic: electronics and telecom imports | checklist: Telecommunications, Electronics and IT Hardware Import Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 43 characters (sample names) | Body: 79 words*
-
-```
-Subject: {{first_name_lc}}, your electronics & telecom checklist
-Preview text: grab it now, skim it later...
-
-Hi {{first_name}},
-
-A gadget with a radio or a battery inside that nobody flagged... sound familiar?
-
-Good news, we built a checklist for it. It is yours:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. Approvals for radio equipment
-2. Batteries inside the product
-3. Classification errors
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the product models. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 44 characters (sample names) | Body: 79 words*
-
-```
-Subject: {{first_name_lc}}, real talk about electronics & telecom
-Preview text: no fluff, just one question...
-
-Hi {{first_name}},
-
-Real talk...
-
-Does any item contain radio equipment or a battery, and has its classification been confirmed?
-
-If your honest answer is "um... probably?", that is the part of electronics and telecom imports where things tend to go sideways.
-
-Here is why it matters: NTC and standards requirements can apply before goods are sold or used.
-
-Not sure about {{company}}? Reply with the product models and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 23 characters (sample names) | Body: 98 words*
-
-```
-Subject: last one from me, {{first_name_lc}}
-Preview text: no hard feelings either way...
-
-Hi {{first_name}},
-
-I will stop filling your inbox after this one, promise.
-
-Here is the thing about electronics and telecom imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Food & Beverage
-
-`industry-food-beverage` | topic: food and beverage imports | checklist: Food, Beverage and FMCG Import Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 23 characters (sample names) | Body: 78 words*
-
-```
-Subject: checklist inside, {{first_name_lc}}
-Preview text: short read, three things to check first
-
-Hi {{first_name}},
-
 Stock that ships before the labels and registration are sorted... sound familiar?
 
-Here is the checklist you asked for:
+Start with this:
 
 [Download the checklist]
 
@@ -1685,19 +1349,19 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 22 characters (sample names) | Body: 92 words*
+*Subject length: 26 characters (sample names) | Body: 91 words*
 
 ```
-Subject: {{first_name_lc}}, sound familiar?
-Preview text: think about your last shipment...
+Subject: did you check this, {{first_name_lc}}?
+Preview text: one for {{company}}, and you can answer in your head...
 
 Hi {{first_name}},
 
-Think about your last shipment for a second...
+Okay, here goes...
 
 Are the labels and product registration in order before the stock ships, and do you know how tax applies to it?
 
-If you had to think about it, that is usually where food and beverage imports starts to wobble.
+If your honest answer is "um... probably?", that is the part of food and beverage imports where things tend to go sideways.
 
 Here is why it matters: Products can be held when labels or registrations do not match the shipment.
 
@@ -1709,175 +1373,7 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 23 characters (sample names) | Body: 94 words*
-
-```
-Subject: {{first_name_lc}}, closing the loop
-Preview text: one last note, and an easy way to say not now
-
-Hi {{first_name}},
-
-Last note from me, I promise.
-
-Here is the thing about food and beverage imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Freight Forwarders
-
-`industry-freight-forwarders` | topic: forwarder clearance | checklist: Freight Forwarders and Logistics Providers Import Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 26 characters (sample names) | Body: 82 words*
-
-```
-Subject: {{first_name_lc}}, this one is for you
-Preview text: your checklist, plus three things to check first...
-
-Hi {{first_name}},
-
-Your client's cargo turning out to be regulated, with your name on it... sound familiar?
-
-If that rings a bell, this is for you:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. Client cargo, your reputation
-2. Regulated shipments
-3. Confidentiality and authority
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the type of cargo your clients move most. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 47 characters (sample names) | Body: 82 words*
-
-```
-Subject: {{first_name_lc}}, honest question about freight forwarders
-Preview text: a 10 second gut check for {{company}}...
-
-Hi {{first_name}},
-
-Honest question...
-
-When a client's cargo turns out to be regulated, who handles the permits, and under whose authority?
-
-A "hmm, not sure" is common here. It is also where forwarder clearance tends to get stuck.
-
-Here is why it matters: A clearance problem lands on the forwarder even when the cause was paperwork.
-
-Not sure about {{company}}? Reply with the type of cargo your clients move most and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 32 characters (sample names) | Body: 103 words*
-
-```
-Subject: should i close your file, {{first_name_lc}}?
-Preview text: no pressure either way...
-
-Hi {{first_name}},
-
-I do not want to be the person who keeps emailing, so this is the last one.
-
-Here is the thing about forwarder clearance... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
-
-If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
-
-[Book a time]
-
-And if now is not the time, totally fine. The checklist is yours to keep.
-
-{{sender_name}}
-The Mills Global
-
-P.S. Wrong person? Just tell me who handles this and I will take it from there.
-```
-
----
-
-## Healthcare
-
-`industry-healthcare` | topic: healthcare imports | checklist: Pharmaceuticals, Medical Devices and Healthcare Import Readiness Checklist
-
-### Email 1: Day 0, deliver the checklist
-
-*Subject length: 33 characters (sample names) | Body: 77 words*
-
-```
-Subject: {{first_name_lc}}, as promised, the checklist
-Preview text: no fluff, just the list...
-
-Hi {{first_name}},
-
-Medical cargo waiting on an approval that does not match the shipment... sound familiar?
-
-As promised, here it is:
-
-[Download the checklist]
-
-Three things to check first:
-
-1. Unregistered or mismatched documents
-2. Controlled and Temperature-Sensitive products
-3. Urgent medical cargo
-
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the product and its authorization details. I will tell you what I would check first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 2: Day 3, a quick check
-
-*Subject length: 31 characters (sample names) | Body: 87 words*
-
-```
-Subject: can i ask you something, {{first_name_lc}}?
-Preview text: it is about healthcare, and it is a short one
-
-Hi {{first_name}},
-
-Can I ask you something?
-
-Is the FDA authorization in place, and does it match what is on the shipment before it arrives?
-
-If your honest answer is "um... probably?", that is the part of healthcare imports where things tend to go sideways.
-
-Here is why it matters: FDA authorization must be in place and match what is on the shipment.
-
-Not sure about {{company}}? Reply with the product and its authorization details and I will tell you where I would look first.
-
-{{sender_name}}
-The Mills Global
-```
-
-### Email 3: Day 7, closing the loop
-
-*Subject length: 18 characters (sample names) | Body: 95 words*
+*Subject length: 18 characters (sample names) | Body: 97 words*
 
 ```
 Subject: no pressure, {{first_name_lc}}
@@ -1887,7 +1383,7 @@ Hi {{first_name}},
 
 One last thing, then I will leave you alone.
 
-Here is the thing about healthcare imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about food and beverage imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -1909,17 +1405,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 27 characters (sample names) | Body: 77 words*
+*Subject length: 29 characters (sample names) | Body: 85 words*
 
 ```
-Subject: {{first_name_lc}}, checklist, delivered
-Preview text: fresh off the press, three things to check first
+Subject: {{first_name_lc}}, your checklist is here
+Preview text: ready when you are... plus 3 things to check first
 
 Hi {{first_name}},
 
 A production line that cannot start because the machinery is stuck in customs... sound familiar?
 
-Delivered, as promised:
+That is exactly what this checklist is for. Here it is:
 
 [Download the checklist]
 
@@ -1937,15 +1433,15 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 33 characters (sample names) | Body: 83 words*
+*Subject length: 29 characters (sample names) | Body: 85 words*
 
 ```
-Subject: {{first_name_lc}}, gut check on manufacturing
-Preview text: answer in your head, no need to reply yet...
+Subject: {{first_name_lc}}, is this on your radar?
+Preview text: about manufacturing, and worth a minute...
 
 Hi {{first_name}},
 
-Gut check time...
+Something I always ask first...
 
 Has the machinery been classified and valued, and is the packing sequence planned around installation?
 
@@ -1987,33 +1483,33 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Marine
+## Automotive
 
-`industry-marine` | topic: marine imports | checklist: Marine, Vessels and Yachts Import Readiness Checklist
+`industry-automotive` | topic: vehicle and equipment imports | checklist: Automotive, Heavy Equipment and Special-Purpose Vehicles Import Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 17 characters (sample names) | Body: 76 words*
+*Subject length: 29 characters (sample names) | Body: 87 words*
 
 ```
-Subject: {{first_name_lc}}, start here
-Preview text: the checklist, plus where to look first...
+Subject: here is that checklist, {{first_name_lc}}
+Preview text: inside: 3 spots worth a look first
 
 Hi {{first_name}},
 
-A vessel or marine asset waiting on registration and port requirements... sound familiar?
+Buying the vehicle first and finding out it is not admissible after... sound familiar?
 
-Start with this:
+So we put together a checklist for exactly that. Here you go:
 
 [Download the checklist]
 
 Three things to check first:
 
-1. Registration and port requirements
-2. Large assets with complex handling
-3. Spares for vessels in service
+1. Buying before checking admissibility
+2. Taxes and permits that change the real cost
+3. Delivery after release
 
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the vessel or asset details. I will tell you what I would check first.
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the make, model and year. I will tell you what I would check first.
 
 {{sender_name}}
 The Mills Global
@@ -2021,23 +1517,23 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 29 characters (sample names) | Body: 77 words*
+*Subject length: 24 characters (sample names) | Body: 91 words*
 
 ```
-Subject: one thing about marine, {{first_name_lc}}
-Preview text: the part that is easy to skip...
+Subject: {{first_name_lc}}, spot the problem?
+Preview text: see if you can spot it before we do...
 
 Hi {{first_name}},
 
-Here is the one I always start with...
+Let me ask you this...
 
-Are the registration and port requirements for this vessel or asset clear before it moves?
+Has someone confirmed the vehicle or equipment can be imported, and what it will really cost with taxes and permits, before you buy?
 
-A "hmm, not sure" is common here. It is also where marine imports tends to get stuck.
+A "hmm, not sure" is common here. It is also where vehicle and equipment imports tends to get stuck.
 
-Here is why it matters: MARINA and PPA requirements run alongside customs.
+Here is why it matters: Used or special-purpose units may face eligibility limits that are best checked before purchase.
 
-Not sure about {{company}}? Reply with the vessel or asset details and I will tell you where I would look first.
+Not sure about {{company}}? Reply with the make, model and year and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -2045,7 +1541,7 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 19 characters (sample names) | Body: 95 words*
+*Subject length: 19 characters (sample names) | Body: 97 words*
 
 ```
 Subject: {{first_name_lc}}, door is open
@@ -2055,7 +1551,7 @@ Hi {{first_name}},
 
 I will leave the door open and stop here.
 
-Here is the thing about marine imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about vehicle and equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -2071,33 +1567,33 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Mining
+## Healthcare
 
-`industry-mining` | topic: mining imports | checklist: Mining, Minerals and Industrial Materials Import Readiness Checklist
+`industry-healthcare` | topic: healthcare imports | checklist: Pharmaceuticals, Medical Devices and Healthcare Import Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 29 characters (sample names) | Body: 78 words*
+*Subject length: 32 characters (sample names) | Body: 83 words*
 
 ```
-Subject: {{first_name_lc}}, your checklist is here
-Preview text: ready when you are... plus 3 things to check first
+Subject: {{first_name_lc}}, your healthcare checklist
+Preview text: grab it now, skim it later...
 
 Hi {{first_name}},
 
-Heavy equipment and controlled materials mixed into one shipment, headed somewhere remote... sound familiar?
+Medical cargo waiting on an approval that does not match the shipment... sound familiar?
 
-That is exactly what this checklist is for. Here it is:
+Good news, we built a checklist for it. It is yours:
 
 [Download the checklist]
 
 Three things to check first:
 
-1. Controlled materials
-2. Heavy, remote deliveries
-3. Mixed shipments
+1. Unregistered or mismatched documents
+2. Controlled and Temperature-Sensitive products
+3. Urgent medical cargo
 
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment and materials list. I will tell you what I would check first.
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the product and its authorization details. I will tell you what I would check first.
 
 {{sender_name}}
 The Mills Global
@@ -2105,23 +1601,23 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 78 words*
+*Subject length: 33 characters (sample names) | Body: 84 words*
 
 ```
-Subject: {{first_name_lc}}, before you ship anything
-Preview text: a 10 second check for {{company}}...
+Subject: {{first_name_lc}}, real talk about healthcare
+Preview text: no fluff, just one question...
 
 Hi {{first_name}},
 
-Before anything ships...
+Real talk...
 
-Are the controlled materials separated from the rest, and is the final delivery to site planned?
+Is the FDA authorization in place, and does it match what is on the shipment before it arrives?
 
-If your honest answer is "um... probably?", that is the part of mining imports where things tend to go sideways.
+If your honest answer is "um... probably?", that is the part of healthcare imports where things tend to go sideways.
 
-Here is why it matters: Explosives and reagents bring DENR, PNP-FEO and PDEA requirements.
+Here is why it matters: FDA authorization must be in place and match what is on the shipment.
 
-Not sure about {{company}}? Reply with the equipment and materials list and I will tell you where I would look first.
+Not sure about {{company}}? Reply with the product and its authorization details and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -2139,7 +1635,7 @@ Hi {{first_name}},
 
 I will stop filling your inbox after this one, promise.
 
-Here is the thing about mining imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about healthcare imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -2155,33 +1651,33 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ---
 
-## Renewable Energy
+## Agriculture
 
-`industry-renewable-energy` | topic: renewable energy equipment imports | checklist: Renewable Energy and Power Import Readiness Checklist
+`industry-agriculture` | topic: agricultural imports | checklist: Agriculture, Plants, Animals and Fisheries Import Readiness Checklist
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 29 characters (sample names) | Body: 84 words*
+*Subject length: 23 characters (sample names) | Body: 83 words*
 
 ```
-Subject: here is that checklist, {{first_name_lc}}
-Preview text: inside: 3 spots worth a look first
+Subject: checklist inside, {{first_name_lc}}
+Preview text: short read, three things to check first
 
 Hi {{first_name}},
 
-Solar and storage gear on a project clock, waiting on approvals... sound familiar?
+One shipment, three agencies, and clearances that do not quite match... sound familiar?
 
-So we put together a checklist for exactly that. Here you go:
+Here is the checklist you asked for:
 
 [Download the checklist]
 
 Three things to check first:
 
-1. Incentives and approvals
-2. Batteries and large components
-3. Project delivery windows
+1. Several agencies, one shipment
+2. Clearances that do not match
+3. Perishable cargo on the clock
 
-Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment list and the project delivery window. I will tell you what I would check first.
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the product, its origin and the arrival date. I will tell you what I would check first.
 
 {{sender_name}}
 The Mills Global
@@ -2189,23 +1685,23 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 26 characters (sample names) | Body: 82 words*
+*Subject length: 22 characters (sample names) | Body: 94 words*
 
 ```
-Subject: did you check this, {{first_name_lc}}?
-Preview text: one for {{company}}, and you can answer in your head...
+Subject: {{first_name_lc}}, sound familiar?
+Preview text: think about your last shipment...
 
 Hi {{first_name}},
 
-Okay, here goes...
+Think about your last shipment for a second...
 
-Are the incentive approvals secured before the equipment arrives, and are batteries and large components planned for?
+Do you know every agency that needs to clear this product, and do their clearances describe the shipment the same way?
 
-If you had to think about it, that is usually where renewable energy equipment imports starts to wobble.
+If you had to think about it, that is usually where agricultural imports starts to wobble.
 
-Here is why it matters: DOE, BOI or PEZA treatment depends on documents prepared before arrival.
+Here is why it matters: BAI, BPI, BFAR, NMIS and other bodies can each have a say, depending on the product.
 
-Not sure about {{company}}? Reply with the equipment list and the project delivery window and I will tell you where I would look first.
+Not sure about {{company}}? Reply with the product, its origin and the arrival date and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -2213,7 +1709,7 @@ The Mills Global
 
 ### Email 3: Day 7, closing the loop
 
-*Subject length: 23 characters (sample names) | Body: 94 words*
+*Subject length: 23 characters (sample names) | Body: 92 words*
 
 ```
 Subject: {{first_name_lc}}, closing the loop
@@ -2223,7 +1719,259 @@ Hi {{first_name}},
 
 Last note from me, I promise.
 
-Here is the thing about renewable energy equipment imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about agricultural imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Electronics & Telecom
+
+`industry-electronics-telecom` | topic: electronics and telecom imports | checklist: Telecommunications, Electronics and IT Hardware Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 26 characters (sample names) | Body: 77 words*
+
+```
+Subject: {{first_name_lc}}, this one is for you
+Preview text: your checklist, plus three things to check first...
+
+Hi {{first_name}},
+
+A gadget with a radio or a battery inside that nobody flagged... sound familiar?
+
+If that rings a bell, this is for you:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. Approvals for radio equipment
+2. Batteries inside the product
+3. Classification errors
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the product models. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 50 characters (sample names) | Body: 76 words*
+
+```
+Subject: {{first_name_lc}}, honest question about electronics & telecom
+Preview text: a 10 second gut check for {{company}}...
+
+Hi {{first_name}},
+
+Honest question...
+
+Does any item contain radio equipment or a battery, and has its classification been confirmed?
+
+A "hmm, not sure" is common here. It is also where electronics and telecom imports tends to get stuck.
+
+Here is why it matters: NTC and standards requirements can apply before goods are sold or used.
+
+Not sure about {{company}}? Reply with the product models and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 32 characters (sample names) | Body: 105 words*
+
+```
+Subject: should i close your file, {{first_name_lc}}?
+Preview text: no pressure either way...
+
+Hi {{first_name}},
+
+I do not want to be the person who keeps emailing, so this is the last one.
+
+Here is the thing about electronics and telecom imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Marine
+
+`industry-marine` | topic: marine imports | checklist: Marine, Vessels and Yachts Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 33 characters (sample names) | Body: 78 words*
+
+```
+Subject: {{first_name_lc}}, as promised, the checklist
+Preview text: no fluff, just the list...
+
+Hi {{first_name}},
+
+A vessel or marine asset waiting on registration and port requirements... sound familiar?
+
+As promised, here it is:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. Registration and port requirements
+2. Large assets with complex handling
+3. Spares for vessels in service
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the vessel or asset details. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 31 characters (sample names) | Body: 77 words*
+
+```
+Subject: can i ask you something, {{first_name_lc}}?
+Preview text: it is about marine, and it is a short one
+
+Hi {{first_name}},
+
+Can I ask you something?
+
+Are the registration and port requirements for this vessel or asset clear before it moves?
+
+If your honest answer is "um... probably?", that is the part of marine imports where things tend to go sideways.
+
+Here is why it matters: MARINA and PPA requirements run alongside customs.
+
+Not sure about {{company}}? Reply with the vessel or asset details and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 18 characters (sample names) | Body: 95 words*
+
+```
+Subject: no pressure, {{first_name_lc}}
+Preview text: one last thing, then I will leave you alone...
+
+Hi {{first_name}},
+
+One last thing, then I will leave you alone.
+
+Here is the thing about marine imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Aviation
+
+`industry-aviation` | topic: aviation parts imports | checklist: Aviation and Aerospace Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 27 characters (sample names) | Body: 85 words*
+
+```
+Subject: {{first_name_lc}}, checklist, delivered
+Preview text: fresh off the press, three things to check first
+
+Hi {{first_name}},
+
+An aircraft on the ground, waiting on a part that is waiting on paperwork... sound familiar?
+
+Delivered, as promised:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. Aircraft on the ground waiting for parts
+2. Technical paperwork that must match
+3. Regulated items inside the shipment
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the part numbers and how urgent they are. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 28 characters (sample names) | Body: 83 words*
+
+```
+Subject: {{first_name_lc}}, gut check on aviation
+Preview text: answer in your head, no need to reply yet...
+
+Hi {{first_name}},
+
+Gut check time...
+
+For urgent parts, are the technical documents ready to match the shipment before it lands?
+
+If you had to think about it, that is usually where aviation parts imports starts to wobble.
+
+Here is why it matters: Every hour of delay has a cost, so documents must be right the first time.
+
+Not sure about {{company}}? Reply with the part numbers and how urgent they are and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 22 characters (sample names) | Body: 96 words*
+
+```
+Subject: {{first_name_lc}}, parting thought
+Preview text: one more thing, then I am out of your inbox...
+
+Hi {{first_name}},
+
+Parting thought, then I am out of your inbox.
+
+Here is the thing about aviation parts imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 
@@ -2245,17 +1993,17 @@ P.S. Wrong person? Just tell me who handles this and I will take it from there.
 
 ### Email 1: Day 0, deliver the checklist
 
-*Subject length: 28 characters (sample names) | Body: 83 words*
+*Subject length: 17 characters (sample names) | Body: 75 words*
 
 ```
-Subject: {{first_name_lc}}, your retail checklist
-Preview text: grab it now, skim it later...
+Subject: {{first_name_lc}}, start here
+Preview text: the checklist, plus where to look first...
 
 Hi {{first_name}},
 
 Inventory landing before anyone checked the rules for each product category... sound familiar?
 
-Good news, we built a checklist for it. It is yours:
+Start with this:
 
 [Download the checklist]
 
@@ -2273,15 +2021,15 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 29 characters (sample names) | Body: 78 words*
+*Subject length: 29 characters (sample names) | Body: 81 words*
 
 ```
-Subject: {{first_name_lc}}, is this on your radar?
-Preview text: about retail, and worth a minute...
+Subject: one thing about retail, {{first_name_lc}}
+Preview text: the part that is easy to skip...
 
 Hi {{first_name}},
 
-Something I always ask first...
+Here is the one I always start with...
 
 Do you know the rules for each product category in the shipment, including labels?
 
@@ -2290,6 +2038,258 @@ A "hmm, not sure" is common here. It is also where retail imports tends to get s
 Here is why it matters: FDA, DTI-BPS and NTC requirements can differ across items in one shipment.
 
 Not sure about {{company}}? Reply with the product list by category and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 19 characters (sample names) | Body: 95 words*
+
+```
+Subject: {{first_name_lc}}, door is open
+Preview text: no hard feelings, either way...
+
+Hi {{first_name}},
+
+I will leave the door open and stop here.
+
+Here is the thing about retail imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Cold Chain
+
+`industry-cold-chain` | topic: cold chain cargo | checklist: Cold Chain and Temperature-Sensitive Cargo Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 29 characters (sample names) | Body: 92 words*
+
+```
+Subject: {{first_name_lc}}, your checklist is here
+Preview text: ready when you are... plus 3 things to check first
+
+Hi {{first_name}},
+
+The temperature clock that starts ticking the second the cargo hits the port... sound familiar?
+
+That is exactly what this checklist is for. Here it is:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. The temperature clock starts at the port
+2. Permits and storage must line up
+3. Proof of temperature
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the product, its temperature range and the arrival date. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 31 characters (sample names) | Body: 91 words*
+
+```
+Subject: {{first_name_lc}}, before you ship anything
+Preview text: a 10 second check for {{company}}...
+
+Hi {{first_name}},
+
+Before anything ships...
+
+From the moment the cargo reaches the port, are the cold storage and the permit timing lined up?
+
+If your honest answer is "um... probably?", that is the part of cold chain cargo where things tend to go sideways.
+
+Here is why it matters: Time in customs counts against shelf life, so release and pickup must be planned together.
+
+Not sure about {{company}}? Reply with the product, its temperature range and the arrival date and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 23 characters (sample names) | Body: 97 words*
+
+```
+Subject: last one from me, {{first_name_lc}}
+Preview text: no hard feelings either way...
+
+Hi {{first_name}},
+
+I will stop filling your inbox after this one, promise.
+
+Here is the thing about cold chain cargo... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Mining
+
+`industry-mining` | topic: mining imports | checklist: Mining, Minerals and Industrial Materials Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 29 characters (sample names) | Body: 79 words*
+
+```
+Subject: here is that checklist, {{first_name_lc}}
+Preview text: inside: 3 spots worth a look first
+
+Hi {{first_name}},
+
+Heavy equipment and controlled materials mixed into one shipment, headed somewhere remote... sound familiar?
+
+So we put together a checklist for exactly that. Here you go:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. Controlled materials
+2. Heavy, remote deliveries
+3. Mixed shipments
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the equipment and materials list. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 26 characters (sample names) | Body: 74 words*
+
+```
+Subject: did you check this, {{first_name_lc}}?
+Preview text: one for {{company}}, and you can answer in your head...
+
+Hi {{first_name}},
+
+Okay, here goes...
+
+Are the controlled materials separated from the rest, and is the final delivery to site planned?
+
+If you had to think about it, that is usually where mining imports starts to wobble.
+
+Here is why it matters: Explosives and reagents bring DENR, PNP-FEO and PDEA requirements.
+
+Not sure about {{company}}? Reply with the equipment and materials list and I will tell you where I would look first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 3: Day 7, closing the loop
+
+*Subject length: 23 characters (sample names) | Body: 92 words*
+
+```
+Subject: {{first_name_lc}}, closing the loop
+Preview text: one last note, and an easy way to say not now
+
+Hi {{first_name}},
+
+Last note from me, I promise.
+
+Here is the thing about mining imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+
+If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
+
+[Book a time]
+
+And if now is not the time, totally fine. The checklist is yours to keep.
+
+{{sender_name}}
+The Mills Global
+
+P.S. Wrong person? Just tell me who handles this and I will take it from there.
+```
+
+---
+
+## Freight Forwarders
+
+`industry-freight-forwarders` | topic: forwarder clearance | checklist: Freight Forwarders and Logistics Providers Import Readiness Checklist
+
+### Email 1: Day 0, deliver the checklist
+
+*Subject length: 40 characters (sample names) | Body: 84 words*
+
+```
+Subject: {{first_name_lc}}, your freight forwarders checklist
+Preview text: grab it now, skim it later...
+
+Hi {{first_name}},
+
+Your client's cargo turning out to be regulated, with your name on it... sound familiar?
+
+Good news, we built a checklist for it. It is yours:
+
+[Download the checklist]
+
+Three things to check first:
+
+1. Client cargo, your reputation
+2. Regulated shipments
+3. Confidentiality and authority
+
+Skim it with your own shipment in mind. If something looks off, hit reply and send me the type of cargo your clients move most. I will tell you what I would check first.
+
+{{sender_name}}
+The Mills Global
+```
+
+### Email 2: Day 3, a quick check
+
+*Subject length: 29 characters (sample names) | Body: 85 words*
+
+```
+Subject: {{first_name_lc}}, is this on your radar?
+Preview text: about freight forwarders, and worth a minute...
+
+Hi {{first_name}},
+
+Something I always ask first...
+
+When a client's cargo turns out to be regulated, who handles the permits, and under whose authority?
+
+A "hmm, not sure" is common here. It is also where forwarder clearance tends to get stuck.
+
+Here is why it matters: A clearance problem lands on the forwarder even when the cause was paperwork.
+
+Not sure about {{company}}? Reply with the type of cargo your clients move most and I will tell you where I would look first.
 
 {{sender_name}}
 The Mills Global
@@ -2307,7 +2307,7 @@ Hi {{first_name}},
 
 I do not want to be the person who keeps emailing, so this is the last one.
 
-Here is the thing about retail imports... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
+Here is the thing about forwarder clearance... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.
 
 If {{company}} has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:
 

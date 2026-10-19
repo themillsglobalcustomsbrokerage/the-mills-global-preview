@@ -2,9 +2,9 @@
 services/industries hubs) so search and AI answers can quote the numbers, services and industries."""
 import re, json, html
 SERVICES = [('services-mills-entry.html','Mills Entry'),('services-mills-permits.html','Mills Permits'),('services-mills-customs.html','Mills Customs'),
- ('services-mills-projects.html','Mills Projects'),('services-mills-marine.html','Mills Marine'),('services-mills-dangerous-goods.html','Mills Dangerous Goods'),
+ ('services-mills-marine.html','Mills Marine'),('services-mills-dangerous-goods.html','Mills Dangerous Goods'),
  ('services-mills-logistics.html','Mills Logistics'),('services-mills-packaging.html','Mills Packaging'),('services-mills-insurance.html','Mills Insurance'),
- ('services-mills-time-critical.html','Mills Time Critical'),('services-mills-advisory.html','Mills Advisory')]
+ ('services-mills-time-critical.html','Mills Time Critical'),('services-mills-advisory.html','Mills Advisory'),('services-mills-projects.html','Mills Projects')]
 ih = open('industries.html').read()
 INDUSTRIES = [(a, html.unescape(b)) for a, b in re.findall(r'<a href="(industries-[\w-]+\.html)"[^>]*>.*?<h3[^>]*>(.*?)</h3>', ih, re.S)]
 assert len(INDUSTRIES) == 16, len(INDUSTRIES)

@@ -1476,3 +1476,13 @@ html.cursor-texty .mills-cursor-dot {
 .split-layout .services-intro + .services-intro__lead {
   margin-top: var(--space-xl);
 }
+
+/* Spacing between a section heading and the paragraph that follows it, wherever they sit together */
+.services-intro__heading + .services-intro__lead,
+.services-intro__heading + p {
+  margin-top: var(--space-lg);
+}
+
+.industry-card__title + .industry-card__text {
+  margin-top: 8px;
+}

@@ -339,7 +339,7 @@ def post_page(p, posts):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=15">
+  <link rel="stylesheet" href="../css/base.css?v=16">
   <link rel="stylesheet" href="../css/sections.css?v=5">
   <link rel="stylesheet" href="../css/service-page.css?v=3">
   <link rel="stylesheet" href="../css/content.css?v=3">
