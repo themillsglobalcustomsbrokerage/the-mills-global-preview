@@ -1471,3 +1471,8 @@ html.cursor-texty .mills-cursor-dot {
 @media (max-width: 600px) {
   .globe-legend-card .globe-legend { grid-template-columns: 1fr; }
 }
+
+/* A lead paragraph that follows the intro heading inside a split layout needs its own breathing room */
+.split-layout .services-intro + .services-intro__lead {
+  margin-top: var(--space-xl);
+}
