@@ -35,7 +35,7 @@ for f in sorted(glob.glob('industries-*.html')):
   <!-- COMMON CHALLENGES                            -->
   <!-- ============================================ -->
   <section class="section section--dark section--img-bg" id="common-challenges">
-    <div class="img-slot img-slot--bg" data-img="assets/images/industry-{slug}.jpg" role="img" aria-label="{html.escape(re.sub('<[^>]+>', '', title))}"><span class="img-slot__label">IMAGE: assets/images/industry-{slug}.jpg</span></div>
+    <div class="img-slot img-slot--bg" data-img="assets/images/challenges/{slug}.jpg" role="img" aria-label="{html.escape(re.sub('<[^>]+>', '', title))}"><span class="img-slot__label">IMAGE: assets/images/challenges/{slug}.jpg</span></div>
     <div class="container">
       <div class="services-intro">
         <p class="section__eyebrow animate-in">Common Challenges</p>

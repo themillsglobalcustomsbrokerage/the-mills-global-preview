@@ -240,3 +240,27 @@ Which generated image feeds which website slot. Source files live in `assets/ima
 | `industries-hub-bg` | `Industrial_ports_and_factories_p…` |
 | `industries-hub-float-1` | `Industrial_cargo_operations_detail` |
 | `industries-hub-float-2` | `Shipping_containers_and_customs_…` |
+
+
+## Common Challenges section backgrounds
+
+Each industry page's "Common Challenges" section uses its own full-width photo (`assets/images/challenges/<industry>.jpg`), different from that page's hero and Regulatory Focus backgrounds. Sourced from the original generated cargo images.
+
+| Slot | Source |
+|---|---|
+| `challenges/agriculture` | `Agricultural_grains_in_port_cargo` |
+| `challenges/automotive` | `Ambulances_in_port_warehouse` |
+| `challenges/aviation` | `Aircraft_fuselage_sections_in_port` |
+| `challenges/chemicals` | `Laboratory_reagents_in_port_ware…` |
+| `challenges/cold-chain` | `Meat_shipments_at_port_warehouse` |
+| `challenges/construction` | `Construction_cranes_in_port` |
+| `challenges/data-centers` | `Data_servers_in_cargo_port` |
+| `challenges/electronics-telecom` | `Storage_devices_in_cargo_port` |
+| `challenges/food-beverage` | `Bulk_shipments_of_commercial_bev…` |
+| `challenges/freight-forwarders` | `Shipping_containers_in_port` |
+| `challenges/healthcare` | `Diagnostic_machines_on_transport…` |
+| `challenges/manufacturing` | `Industrial_equipment_in_cargo_port` |
+| `challenges/marine` | `Speedboats_on_transport_trailers` |
+| `challenges/mining` | `Explosives_cargo_in_port_warehouse` |
+| `challenges/renewable-energy` | `Wind_turbine_blades_in_port` |
+| `challenges/retail` | `Commercial_cargo_in_port_warehouse` |
