@@ -44,7 +44,22 @@
     ];
     window.MILLS_COUNTRIES = COUNTRIES;
 
-    var hq = COUNTRIES[0];
+    // The connections form a mesh between neighbouring locations, not a hub: each one links to its three nearest
+    function dist(a, b) {
+        var r = Math.PI / 180, dl = (b.lng - a.lng) * r, p1 = a.lat * r, p2 = b.lat * r;
+        return Math.acos(Math.min(1, Math.sin(p1) * Math.sin(p2) + Math.cos(p1) * Math.cos(p2) * Math.cos(dl)));
+    }
+    var LINKS = (function () {
+        var seen = {}, out = [];
+        COUNTRIES.forEach(function (c, i) {
+            COUNTRIES.map(function (o, k) { return { k: k, d: k === i ? 9 : dist(c, o) }; })
+                .sort(function (x, y) { return x.d - y.d; }).slice(0, 3).forEach(function (n) {
+                    var key = Math.min(i, n.k) + '-' + Math.max(i, n.k);
+                    if (!seen[key]) { seen[key] = 1; out.push([i, n.k]); }
+                });
+        });
+        return out;
+    })();
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var libPromise = null;
 
@@ -84,7 +99,7 @@
         var chipsLabel = el('p', 'globe-chips__label', 'Where we work. Hover a country to see what the network offers there.');
         var chips = el('div', 'globe-chips'); var chipEls = {};
         COUNTRIES.forEach(function (c, idx) {
-            var b = el('button', 'globe-chip' + (c.hq ? ' is-home' : '')); b.type = 'button';
+            var b = el('button', 'globe-chip'); b.type = 'button';
             b.appendChild(el('span', 'globe-chip__name', c.n));
             var dots = el('span', 'globe-chip__dots'); dots.setAttribute('aria-hidden', 'true');
             ORDER.forEach(function (code) { if (offers(c, code)) dots.appendChild(dot(code, 'globe-chip__dot')); });
@@ -110,7 +125,10 @@
 
             function visible(c) { return !state.filter || offers(c, state.filter); }
             var arcs = function () {
-                return COUNTRIES.slice(1).filter(visible).map(function (c) { return { startLat: hq.lat, startLng: hq.lng, endLat: c.lat, endLng: c.lng }; });
+                return LINKS.filter(function (l) { return visible(COUNTRIES[l[0]]) && visible(COUNTRIES[l[1]]); }).map(function (l) {
+                    var a = COUNTRIES[l[0]], b = COUNTRIES[l[1]];
+                    return { startLat: a.lat, startLng: a.lng, endLat: b.lat, endLng: b.lng };
+                });
             };
 
             var g = window.Globe()(el0)
@@ -123,12 +141,7 @@
                 .height(el0.clientWidth)
                 .pointsData(COUNTRIES)
                 .pointLat('lat').pointLng('lng')
-                .pointRadius(function (d) { return d.hq ? 0.6 : 0.42; })
-                .ringsData([hq])
-                .ringColor(function () { return function (t) { return 'rgba(234,92,31,' + (1 - t) + ')'; }; })
-                .ringMaxRadius(6)
-                .ringPropagationSpeed(2)
-                .ringRepeatPeriod(1500)
+                .pointRadius(function (d) { return 0.42; })
                 .arcsData(arcs())
                 .arcColor(function () { return ['rgba(234,92,31,0.95)', 'rgba(255,255,255,0.35)']; })
                 .arcStroke(0.32)
@@ -143,11 +156,11 @@
 
             function styles() {
                 var sel = state.pinned > -1 ? state.pinned : state.hover;
-                g.pointColor(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? '#EA5C1F' : (!visible(d) ? 'rgba(255,255,255,0.25)' : (d.hq ? '#EA5C1F' : '#FFFFFF')); })
-                 .pointAltitude(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? 0.12 : (d.hq ? 0.14 : 0.04); })
-                 .labelSize(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? 1.5 : (d.hq ? 1.5 : 0.95); })
-                 .labelAltitude(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? 0.16 : (d.hq ? 0.2 : 0.08); })
-                 .labelColor(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? '#FFB48A' : (!visible(d) ? 'rgba(255,255,255,0.28)' : (d.hq ? '#FFB48A' : '#FFFFFF')); })
+                g.pointColor(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? '#EA5C1F' : (!visible(d) ? 'rgba(255,255,255,0.25)' : '#FFFFFF'); })
+                 .pointAltitude(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? 0.12 : 0.04; })
+                 .labelSize(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? 1.5 : 0.95; })
+                 .labelAltitude(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? 0.16 : 0.08; })
+                 .labelColor(function (d) { var i = COUNTRIES.indexOf(d); return i === sel ? '#FFB48A' : (!visible(d) ? 'rgba(255,255,255,0.28)' : '#FFFFFF'); })
                  .arcsData(arcs());
                 if (ui) {
                     COUNTRIES.forEach(function (c, i) {
@@ -165,7 +178,7 @@
                 var c = COUNTRIES[i];
                 card.innerHTML = '';
                 card.appendChild(el('h3', 'globe-card__title', c.n));
-                card.appendChild(el('p', 'globe-card__sub', c.hq ? 'Home base, Manila' : 'Partner network'));
+                card.appendChild(el('p', 'globe-card__sub', 'Partner network'));
                 var ul = el('ul', 'globe-card__list');
                 ORDER.forEach(function (code) {
                     if (!offers(c, code)) return;
