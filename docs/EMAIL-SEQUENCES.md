@@ -1013,7 +1013,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 83 words*
+*Subject length: 31 characters (sample names) | Body: 96 words*
 
 ```
 Subject: can i ask you something, {{first_name_lc}}?
@@ -1027,7 +1027,7 @@ Is any of the machinery used, and does any piece exceed what the planned route c
 
 A "hmm, not sure" is common here. It is also where construction equipment imports tends to get stuck.
 
-Here is why it matters: Eligibility, standards and permits can differ for new and used equipment.
+Here is why it matters: Rules and permits differ for new and used equipment. We check eligibility before you commit, so you do not buy machinery you cannot import.
 
 Not sure about {{company}}? Reply with the equipment list and the site schedule and I will tell you where I would look first.
 
@@ -1097,7 +1097,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 36 characters (sample names) | Body: 86 words*
+*Subject length: 36 characters (sample names) | Body: 98 words*
 
 ```
 Subject: {{first_name_lc}}, gut check on renewable energy
@@ -1111,7 +1111,7 @@ Are the incentive approvals secured before the equipment arrives, and are batter
 
 If your honest answer is "um... probably?", that is the part of renewable energy equipment imports where things tend to go sideways.
 
-Here is why it matters: DOE, BOI or PEZA treatment depends on documents prepared before arrival.
+Here is why it matters: Incentive treatment depends on documents prepared before arrival. We get them in place early, so the benefit is applied when the cargo clears.
 
 Not sure about {{company}}? Reply with the equipment list and the project delivery window and I will tell you where I would look first.
 
@@ -1181,7 +1181,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 35 characters (sample names) | Body: 88 words*
+*Subject length: 35 characters (sample names) | Body: 103 words*
 
 ```
 Subject: one thing about data centers, {{first_name_lc}}
@@ -1195,7 +1195,7 @@ Have the categories in the project (servers, cooling, power, batteries) been sep
 
 If you had to think about it, that is usually where data center equipment imports starts to wobble.
 
-Here is why it matters: Servers, batteries, generators and cooling can each follow different rules.
+Here is why it matters: Servers, batteries, generators and cooling each follow different rules. We separate and clear each category, so one regulated item does not hold the whole shipment.
 
 Not sure about {{company}}? Reply with the bill of materials and the fit-out date and I will tell you where I would look first.
 
@@ -1265,7 +1265,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 84 words*
+*Subject length: 31 characters (sample names) | Body: 95 words*
 
 ```
 Subject: {{first_name_lc}}, before you ship anything
@@ -1279,7 +1279,7 @@ Is the exact substance identified, and have you checked whether it is a controll
 
 A "hmm, not sure" is common here. It is also where chemical imports tends to get stuck.
 
-Here is why it matters: What the material is determines which permits, transport rules and customs treatment apply.
+Here is why it matters: What the material is decides which permits, transport rules and customs treatment apply. We identify the substance first, so every later step is right.
 
 Not sure about {{company}}? Reply with the chemical name and its safety data sheet and I will tell you where I would look first.
 
@@ -1349,7 +1349,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 26 characters (sample names) | Body: 91 words*
+*Subject length: 26 characters (sample names) | Body: 107 words*
 
 ```
 Subject: did you check this, {{first_name_lc}}?
@@ -1363,7 +1363,7 @@ Are the labels and product registration in order before the stock ships, and do 
 
 If your honest answer is "um... probably?", that is the part of food and beverage imports where things tend to go sideways.
 
-Here is why it matters: Products can be held when labels or registrations do not match the shipment.
+Here is why it matters: Products can be held when labels or registrations do not match the shipment. We check both before you ship, so stock is not stuck while a label is fixed.
 
 Not sure about {{company}}? Reply with the product list and the label artwork and I will tell you where I would look first.
 
@@ -1433,7 +1433,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 29 characters (sample names) | Body: 85 words*
+*Subject length: 29 characters (sample names) | Body: 97 words*
 
 ```
 Subject: {{first_name_lc}}, is this on your radar?
@@ -1447,7 +1447,7 @@ Has the machinery been classified and valued, and is the packing sequence planne
 
 If you had to think about it, that is usually where manufacturing equipment imports starts to wobble.
 
-Here is why it matters: Complex equipment with no proper classification or valuation is easy to undervalue, which causes customs delays.
+Here is why it matters: Complex equipment and spare parts are easy to misclassify or undervalue, which causes customs delays. We settle classification and value before filing, so the entry clears first time.
 
 Not sure about {{company}}? Reply with the machine list and the installation date and I will tell you where I would look first.
 
@@ -1517,7 +1517,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 24 characters (sample names) | Body: 91 words*
+*Subject length: 24 characters (sample names) | Body: 107 words*
 
 ```
 Subject: {{first_name_lc}}, spot the problem?
@@ -1531,7 +1531,7 @@ Has someone confirmed the vehicle or equipment can be imported, and what it will
 
 A "hmm, not sure" is common here. It is also where vehicle and equipment imports tends to get stuck.
 
-Here is why it matters: Used or special-purpose units may face eligibility limits that are best checked before purchase.
+Here is why it matters: Used and special-purpose units can fail eligibility rules after you have paid for them. We check admissibility before you buy, so you never commit to a unit you cannot import.
 
 Not sure about {{company}}? Reply with the make, model and year and I will tell you where I would look first.
 
@@ -1601,7 +1601,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 33 characters (sample names) | Body: 84 words*
+*Subject length: 33 characters (sample names) | Body: 99 words*
 
 ```
 Subject: {{first_name_lc}}, real talk about healthcare
@@ -1615,7 +1615,7 @@ Is the FDA authorization in place, and does it match what is on the shipment bef
 
 If your honest answer is "um... probably?", that is the part of healthcare imports where things tend to go sideways.
 
-Here is why it matters: FDA authorization must be in place and match what is on the shipment.
+Here is why it matters: Authorization must be in place and match what is on the shipment. We check every document against the cargo before it ships, so nothing is rejected on arrival.
 
 Not sure about {{company}}? Reply with the product and its authorization details and I will tell you where I would look first.
 
@@ -1685,7 +1685,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 22 characters (sample names) | Body: 94 words*
+*Subject length: 22 characters (sample names) | Body: 101 words*
 
 ```
 Subject: {{first_name_lc}}, sound familiar?
@@ -1699,7 +1699,7 @@ Do you know every agency that needs to clear this product, and do their clearanc
 
 If you had to think about it, that is usually where agricultural imports starts to wobble.
 
-Here is why it matters: BAI, BPI, BFAR, NMIS and other bodies can each have a say, depending on the product.
+Here is why it matters: Several agencies can each have a say, depending on the product. We map every clearance before shipping, so no agency surprises the cargo.
 
 Not sure about {{company}}? Reply with the product, its origin and the arrival date and I will tell you where I would look first.
 
@@ -1769,7 +1769,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 50 characters (sample names) | Body: 76 words*
+*Subject length: 50 characters (sample names) | Body: 88 words*
 
 ```
 Subject: {{first_name_lc}}, honest question about electronics & telecom
@@ -1783,7 +1783,7 @@ Does any item contain radio equipment or a battery, and has its classification b
 
 A "hmm, not sure" is common here. It is also where electronics and telecom imports tends to get stuck.
 
-Here is why it matters: NTC and standards requirements can apply before goods are sold or used.
+Here is why it matters: Radio equipment needs approval before it can be sold or used. We secure it in advance, so units are not held or turned back.
 
 Not sure about {{company}}? Reply with the product models and I will tell you where I would look first.
 
@@ -1853,7 +1853,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 77 words*
+*Subject length: 31 characters (sample names) | Body: 91 words*
 
 ```
 Subject: can i ask you something, {{first_name_lc}}?
@@ -1867,7 +1867,7 @@ Are the registration and port requirements for this vessel or asset clear before
 
 If your honest answer is "um... probably?", that is the part of marine imports where things tend to go sideways.
 
-Here is why it matters: MARINA and PPA requirements run alongside customs.
+Here is why it matters: Maritime authority and port requirements run alongside customs. We coordinate all three, so your asset is registered and cleared without gaps.
 
 Not sure about {{company}}? Reply with the vessel or asset details and I will tell you where I would look first.
 
@@ -1937,7 +1937,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 28 characters (sample names) | Body: 83 words*
+*Subject length: 28 characters (sample names) | Body: 93 words*
 
 ```
 Subject: {{first_name_lc}}, gut check on aviation
@@ -1951,7 +1951,7 @@ For urgent parts, are the technical documents ready to match the shipment before
 
 If you had to think about it, that is usually where aviation parts imports starts to wobble.
 
-Here is why it matters: Every hour of delay has a cost, so documents must be right the first time.
+Here is why it matters: Every hour a grounded aircraft waits has a cost. We prepare documents right the first time and prioritize release, so parts reach the aircraft sooner.
 
 Not sure about {{company}}? Reply with the part numbers and how urgent they are and I will tell you where I would look first.
 
@@ -2021,7 +2021,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 29 characters (sample names) | Body: 81 words*
+*Subject length: 29 characters (sample names) | Body: 93 words*
 
 ```
 Subject: one thing about retail, {{first_name_lc}}
@@ -2035,7 +2035,7 @@ Do you know the rules for each product category in the shipment, including label
 
 A "hmm, not sure" is common here. It is also where retail imports tends to get stuck.
 
-Here is why it matters: FDA, DTI-BPS and NTC requirements can differ across items in one shipment.
+Here is why it matters: Different agencies can apply to different items in one shipment. We map requirements per product before shipping, so no item holds back the rest.
 
 Not sure about {{company}}? Reply with the product list by category and I will tell you where I would look first.
 
@@ -2105,7 +2105,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 31 characters (sample names) | Body: 91 words*
+*Subject length: 31 characters (sample names) | Body: 99 words*
 
 ```
 Subject: {{first_name_lc}}, before you ship anything
@@ -2119,7 +2119,7 @@ From the moment the cargo reaches the port, are the cold storage and the permit 
 
 If your honest answer is "um... probably?", that is the part of cold chain cargo where things tend to go sideways.
 
-Here is why it matters: Time in customs counts against shelf life, so release and pickup must be planned together.
+Here is why it matters: Time in customs counts against shelf life. We plan release and pickup together, so the temperature clock is not wasted at the port.
 
 Not sure about {{company}}? Reply with the product, its temperature range and the arrival date and I will tell you where I would look first.
 
@@ -2189,7 +2189,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 26 characters (sample names) | Body: 74 words*
+*Subject length: 26 characters (sample names) | Body: 85 words*
 
 ```
 Subject: did you check this, {{first_name_lc}}?
@@ -2203,7 +2203,7 @@ Are the controlled materials separated from the rest, and is the final delivery 
 
 If you had to think about it, that is usually where mining imports starts to wobble.
 
-Here is why it matters: Explosives and reagents bring DENR, PNP-FEO and PDEA requirements.
+Here is why it matters: Explosives and reagents bring extra agency requirements. We secure each approval before shipping, so controlled cargo clears when it lands.
 
 Not sure about {{company}}? Reply with the equipment and materials list and I will tell you where I would look first.
 
@@ -2273,7 +2273,7 @@ The Mills Global
 
 ### Email 2: Day 3, a quick check
 
-*Subject length: 29 characters (sample names) | Body: 85 words*
+*Subject length: 29 characters (sample names) | Body: 96 words*
 
 ```
 Subject: {{first_name_lc}}, is this on your radar?
@@ -2287,7 +2287,7 @@ When a client's cargo turns out to be regulated, who handles the permits, and un
 
 A "hmm, not sure" is common here. It is also where forwarder clearance tends to get stuck.
 
-Here is why it matters: A clearance problem lands on the forwarder even when the cause was paperwork.
+Here is why it matters: A clearance problem lands on the forwarder even when the cause was paperwork. We handle the filing and follow-up, so your name stays clear.
 
 Not sure about {{company}}? Reply with the type of cargo your clients move most and I will tell you where I would look first.
 
