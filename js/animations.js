@@ -449,3 +449,23 @@ document.addEventListener('DOMContentLoaded', () => {
         frame();
     });
 });
+
+/* Navbar dropdowns: hovering one tab hands over instantly, so the previous panel never lingers
+   (including one held open by keyboard focus from an earlier click). */
+(function () {
+    var items = document.querySelectorAll('.nav__item--dropdown');
+    if (!items.length) return;
+    items.forEach(function (item) {
+        item.addEventListener('mouseenter', function () {
+            items.forEach(function (other) {
+                if (other === item) { other.classList.remove('is-suppressed'); return; }
+                other.classList.add('is-suppressed');
+                if (other.contains(document.activeElement)) document.activeElement.blur();
+            });
+        });
+    });
+    var list = items[0].parentElement;
+    list.addEventListener('mouseleave', function () {
+        items.forEach(function (i) { i.classList.remove('is-suppressed'); });
+    });
+})();
