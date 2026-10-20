@@ -1511,30 +1511,3 @@ html.cursor-texty .mills-cursor-dot {
   margin-top: 8px;
 }
 
-/* Bigger globe: it may extend into the margins and sit behind the copy, as long as the copy stays on top */
-@media (min-width: 901px) {
-  .section--sky .split-layout__text {
-    position: relative;
-    z-index: 2;
-    pointer-events: none;   /* empty space in the copy column never blocks dragging the globe behind it */
-  }
-
-  .section--sky .split-layout__text :is(p, h1, h2, h3, a, button, .globe-legend-card, .globe-chips, .cta-pair) {
-    pointer-events: auto;
-  }
-
-  .section--sky .mills-globe {
-    position: relative;
-    z-index: 1;
-    width: 138%;
-    max-width: 960px;   /* cap so very wide screens do not blow the globe up */
-    margin-left: -26%;
-    margin-right: -12%;
-  }
-
-  .section--sky .mills-globe .globe-card {
-    left: auto;
-    right: 16%;
-    bottom: 10%;
-  }
-}

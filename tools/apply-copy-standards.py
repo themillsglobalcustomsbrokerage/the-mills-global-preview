@@ -84,8 +84,8 @@ def expand_page(h):
 
 
 def expand_agency_lists(h):
-    s2 = h.find('Regulatory Focus'); s3 = h.find('Common Challenges')
-    if s2 < 0 or s3 < 0: return h
+    s2 = h.find('Regulatory Focus'); s3 = h.find('Common Challenges', s2 + 1)
+    if s2 < 0 or s3 < 0: return h   # Common Challenges now sits before Regulatory Focus, so there is nothing to slice
     block = h[s2:s3]
     def li(m):
         txt = m.group(2)
