@@ -26,7 +26,9 @@
         '#millsLoader{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;' +
         'background:linear-gradient(90deg,#4A6BA3 0%,#2F3B5C 30%,#212431 58%,#212431 100%);transition:opacity .5s ease,visibility .5s ease}' +
         '#millsLoader.is-leaving{opacity:0;visibility:hidden}' +
-        '#millsLoader video{display:block;width:clamp(220px,24vw,320px);height:auto;mix-blend-mode:screen;pointer-events:none}' +
+        '#millsLoader .ml-lockup{width:clamp(220px,24vw,320px)}' +
+        '#millsLoader video{display:block;width:100%;height:auto;mix-blend-mode:screen;pointer-events:none}' +
+        '#millsLoader .ml-tag{display:inline-block;margin-left:17.6%;white-space:nowrap;line-height:1;text-transform:uppercase;font-family:Tahoma,Geneva,Verdana,sans-serif;color:#F5F5F5;opacity:.85}' +
         'html.mills-loading{overflow:hidden}';
     var style = document.createElement('style');
     style.textContent = css;
@@ -36,12 +38,28 @@
     el.id = 'millsLoader';
     el.setAttribute('role', 'status');
     el.setAttribute('aria-label', 'Loading');
-    el.innerHTML = '<video muted playsinline autoplay preload="auto" aria-hidden="true">' +
+    el.innerHTML = '<div class="ml-lockup"><video muted playsinline autoplay preload="auto" aria-hidden="true">' +
         '<source src="' + BASE + 'assets/videos/' + clip + '.webm" type="video/webm">' +
-        '<source src="' + BASE + 'assets/videos/' + clip + '.mp4" type="video/mp4"></video>';
+        '<source src="' + BASE + 'assets/videos/' + clip + '.mp4" type="video/mp4"></video>' +
+        '<span class="ml-tag" aria-hidden="true">TRADE WITHOUT LIMITS</span></div>';
+    // The logo fills 17.6% to 97% of the video frame; fit the tagline to exactly that width, tucked under the logo
+    var lock = el.querySelector('.ml-lockup'), tag = el.querySelector('.ml-tag');
+    function fitTag() {
+        var W = lock.getBoundingClientRect().width, target = W * 0.794;
+        if (!W) return;
+        tag.style.fontSize = (target * 0.07).toFixed(2) + 'px';
+        tag.style.letterSpacing = '0px'; tag.style.marginRight = '0px';
+        var ls = (target - tag.getBoundingClientRect().width) / 19;
+        tag.style.letterSpacing = ls.toFixed(3) + 'px';
+        tag.style.marginRight = (-ls).toFixed(3) + 'px';
+        tag.style.marginTop = (-W * 0.066 + target * 0.04).toFixed(2) + 'px';
+    }
     document.documentElement.appendChild(el);
     document.documentElement.classList.add('mills-loading');
     var video = el.querySelector('video');
+    fitTag();
+    window.addEventListener('resize', fitTag);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTag);
     video.muted = true;
     var p = video.play();
     if (p && p.catch) p.catch(function () { /* autoplay blocked: gradient only */ });

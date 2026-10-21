@@ -469,3 +469,41 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach(function (i) { i.classList.remove('is-suppressed'); });
     });
 })();
+
+/* Logo lockup: "TRADE WITHOUT LIMITS" sits under every Mills logo, fitted to the logo's width
+   (nav, footer and anywhere else the logo image is used). */
+(function () {
+    var TEXT = 'TRADE WITHOUT LIMITS';
+    var tags = [];
+    function fit(t) {
+        var img = t.img, w = img.getBoundingClientRect().width;
+        if (!w) return;
+        t.el.style.fontSize = (w * 0.07).toFixed(2) + 'px';
+        t.el.style.letterSpacing = '0px';
+        t.el.style.marginRight = '0px';
+        var natural = t.el.getBoundingClientRect().width;
+        var ls = (w - natural) / (TEXT.length - 1);
+        t.el.style.letterSpacing = ls.toFixed(3) + 'px';
+        t.el.style.marginRight = (-ls).toFixed(3) + 'px';
+        t.el.style.marginTop = (w * 0.045).toFixed(2) + 'px';
+    }
+    function fitAll() { tags.forEach(fit); }
+    document.querySelectorAll('img[src*="mills-logo"]').forEach(function (img) {
+        var host = img.closest('a') || img.parentElement;
+        if (!host || host.querySelector('.logo-tagline')) return;
+        host.classList.add('logo-lockup');
+        var el = document.createElement('span');
+        el.className = 'logo-tagline';
+        el.setAttribute('aria-hidden', 'true');
+        el.textContent = TEXT;
+        host.appendChild(el);
+        var t = { img: img, el: el };
+        tags.push(t);
+        if (window.ResizeObserver) new ResizeObserver(function () { fit(t); }).observe(img);
+    });
+    if (!tags.length) return;
+    fitAll();
+    window.addEventListener('resize', fitAll);
+    window.addEventListener('load', fitAll);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+})();
