@@ -266,7 +266,7 @@ def chrome():
 
 
 NAV, FOOT = chrome()
-HEAD_SCRIPTS = '''  <script src="../js/loader.js?v=7"></script>'''
+HEAD_SCRIPTS = '''  <script src="../js/loader.js?v=8"></script>'''
 TAIL_SCRIPTS = '''  <script src="../js/vendor/lenis.min.js"></script>
   <script src="../js/smooth.js?v=1"></script>
   <script src="../js/cursor.js?v=7"></script>
@@ -339,7 +339,7 @@ def post_page(p, posts):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=24">
+  <link rel="stylesheet" href="../css/base.css?v=25">
   <link rel="stylesheet" href="../css/sections.css?v=5">
   <link rel="stylesheet" href="../css/service-page.css?v=3">
   <link rel="stylesheet" href="../css/content.css?v=3">

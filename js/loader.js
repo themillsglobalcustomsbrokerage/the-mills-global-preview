@@ -28,7 +28,7 @@
         '#millsLoader.is-leaving{opacity:0;visibility:hidden}' +
         '#millsLoader .ml-lockup{width:clamp(220px,24vw,320px)}' +
         '#millsLoader video{display:block;width:100%;height:auto;mix-blend-mode:screen;pointer-events:none}' +
-        '#millsLoader .ml-tag{display:inline-block;margin-left:17.6%;white-space:nowrap;line-height:1;text-transform:uppercase;font-family:Tahoma,Geneva,Verdana,sans-serif;color:#F5F5F5;opacity:.85}' +
+        '#millsLoader .ml-tag{display:inline-block;margin-left:17.6%;white-space:nowrap;line-height:1;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;color:#F5F5F5;opacity:.85}' +
         'html.mills-loading{overflow:hidden}';
     var style = document.createElement('style');
     style.textContent = css;
