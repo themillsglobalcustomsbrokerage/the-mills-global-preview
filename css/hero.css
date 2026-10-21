@@ -259,20 +259,33 @@
 }
 
 @media (max-width: 767px) {
-  /* Scroll-scrubbed on phones too: the section is tall, the viewport sticks, the slides fade in turn */
+  /* Scroll-scrubbed on phones too: the section is tall, the viewport sticks, the slides fade in turn.
+     The video fills only the top part of the screen (--hero-media-h) so it keeps its detail,
+     and the slide copy sits in its own area underneath instead of over the picture. */
   .hero-scroll-container {
     height: 420vh;
     height: 420svh;
   }
 
   .hero-viewport {
+    --hero-media-h: 56svh;
     height: 100vh;
     height: 100svh;
   }
 
+  .hero-video,
+  .hero-placeholders {
+    inset: 0 0 auto 0;
+    height: 56vh;
+    height: var(--hero-media-h);
+  }
+
+  /* Darkens the top (under the nav) and melts the bottom of the picture into the page colour */
   .hero-darken {
+    inset: 0 0 auto 0;
+    height: var(--hero-media-h);
     background:
-      linear-gradient(180deg, rgba(6,7,10,0.5) 0%, rgba(6,7,10,0.1) 25%, rgba(6,7,10,0.35) 50%, rgba(6,7,10,0.88) 100%);
+      linear-gradient(180deg, rgba(6,7,10,0.5) 0%, rgba(6,7,10,0.05) 26%, rgba(6,7,10,0.05) 62%, var(--color-bg-dark) 100%);
   }
 
   .hero-content {
@@ -289,27 +302,28 @@
     position: absolute;
     left: 22px;
     right: 22px;
-    top: auto;
-    bottom: calc(11svh + env(safe-area-inset-bottom, 0px));
+    top: calc(var(--hero-media-h) + 6px);
+    bottom: auto;
     max-width: none;
     text-align: left;
   }
 
   .hero-slide__eyebrow {
     font-size: 11px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .hero-slide__heading {
-    font-size: clamp(28px, 8.4vw, 38px);
-    margin-bottom: 12px;
+    font-size: clamp(22px, min(6.8vw, 3.5svh), 31px);
+    line-height: 1.12;
+    margin-bottom: 10px;
   }
 
   .hero-slide__description {
     max-width: none;
     margin: 0;
-    font-size: 15px;
-    line-height: 1.55;
+    font-size: clamp(13px, min(3.9vw, 1.9svh), 15px);
+    line-height: 1.5;
     color: rgba(240, 237, 232, 0.88);
   }
 
@@ -320,7 +334,7 @@
   }
 
   .scroll-indicator {
-    bottom: calc(2.5svh + env(safe-area-inset-bottom, 0px));
+    bottom: calc(1.5svh + env(safe-area-inset-bottom, 0px));
   }
 
   .scroll-indicator__text {
@@ -333,7 +347,8 @@
   }
 
   .hero-frame {
-    inset: 14px;
+    inset: 14px 14px auto 14px;
+    height: calc(var(--hero-media-h) - 28px);
   }
 
   .hero-hud {

@@ -52,10 +52,10 @@ FALLBACK_IMG = {
     'Duties, Taxes & Fees': 'assets/images/pexels-customs.jpg', 'Compliance & Regulations': 'assets/images/pexels-permits.jpg',
     'Customs Procedures': 'assets/images/pexels-customs.jpg', 'Customs': 'assets/images/pexels-customs.jpg',
     'Importation Guides': 'assets/images/pexels-entry.jpg', 'Industry Guides': 'assets/images/pexels-logistics.jpg',
-    'Industry': 'assets/images/pexels-logistics.jpg', 'Trade Strategy': 'assets/images/pexels-advisory.jpg',
+    'Industry': 'assets/images/pexels-logistics.jpg', 'Trade Strategy': 'assets/images/pexels-advisory-2.jpg',
     'Accreditation & Registration': 'assets/images/pexels-entry.jpg', 'Documentation': 'assets/images/pexels-permits.jpg',
     'Tariff & Classification': 'assets/images/pexels-customs.jpg', 'Import Permits & Agencies': 'assets/images/pexels-permits.jpg',
-    'Trade Agreements': 'assets/images/pexels-advisory.jpg', 'Market News': 'assets/images/pexels-marine.jpg',
+    'Trade Agreements': 'assets/images/pexels-advisory-2.jpg', 'Market News': 'assets/images/pexels-marine.jpg',
     'BOC Issuances': 'assets/images/pexels-customs.jpg',
 }
 # links in old bodies that point at slugs which do not exist

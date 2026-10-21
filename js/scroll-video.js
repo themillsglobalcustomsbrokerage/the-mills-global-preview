@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // on and off during scroll (looked like the video glitching).
     let videoReady = false;
 
-    // Choose the clip by screen size (the mobile copy is ~1.7 MB, all keyframes) and start loading it
+    // Choose the clip by screen size (the mobile copy is a ~4 MB portrait-cropped, all-keyframe clip) and start loading it
     const phone = window.innerWidth < 768;
     if (video && video.dataset.src) {
         video.src = (phone && video.dataset.mobileSrc) ? video.dataset.mobileSrc : video.dataset.src;
