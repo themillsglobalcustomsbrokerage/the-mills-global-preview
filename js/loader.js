@@ -28,7 +28,8 @@
         '#millsLoader.is-leaving{opacity:0;visibility:hidden}' +
         '#millsLoader .ml-lockup{width:clamp(220px,24vw,320px)}' +
         '#millsLoader video{display:block;width:100%;height:auto;mix-blend-mode:screen;pointer-events:none}' +
-        '#millsLoader .ml-tag{display:inline-block;margin-left:17.6%;white-space:nowrap;line-height:1;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;color:#F5F5F5;opacity:.85}' +
+        '#millsLoader .ml-tag sup{font-size:.72em;letter-spacing:0;line-height:0;vertical-align:baseline;position:relative;top:-.42em;margin-left:.05em}' +
+        '#millsLoader .ml-tag{display:inline-block;margin-left:17.6%;white-space:nowrap;line-height:1;text-transform:uppercase;font-family:\'DM Sans\',sans-serif;font-weight:500;color:#F5F5F5;opacity:.85}' +
         'html.mills-loading{overflow:hidden}';
     var style = document.createElement('style');
     style.textContent = css;
@@ -41,17 +42,16 @@
     el.innerHTML = '<div class="ml-lockup"><video muted playsinline autoplay preload="auto" aria-hidden="true">' +
         '<source src="' + BASE + 'assets/videos/' + clip + '.webm" type="video/webm">' +
         '<source src="' + BASE + 'assets/videos/' + clip + '.mp4" type="video/mp4"></video>' +
-        '<span class="ml-tag" aria-hidden="true">TRADE WITHOUT LIMITS</span></div>';
+        '<span class="ml-tag" aria-hidden="true">TRADE WITHOUT LIMITS<sup>\u00AE</sup></span></div>';
     // The logo fills 17.6% to 97% of the video frame; fit the tagline to exactly that width, tucked under the logo
     var lock = el.querySelector('.ml-lockup'), tag = el.querySelector('.ml-tag');
     function fitTag() {
         var W = lock.getBoundingClientRect().width, target = W * 0.794;
         if (!W) return;
         tag.style.fontSize = (target * 0.07).toFixed(2) + 'px';
-        tag.style.letterSpacing = '0px'; tag.style.marginRight = '0px';
-        var ls = (target - tag.getBoundingClientRect().width) / 19;
+        tag.style.letterSpacing = '0px';
+        var ls = (target - tag.getBoundingClientRect().width) / 20;
         tag.style.letterSpacing = ls.toFixed(3) + 'px';
-        tag.style.marginRight = (-ls).toFixed(3) + 'px';
         tag.style.marginTop = (-W * 0.066 + target * 0.04).toFixed(2) + 'px';
     }
     document.documentElement.appendChild(el);
@@ -59,6 +59,8 @@
     var video = el.querySelector('video');
     fitTag();
     window.addEventListener('resize', fitTag);
+    var fl = document.createElement('link'); fl.rel = 'stylesheet'; fl.href = 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap'; document.head.appendChild(fl);
+    if (document.fonts && document.fonts.load) document.fonts.load('500 10px "DM Sans"').then(fitTag, function () {});
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTag);
     video.muted = true;
     var p = video.play();

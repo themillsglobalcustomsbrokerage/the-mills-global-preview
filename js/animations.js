@@ -480,11 +480,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!w) return;
         t.el.style.fontSize = (w * 0.07).toFixed(2) + 'px';
         t.el.style.letterSpacing = '0px';
-        t.el.style.marginRight = '0px';
         var natural = t.el.getBoundingClientRect().width;
-        var ls = (w - natural) / (TEXT.length - 1);
+        var ls = (w - natural) / TEXT.length;   // one gap after each letter, the last one before the registered mark
         t.el.style.letterSpacing = ls.toFixed(3) + 'px';
-        t.el.style.marginRight = (-ls).toFixed(3) + 'px';
         t.el.style.marginTop = (w * 0.045).toFixed(2) + 'px';
     }
     function fitAll() { tags.forEach(fit); }
@@ -495,7 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var el = document.createElement('span');
         el.className = 'logo-tagline';
         el.setAttribute('aria-hidden', 'true');
-        el.textContent = TEXT;
+        el.innerHTML = TEXT + '<sup class="logo-tagline__r">\u00AE</sup>';
         host.appendChild(el);
         var t = { img: img, el: el };
         tags.push(t);
@@ -505,5 +503,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fitAll();
     window.addEventListener('resize', fitAll);
     window.addEventListener('load', fitAll);
+    if (document.fonts && document.fonts.load) document.fonts.load('500 10px "DM Sans"').then(fitAll, function () {});
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
 })();

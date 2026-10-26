@@ -117,9 +117,19 @@ a {
   justify-content: center;
 }
 
+.logo-tagline__r {
+  font-size: 0.72em;
+  letter-spacing: 0;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.42em;
+  margin-left: 0.05em;
+}
+
 .logo-tagline {
   display: block;
-  font-family: var(--font-sans);
+  font-family: 'DM Sans', var(--font-sans);
   font-weight: 500;
   text-transform: uppercase;
   white-space: nowrap;
