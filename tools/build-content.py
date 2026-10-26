@@ -342,7 +342,7 @@ def post_page(p, posts):
   <link rel="stylesheet" href="../css/base.css?v=28">
   <link rel="stylesheet" href="../css/sections.css?v=5">
   <link rel="stylesheet" href="../css/service-page.css?v=3">
-  <link rel="stylesheet" href="../css/content.css?v=3">
+  <link rel="stylesheet" href="../css/content.css?v=4">
   <script type="application/ld+json">{ld}</script>
 </head>
 <body>
