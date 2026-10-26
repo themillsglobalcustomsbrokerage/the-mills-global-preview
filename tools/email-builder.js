@@ -47,7 +47,7 @@ function shell(preheader, inner) {
     '<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;">' +
     '<tr><td bgcolor="' + NAVY + '" style="background-color:' + NAVY + ';padding:22px 32px;border-radius:16px 16px 0 0;">' +
     '<img src="' + LOGO + '" alt="The Mills Global" width="150" style="display:block;border:0;height:auto;color:#FFFFFF;font-family:' + FONT + ';font-size:18px;font-weight:700;">' +
-    '<div style="width:150px;margin:7px 0 0 0;font-family:' + FONT + ';font-size:9px;line-height:9px;letter-spacing:2.1px;white-space:nowrap;color:#F5F5F5;text-transform:uppercase;">Trade without limits<sup style="font-size:6px;line-height:0;letter-spacing:0;vertical-align:baseline;position:relative;top:-3px;">&reg;</sup></div></td></tr>' +
+    '<div style="width:150px;margin:7px 0 0 0;font-family:' + FONT + ';font-size:9px;line-height:9px;letter-spacing:2.1px;white-space:nowrap;color:#F5F5F5;text-transform:uppercase;">Trade without limits<sup style="font-size:10px;line-height:0;letter-spacing:0;vertical-align:baseline;position:relative;top:-3px;">&reg;</sup></div></td></tr>' +
     '<tr><td bgcolor="' + ORANGE + '" style="background-color:' + ORANGE + ';height:4px;font-size:0;line-height:0;">&nbsp;</td></tr>' +
     '<tr><td class="pad dm-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:32px;">' + inner + '</td></tr>' +
     '<tr><td class="pad dm-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:0 32px 28px 32px;border-radius:0 0 16px 16px;">' +
