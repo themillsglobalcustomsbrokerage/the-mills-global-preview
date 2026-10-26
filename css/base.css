@@ -129,6 +129,7 @@ a {
 
 .logo-tagline {
   display: block;
+  width: max-content;   /* measure the text itself, not the container (footer logo is a block-level box) */
   font-family: 'DM Sans', var(--font-sans);
   font-weight: 500;
   text-transform: uppercase;
