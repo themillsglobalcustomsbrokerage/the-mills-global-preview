@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/services/international-freight-forwarding(/)?", "destination": "/services-mills-logistics.html", "permanent": true },
+    { "source": "/services/permits-and-licensing(/)?", "destination": "/services-mills-permits.html", "permanent": true },
+    { "source": "/services/customs-disputes-and-legal-remedies(/)?", "destination": "/services-mills-customs.html", "permanent": true },
+    { "source": "/services/tariff-and-customs-consultancy(/)?", "destination": "/services-mills-customs.html", "permanent": true }
+  ]
+}

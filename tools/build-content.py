@@ -343,6 +343,9 @@ def post_page(p, posts):
   <link rel="stylesheet" href="../css/sections.css?v=5">
   <link rel="stylesheet" href="../css/service-page.css?v=3">
   <link rel="stylesheet" href="../css/content.css?v=4">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
   <script type="application/ld+json">{ld}</script>
 </head>
 <body>
