@@ -348,3 +348,8 @@
 .lp-hero::before {
   background: linear-gradient(180deg, rgba(22, 30, 58, 0.82) 0%, rgba(26, 36, 70, 0.74) 45%, rgba(20, 26, 48, 0.94) 100%);
 }
+
+/* No side picture: the copy and the numbers stack on the background photo */
+.lp-hero__grid { grid-template-columns: minmax(0, 760px); }
+.lp-hero__stats { margin-top: var(--space-xl); max-width: 560px; }
+.lp-hero .service-hero__inner { width: 100%; }

@@ -20,7 +20,7 @@ head = re.sub(r'(<meta (?:property="og:description"|name="twitter:description") 
 head = head.replace('https://themillsglobal.com/book-a-call.html', URL)
 head = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', '', head, flags=re.S)
 head = head.replace('<link rel="stylesheet" href="css/service-page.css?v=3">',
-                    '<link rel="stylesheet" href="css/service-page.css?v=3">\n  <link rel="stylesheet" href="css/content.css?v=4">\n  <link rel="stylesheet" href="css/landing.css?v=7">')
+                    '<link rel="stylesheet" href="css/service-page.css?v=3">\n  <link rel="stylesheet" href="css/content.css?v=4">\n  <link rel="stylesheet" href="css/landing.css?v=9">')
 gtm = re.search(r'<!-- Google Tag Manager \(noscript\) -->.*?<!-- End Google Tag Manager \(noscript\) -->', book, re.S).group(0)
 
 def ico(path): return f'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{path}</svg>'
@@ -58,7 +58,6 @@ hero = f"""<header class="service-hero lp-hero" style="background-image: url('as
           <p class="lp-hero__rating"><span aria-hidden="true">&#9733;</span> 4.9 on Google, 200+ Reviews <i></i> Licensed Customs Brokers</p>
         </div>
         <div class="lp-hero__media">
-          <img src="assets/images/hero-ocean.jpg" alt="Container ship moving cargo at sea" width="1600" height="1067" loading="eager">
           <div class="lp-hero__stats">
             {stat("Years of Hands-On Experience", 15, "+")}
             {stat("Shipments Processed", 48000, "+")}
@@ -142,7 +141,6 @@ broker = f"""<section class="section section--dark lp-call">
       <p class="section__eyebrow animate-in">Talk To A Broker Now</p>
       <h2 class="services-intro__heading animate-in" data-delay="1">Talk To A Broker In The Next Five Minutes.</h2>
       <p class="services-intro__lead animate-in" data-delay="2">No forms, no queue. Call the number below and describe your shipment. We'll take it from there.</p>
-      <a href="tel:{PHONE_TEL}" class="lp-call__number animate-in" data-delay="3" data-ga="cta_call_now" data-ga-label="lp-big-number">{PHONE}</a>
       <div class="cta-pair lp-call__buttons">{call_btn("Give Us A Call Today", "lp-broker")}</div>
       <p class="lp-call__sub animate-in" data-delay="4">Email <a href="mailto:inquiry@themillsglobal.com">inquiry@themillsglobal.com</a></p>
     </div>
