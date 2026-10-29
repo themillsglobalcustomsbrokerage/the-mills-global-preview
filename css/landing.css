@@ -215,3 +215,136 @@
   justify-content: center;
   margin-top: var(--space-xl);
 }
+
+/* Hero: copy left, picture and numbers right */
+.lp-hero {
+  padding-top: 140px;
+  padding-bottom: var(--space-3xl, 80px);
+}
+
+.lp-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .lp-hero { padding-top: 112px; }
+  .lp-hero__grid { grid-template-columns: 1fr; gap: var(--space-xl); }
+}
+
+.lp-hero .service-hero__inner { max-width: none; }
+
+.lp-hero__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg, 20px);
+}
+
+.lp-hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.lp-hero__stat .stat-number {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 32px);
+  letter-spacing: -0.02em;
+  color: var(--color-text-light);
+}
+
+.lp-hero__stat span {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.lp-hero__rating i {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 0 12px;
+  vertical-align: middle;
+  background: rgba(245, 245, 245, 0.3);
+}
+
+/* Testimonials on the light section */
+.lp-quotes--light .lp-quote {
+  background: #fff;
+  border: 1px solid rgba(33, 36, 49, 0.1);
+}
+
+.lp-quotes--light .lp-quote blockquote { color: #212431; }
+.lp-quotes--light .lp-quote figcaption { color: #4F5D75; }
+.lp-proof .marquee { margin-top: var(--space-xl); }
+
+/* "With The Mills Global" card */
+.lp-card {
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border: 1px solid rgba(234, 92, 31, 0.5);
+  border-radius: var(--radius-md);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+}
+
+.lp-card__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text-light);
+}
+
+.lp-card__title svg { width: 20px; height: 20px; color: var(--color-accent); }
+
+.lp-center .cta-pair { justify-content: center; }
+.lp-center { margin-top: var(--space-xl); }
+
+/* "You are here" on step one */
+.how-steps__item { position: relative; }
+
+.how-steps__item--here {
+  outline: 1px solid var(--color-accent);
+  outline-offset: 14px;
+  border-radius: 6px;
+}
+
+.lp-here {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  padding: 3px 10px;
+  border-radius: 4px 4px 0 0;
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lp-tags--center { justify-content: center; margin-top: var(--space-2xl); }
+
+/* Steps on the light section */
+.lp-how .how-steps__title { color: #212431; }
+.lp-how .how-steps__text { color: #4F5D75; }
+
+/* Hero background photo under a dark blue wash (the same dark-image treatment as the other pages) */
+.lp-hero::before {
+  background: linear-gradient(180deg, rgba(22, 30, 58, 0.82) 0%, rgba(26, 36, 70, 0.74) 45%, rgba(20, 26, 48, 0.94) 100%);
+}
