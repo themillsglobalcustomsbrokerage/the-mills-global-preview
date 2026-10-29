@@ -8,7 +8,7 @@
         "width": 480,
         "color": 5
       },
-      "id": "a47f319b-914f-473e-b667-fb7109a331e3",
+      "id": "fc38c968-8702-4556-b167-51a5503aad27",
       "name": "Setup notes",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -26,7 +26,7 @@
           "allowedOrigins": "https://themillsglobal.com,https://www.themillsglobal.com,https://themillsglobalcustomsbrokerage.github.io"
         }
       },
-      "id": "8f1daee5-5c24-4c2a-aa38-c5b7ed4b5ad8",
+      "id": "23362727-897f-40da-97a4-cb2717194217",
       "name": "Webhook - lead magnet form",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
@@ -34,13 +34,13 @@
         0,
         0
       ],
-      "webhookId": "5db0966c-b418-4b14-89ee-1b9d808a705f"
+      "webhookId": "24ae1760-0b0e-4663-abf4-4086437daf44"
     },
     {
       "parameters": {
         "jsCode": "// Mills lead magnet (services): validate, normalize and enrich one form submission.\nconst GUIDES = {\n  \"entry\": {\n    \"service\": \"Mills Entry\",\n    \"title\": \"Philippine Market Entry Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/entry-readiness-checklist.pdf\"\n  },\n  \"permits\": {\n    \"service\": \"Mills Permits\",\n    \"title\": \"Import Permit and Product Registration Checklist\",\n    \"pdf\": \"assets/lead-magnets/permits-readiness-checklist.pdf\"\n  },\n  \"customs\": {\n    \"service\": \"Mills Customs\",\n    \"title\": \"Customs Clearance Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/customs-readiness-checklist.pdf\"\n  },\n  \"marine\": {\n    \"service\": \"Mills Marine\",\n    \"title\": \"Vessel and Marine Equipment Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/marine-readiness-checklist.pdf\"\n  },\n  \"dangerous-goods\": {\n    \"service\": \"Mills Dangerous Goods\",\n    \"title\": \"Dangerous Goods Shipping Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/dangerous-goods-readiness-checklist.pdf\"\n  },\n  \"logistics\": {\n    \"service\": \"Mills Logistics\",\n    \"title\": \"Post-Clearance Delivery Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/logistics-readiness-checklist.pdf\"\n  },\n  \"packaging\": {\n    \"service\": \"Mills Packaging\",\n    \"title\": \"Export and Industrial Packaging Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/packaging-readiness-checklist.pdf\"\n  },\n  \"insurance\": {\n    \"service\": \"Mills Insurance\",\n    \"title\": \"Marine Cargo Insurance Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/insurance-readiness-checklist.pdf\"\n  },\n  \"time-critical\": {\n    \"service\": \"Mills Time Critical\",\n    \"title\": \"Priority Clearance Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/time-critical-readiness-checklist.pdf\"\n  },\n  \"advisory\": {\n    \"service\": \"Mills Advisory\",\n    \"title\": \"Philippine Trade Regulation Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/advisory-readiness-checklist.pdf\"\n  },\n  \"projects\": {\n    \"service\": \"Mills Projects\",\n    \"title\": \"Project Cargo Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/projects-readiness-checklist.pdf\"\n  }\n};\n\n// Who is notified for each service. Replace the addresses with the person who owns it.\nconst DEFAULT_OWNER = 'inquiry@themillsglobal.com';\nconst OWNERS = {\n  \"Mills Entry\": DEFAULT_OWNER,\n  \"Mills Permits\": DEFAULT_OWNER,\n  \"Mills Customs\": DEFAULT_OWNER,\n  \"Mills Marine\": DEFAULT_OWNER,\n  \"Mills Dangerous Goods\": DEFAULT_OWNER,\n  \"Mills Logistics\": DEFAULT_OWNER,\n  \"Mills Packaging\": DEFAULT_OWNER,\n  \"Mills Insurance\": DEFAULT_OWNER,\n  \"Mills Time Critical\": DEFAULT_OWNER,\n  \"Mills Advisory\": DEFAULT_OWNER,\n  \"Mills Projects\": DEFAULT_OWNER\n};\n\nconst b = $input.first().json.body || {};\nconst clean = (v) => String(v == null ? '' : v).trim();\nconst guide = clean(b.guide);\nconst email = clean(b.email).toLowerCase();\nconst digits = clean(b.phone).replace(/\\D/g, '');\nconst g = GUIDES[guide];\n\nlet error = '';\nif (clean(b.hp)) error = 'spam';\nelse if (!g) error = 'unknown guide: ' + guide;\nelse if (clean(b.name).length < 2) error = 'name';\nelse if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) error = 'email';\nelse if (digits.length < 7 || digits.length > 15) error = 'phone';\nelse if (clean(b.company).length < 2) error = 'company';\n\nconst name = clean(b.name);\nconst FREE = ['gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com', 'icloud.com', 'live.com', 'proton.me', 'protonmail.com'];\nconst domain = email.split('@')[1] || '';\nconst fromAd = !!(clean(b.gclid) || clean(b.gbraid) || clean(b.wbraid));\n// Hot = came from a Google ad, or used a company email address\nconst priority = (fromAd || (domain && !FREE.includes(domain))) ? 'Hot' : 'Normal';\nreturn [{ json: {\n  notify_to: (g && OWNERS[g.service]) || DEFAULT_OWNER,\n  priority,\n  valid: !error,\n  error,\n  submitted_at: clean(b.submitted_at) || new Date().toISOString(),\n  guide,\n  service: g ? g.service : '',\n  guide_title: g ? g.title : clean(b.guide_title),\n  name,\n  first_name: name.split(/\\s+/).length > 1 ? name.split(/\\s+/)[0] : '',\n  last_name: name.split(/\\s+/).length > 1 ? name.split(/\\s+/).slice(1).join(' ') : name,\n  email,\n  phone: clean(b.phone),\n  company: clean(b.company),\n  page: clean(b.page),\n  gclid: clean(b.gclid), gbraid: clean(b.gbraid), wbraid: clean(b.wbraid),\n  utm_source: clean(b.utm_source), utm_medium: clean(b.utm_medium), utm_campaign: clean(b.utm_campaign),\n  utm_term: clean(b.utm_term), utm_content: clean(b.utm_content),\n  lead_source: 'lead_magnet'\n} }];"
       },
-      "id": "24c0366c-2f54-4172-9705-1ead6e678af1",
+      "id": "00eb85f9-29d7-4901-8256-35bd1663b371",
       "name": "Validate and normalize",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -59,7 +59,7 @@
           },
           "conditions": [
             {
-              "id": "4a51b124-dbfc-4e3e-a7a1-0393320f1f87",
+              "id": "319b58d4-1b81-4c0a-a60f-169bfabc85f5",
               "leftValue": "={{ $json.valid }}",
               "rightValue": "",
               "operator": {
@@ -73,7 +73,7 @@
         },
         "options": {}
       },
-      "id": "98ff5673-8b3f-4c19-ba40-ab1520ae21c5",
+      "id": "08d4e092-e6da-414a-a2ae-06c330903a3a",
       "name": "Valid submission?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
@@ -90,7 +90,7 @@
           "responseCode": 200
         }
       },
-      "id": "3b8a29f8-589a-4973-aab9-e278961d3e01",
+      "id": "b6b0c777-9fbb-47c2-9e2d-9103054896e2",
       "name": "Respond 200",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
@@ -107,7 +107,7 @@
           "responseCode": 400
         }
       },
-      "id": "ed2079d7-76d5-428d-9ead-8e6e9875db82",
+      "id": "8edb02c2-fb2e-450a-bd4e-17b226299550",
       "name": "Respond 400",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
@@ -143,7 +143,7 @@
           }
         }
       },
-      "id": "b6610edd-074a-41e5-b828-5d372a31b3e1",
+      "id": "797a402c-dd27-49b5-bec2-7504008f1e30",
       "name": "Create or update lead in Zoho CRM",
       "type": "n8n-nodes-base.zohoCrm",
       "typeVersion": 1,
@@ -163,7 +163,7 @@
           "appendAttribution": false
         }
       },
-      "id": "2773e097-6395-4c5f-b7de-af5cc3772933",
+      "id": "46b38919-9e30-4773-a362-67c5d201220d",
       "name": "Notify the team",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,

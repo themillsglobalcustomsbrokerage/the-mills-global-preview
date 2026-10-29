@@ -8,7 +8,7 @@
         "width": 480,
         "color": 5
       },
-      "id": "3b75f5f0-b746-40b3-9c20-c46b1c4f3937",
+      "id": "9b40cfba-058e-4cf0-a67a-ff00e76e09ec",
       "name": "Setup notes",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -26,7 +26,7 @@
           "allowedOrigins": "https://themillsglobal.com,https://www.themillsglobal.com,https://themillsglobalcustomsbrokerage.github.io"
         }
       },
-      "id": "8b938d41-112b-4e2b-b96b-f269c7c45838",
+      "id": "aee451a4-d8b8-4e80-b036-42d4632820e3",
       "name": "Webhook - lead magnet form",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
@@ -34,13 +34,13 @@
         0,
         0
       ],
-      "webhookId": "ec518996-9a86-4d57-b191-b74fb4058503"
+      "webhookId": "77adab26-1d51-41b7-89ab-d203829e8330"
     },
     {
       "parameters": {
         "jsCode": "// Mills lead magnet (industries): validate, normalize and enrich one form submission.\nconst GUIDES = {\n  \"industry-construction\": {\n    \"industry\": \"Construction\",\n    \"title\": \"Construction and Infrastructure Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-construction-readiness-checklist.pdf\"\n  },\n  \"industry-renewable-energy\": {\n    \"industry\": \"Renewable Energy\",\n    \"title\": \"Renewable Energy and Power Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-renewable-energy-readiness-checklist.pdf\"\n  },\n  \"industry-data-centers\": {\n    \"industry\": \"Data Centers\",\n    \"title\": \"Data Centers and Digital Infrastructure Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-data-centers-readiness-checklist.pdf\"\n  },\n  \"industry-chemicals\": {\n    \"industry\": \"Chemicals\",\n    \"title\": \"Chemicals and Controlled Materials Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-chemicals-readiness-checklist.pdf\"\n  },\n  \"industry-food-beverage\": {\n    \"industry\": \"Food & Beverage\",\n    \"title\": \"Food, Beverage and FMCG Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-food-beverage-readiness-checklist.pdf\"\n  },\n  \"industry-manufacturing\": {\n    \"industry\": \"Manufacturing\",\n    \"title\": \"Manufacturing and Industrial Machinery Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-manufacturing-readiness-checklist.pdf\"\n  },\n  \"industry-automotive\": {\n    \"industry\": \"Automotive\",\n    \"title\": \"Automotive, Heavy Equipment and Special-Purpose Vehicles Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-automotive-readiness-checklist.pdf\"\n  },\n  \"industry-healthcare\": {\n    \"industry\": \"Healthcare\",\n    \"title\": \"Pharmaceuticals, Medical Devices and Healthcare Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-healthcare-readiness-checklist.pdf\"\n  },\n  \"industry-agriculture\": {\n    \"industry\": \"Agriculture\",\n    \"title\": \"Agriculture, Plants, Animals and Fisheries Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-agriculture-readiness-checklist.pdf\"\n  },\n  \"industry-electronics-telecom\": {\n    \"industry\": \"Electronics & Telecom\",\n    \"title\": \"Telecommunications, Electronics and IT Hardware Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-electronics-telecom-readiness-checklist.pdf\"\n  },\n  \"industry-marine\": {\n    \"industry\": \"Marine\",\n    \"title\": \"Marine, Vessels and Yachts Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-marine-readiness-checklist.pdf\"\n  },\n  \"industry-aviation\": {\n    \"industry\": \"Aviation\",\n    \"title\": \"Aviation and Aerospace Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-aviation-readiness-checklist.pdf\"\n  },\n  \"industry-retail\": {\n    \"industry\": \"Retail\",\n    \"title\": \"Retail, Consumer Goods and E-Commerce Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-retail-readiness-checklist.pdf\"\n  },\n  \"industry-cold-chain\": {\n    \"industry\": \"Cold Chain\",\n    \"title\": \"Cold Chain and Temperature-Sensitive Cargo Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-cold-chain-readiness-checklist.pdf\"\n  },\n  \"industry-mining\": {\n    \"industry\": \"Mining\",\n    \"title\": \"Mining, Minerals and Industrial Materials Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-mining-readiness-checklist.pdf\"\n  },\n  \"industry-freight-forwarders\": {\n    \"industry\": \"Freight Forwarders\",\n    \"title\": \"Freight Forwarders and Logistics Providers Import Readiness Checklist\",\n    \"pdf\": \"assets/lead-magnets/industry-freight-forwarders-readiness-checklist.pdf\"\n  }\n};\n\n// Who is notified for each industry. Replace the addresses with the person who owns it.\nconst DEFAULT_OWNER = 'inquiry@themillsglobal.com';\nconst OWNERS = {\n  \"Construction\": DEFAULT_OWNER,\n  \"Renewable Energy\": DEFAULT_OWNER,\n  \"Data Centers\": DEFAULT_OWNER,\n  \"Chemicals\": DEFAULT_OWNER,\n  \"Food & Beverage\": DEFAULT_OWNER,\n  \"Manufacturing\": DEFAULT_OWNER,\n  \"Automotive\": DEFAULT_OWNER,\n  \"Healthcare\": DEFAULT_OWNER,\n  \"Agriculture\": DEFAULT_OWNER,\n  \"Electronics & Telecom\": DEFAULT_OWNER,\n  \"Marine\": DEFAULT_OWNER,\n  \"Aviation\": DEFAULT_OWNER,\n  \"Retail\": DEFAULT_OWNER,\n  \"Cold Chain\": DEFAULT_OWNER,\n  \"Mining\": DEFAULT_OWNER,\n  \"Freight Forwarders\": DEFAULT_OWNER\n};\n\nconst b = $input.first().json.body || {};\nconst clean = (v) => String(v == null ? '' : v).trim();\nconst guide = clean(b.guide);\nconst email = clean(b.email).toLowerCase();\nconst digits = clean(b.phone).replace(/\\D/g, '');\nconst g = GUIDES[guide];\n\nlet error = '';\nif (clean(b.hp)) error = 'spam';\nelse if (!g) error = 'unknown guide: ' + guide;\nelse if (clean(b.name).length < 2) error = 'name';\nelse if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) error = 'email';\nelse if (digits.length < 7 || digits.length > 15) error = 'phone';\nelse if (clean(b.company).length < 2) error = 'company';\n\nconst name = clean(b.name);\nconst FREE = ['gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com', 'icloud.com', 'live.com', 'proton.me', 'protonmail.com'];\nconst domain = email.split('@')[1] || '';\nconst fromAd = !!(clean(b.gclid) || clean(b.gbraid) || clean(b.wbraid));\n// Hot = came from a Google ad, or used a company email address\nconst priority = (fromAd || (domain && !FREE.includes(domain))) ? 'Hot' : 'Normal';\nreturn [{ json: {\n  notify_to: (g && OWNERS[g.industry]) || DEFAULT_OWNER,\n  priority,\n  valid: !error,\n  error,\n  submitted_at: clean(b.submitted_at) || new Date().toISOString(),\n  guide,\n  industry: g ? g.industry : '',\n  guide_title: g ? g.title : clean(b.guide_title),\n  name,\n  first_name: name.split(/\\s+/).length > 1 ? name.split(/\\s+/)[0] : '',\n  last_name: name.split(/\\s+/).length > 1 ? name.split(/\\s+/).slice(1).join(' ') : name,\n  email,\n  phone: clean(b.phone),\n  company: clean(b.company),\n  page: clean(b.page),\n  gclid: clean(b.gclid), gbraid: clean(b.gbraid), wbraid: clean(b.wbraid),\n  utm_source: clean(b.utm_source), utm_medium: clean(b.utm_medium), utm_campaign: clean(b.utm_campaign),\n  utm_term: clean(b.utm_term), utm_content: clean(b.utm_content),\n  lead_source: 'lead_magnet'\n} }];"
       },
-      "id": "a50fb345-c34b-429f-ad26-d8a96ab7e5d6",
+      "id": "92630596-fd78-4898-a3d7-f0d66061cf9a",
       "name": "Validate and normalize",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -59,7 +59,7 @@
           },
           "conditions": [
             {
-              "id": "6b578359-cf9d-422d-aeaf-257317fdfec2",
+              "id": "80a46570-5912-4d6a-aa05-da07df3c9559",
               "leftValue": "={{ $json.valid }}",
               "rightValue": "",
               "operator": {
@@ -73,7 +73,7 @@
         },
         "options": {}
       },
-      "id": "d13b5484-aa9c-486f-9c85-bfda424cf4d0",
+      "id": "7b2468c5-225f-4e6b-b09a-d22cd59f0f0e",
       "name": "Valid submission?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
@@ -90,7 +90,7 @@
           "responseCode": 200
         }
       },
-      "id": "14c7012f-c549-41a4-8cbc-e14ed1591420",
+      "id": "a7c47a2f-3756-478a-b07c-8a19c4a6e348",
       "name": "Respond 200",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
@@ -107,7 +107,7 @@
           "responseCode": 400
         }
       },
-      "id": "b22b6799-d065-47ad-bc3c-e28527ed5987",
+      "id": "c46ff443-5312-4a2e-99dd-3249fd18ee59",
       "name": "Respond 400",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
@@ -143,7 +143,7 @@
           }
         }
       },
-      "id": "77f4859c-9c86-47de-adf7-56704526af7c",
+      "id": "7f6b6f67-eba5-43a3-a5c7-a19152c8cccb",
       "name": "Create or update lead in Zoho CRM",
       "type": "n8n-nodes-base.zohoCrm",
       "typeVersion": 1,
@@ -163,7 +163,7 @@
           "appendAttribution": false
         }
       },
-      "id": "8275df3a-ac5c-4633-a529-1bf59332e2b9",
+      "id": "e50d0335-5081-46c3-bd6e-b7201624be27",
       "name": "Notify the team",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,

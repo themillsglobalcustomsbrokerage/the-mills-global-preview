@@ -8,7 +8,7 @@
         "width": 560,
         "color": 5
       },
-      "id": "7ab84aae-c5e3-4e41-bc49-1f4e7639ad36",
+      "id": "8bb53876-a735-46e2-8896-55817107729f",
       "name": "Setup notes",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -24,7 +24,7 @@
         "responseMode": "onReceived",
         "options": {}
       },
-      "id": "4cff1a43-9100-4d3c-8b70-cb4ab18cc200",
+      "id": "5f71a3fc-c6c3-4b3a-a296-8ebfebf51698",
       "name": "Webhook from Zoho",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
@@ -32,13 +32,13 @@
         0,
         0
       ],
-      "webhookId": "0ed88b06-fbd4-41bf-8f70-c339454b4ae6"
+      "webhookId": "ef8e3c4c-ea2a-49b8-b856-f3fb86eb51d5"
     },
     {
       "parameters": {
         "jsCode": "// Prepare the lead sent by the Zoho workflow rule and build all three emails for this industry.\nconst TOKEN = 'CHANGE_ME';   // must match the \"token\" parameter set in the Zoho webhook\nconst SITE = 'https://themillsglobal.com/';   // checklist PDFs and links are served from here\nconst SEG = {\n  \"name\": \"Retail\",\n  \"short\": \"retail\",\n  \"topic\": \"retail imports\",\n  \"guide_title\": \"Retail, Consumer Goods and E-Commerce Import Readiness Checklist\",\n  \"pdf\": \"assets/lead-magnets/industry-retail-readiness-checklist.pdf\",\n  \"drive\": \"https://drive.google.com/uc?export=download&id=1vYw8TMxsFAJObb65RKUae_6N3co_LcH8\",\n  \"scene\": \"inventory landing before anyone checked the rules for each product category\",\n  \"check\": \"Do you know the rules for each product category in the shipment, including labels?\",\n  \"send\": \"the product list by category\",\n  \"v\": 23,\n  \"summary\": \"We clear apparel, appliances, beauty and consumer goods through the right product approvals and valuation, so inventory arrives compliant and ready to sell.\",\n  \"url\": \"https://themillsglobal.com/industries-retail.html\",\n  \"stuck\": [\n    {\n      \"t\": \"Product rules vary by category\",\n      \"d\": \"Different agencies can apply to different items in one shipment. We map requirements per product before shipping, so no item holds back the rest.\"\n    },\n    {\n      \"t\": \"Labeling and intellectual property\",\n      \"d\": \"Labels and branded goods can be held for non-compliance. We check labels and brand documents up front, so goods are not held.\"\n    },\n    {\n      \"t\": \"Valuation of mixed shipments\",\n      \"d\": \"Mixed cargo needs careful valuation and classification. We prepare each line correctly, so duties are accurate and disputes are avoided.\"\n    }\n  ]\n};\n\nconst b = $input.first().json.body || {};\nconst clean = (v) => String(v == null ? '' : v).trim();\nconst esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst email = clean(b.email).toLowerCase();\n// Each lead is signed by Ari or Joshua, chosen from the email address so the same person signs all three emails\nconst SENDERS = ['Ari', 'Joshua'];\nlet hsh = 0;\nfor (const ch of email) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;\nconst sender = SENDERS[hsh % SENDERS.length];\nconst valid = clean(b.token) === TOKEN && /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email) && !!clean(b.lead_id);\nconst out = {\n  valid,\n  lead_id: clean(b.lead_id),\n  email,\n  first_name_greeting: clean(b.first_name) || 'there',\n  company: clean(b.company),\n  segment: SEG.name,\n  topic: SEG.topic,\n  short: SEG.short,\n  scene: SEG.scene,\n  check: SEG.check,\n  send: SEG.send,\n  v: SEG.v,\n  sender_name: sender,\n  first_name: clean(b.first_name),\n  guide_title: SEG.guide_title,\n  pdf_url: SEG.drive,   // Google Drive direct download link (works before the website domain is live)\n  page_url: SEG.url,\n  book_url: SITE + 'book-a-call.html',\n  stuck: SEG.stuck\n};\n\nconst VARIANTS = {\n \"e1\": [\n  {\n   \"subject\": \"{lead}your checklist is here\",\n   \"pre\": \"ready when you are... plus 3 things to check first\",\n   \"line\": \"That is exactly what this checklist is for. Here it is:\"\n  },\n  {\n   \"subject\": \"here is that checklist{tail}\",\n   \"pre\": \"inside: 3 spots worth a look first\",\n   \"line\": \"So we put together a checklist for exactly that. Here you go:\"\n  },\n  {\n   \"subject\": \"{lead}your {short} checklist\",\n   \"pre\": \"grab it now, skim it later...\",\n   \"line\": \"Good news, we built a checklist for it. It is yours:\"\n  },\n  {\n   \"subject\": \"checklist inside{tail}\",\n   \"pre\": \"short read, three things to check first\",\n   \"line\": \"Here is the checklist you asked for:\"\n  },\n  {\n   \"subject\": \"{lead}this one is for you\",\n   \"pre\": \"your checklist, plus three things to check first...\",\n   \"line\": \"If that rings a bell, this is for you:\"\n  },\n  {\n   \"subject\": \"{lead}as promised, the checklist\",\n   \"pre\": \"no fluff, just the list...\",\n   \"line\": \"As promised, here it is:\"\n  },\n  {\n   \"subject\": \"{lead}checklist, delivered\",\n   \"pre\": \"fresh off the press, three things to check first\",\n   \"line\": \"Delivered, as promised:\"\n  },\n  {\n   \"subject\": \"{lead}start here\",\n   \"pre\": \"the checklist, plus where to look first...\",\n   \"line\": \"Start with this:\"\n  }\n ],\n \"e2\": [\n  {\n   \"subject\": \"{lead}honest question about {short}\",\n   \"pre\": \"a 10 second gut check for {co}...\",\n   \"open\": \"Honest question...\"\n  },\n  {\n   \"subject\": \"can i ask you something{tail}?\",\n   \"pre\": \"it is about {short}, and it is a short one\",\n   \"open\": \"Can I ask you something?\"\n  },\n  {\n   \"subject\": \"{lead}gut check on {short}\",\n   \"pre\": \"answer in your head, no need to reply yet...\",\n   \"open\": \"Gut check time...\"\n  },\n  {\n   \"subject\": \"one thing about {short}{tail}\",\n   \"pre\": \"the part that is easy to skip...\",\n   \"open\": \"Here is the one I always start with...\"\n  },\n  {\n   \"subject\": \"{lead}before you ship anything\",\n   \"pre\": \"a 10 second check for {co}...\",\n   \"open\": \"Before anything ships...\"\n  },\n  {\n   \"subject\": \"did you check this{tail}?\",\n   \"pre\": \"one for {co}, and you can answer in your head...\",\n   \"open\": \"Okay, here goes...\"\n  },\n  {\n   \"subject\": \"{lead}is this on your radar?\",\n   \"pre\": \"about {short}, and worth a minute...\",\n   \"open\": \"Something I always ask first...\"\n  },\n  {\n   \"subject\": \"{lead}spot the problem?\",\n   \"pre\": \"see if you can spot it before we do...\",\n   \"open\": \"Let me ask you this...\"\n  },\n  {\n   \"subject\": \"{lead}real talk about {short}\",\n   \"pre\": \"no fluff, just one question...\",\n   \"open\": \"Real talk...\"\n  },\n  {\n   \"subject\": \"{lead}sound familiar?\",\n   \"pre\": \"think about your last shipment...\",\n   \"open\": \"Think about your last shipment for a second...\"\n  }\n ],\n \"e2tail\": [\n  \"If your honest answer is \\\"um... probably?\\\", that is the part of {topic} where things tend to go sideways.\",\n  \"If you had to think about it, that is usually where {topic} starts to wobble.\",\n  \"A \\\"hmm, not sure\\\" is common here. It is also where {topic} tends to get stuck.\"\n ],\n \"e3\": [\n  {\n   \"subject\": \"last one from me{tail}\",\n   \"pre\": \"no hard feelings either way...\",\n   \"open\": \"I will stop filling your inbox after this one, promise.\"\n  },\n  {\n   \"subject\": \"{lead}closing the loop\",\n   \"pre\": \"one last note, and an easy way to say not now\",\n   \"open\": \"Last note from me, I promise.\"\n  },\n  {\n   \"subject\": \"should i close your file{tail}?\",\n   \"pre\": \"no pressure either way...\",\n   \"open\": \"I do not want to be the person who keeps emailing, so this is the last one.\"\n  },\n  {\n   \"subject\": \"no pressure{tail}\",\n   \"pre\": \"one last thing, then I will leave you alone...\",\n   \"open\": \"One last thing, then I will leave you alone.\"\n  },\n  {\n   \"subject\": \"{lead}parting thought\",\n   \"pre\": \"one more thing, then I am out of your inbox...\",\n   \"open\": \"Parting thought, then I am out of your inbox.\"\n  },\n  {\n   \"subject\": \"{lead}door is open\",\n   \"pre\": \"no hard feelings, either way...\",\n   \"open\": \"I will leave the door open and stop here.\"\n  }\n ]\n};\n// ---- Email builder: Mills brand palette, WCAG AA contrast, dark-mode safe ----\n// Brand: navy #212431, slate #4F5D75, paper #F5F5F5, orange #EA5C1F (decoration only: it fails AA for text on white/paper).\n// Text: navy on white 15.4:1, slate on white 6.7:1. Button: white on navy 15.4:1. Dark mode: paper on navy 14.2:1.\n// The header band is already navy with a white logo, so it survives Gmail/Outlook inversion unchanged.\nconst NAVY = '#212431', SLATE = '#4F5D75', PAPER = '#F5F5F5', ORANGE = '#EA5C1F';\nconst FONT = \"Arial, Helvetica, sans-serif\";\nconst LOGO = SITE + 'assets/images/brand/mills-logo-horizontal-white.png';\nconst hasCo = !!out.company, hasFirst = !!out.first_name;\nconst first = out.first_name_greeting || 'there';\nconst firstLc = first.toLowerCase();\nconst T = out.topic;\nconst co = esc(out.company || 'your team');\nconst lead = hasFirst ? firstLc + ', ' : '';   // subject lines read like a note from a colleague\n// VARIANTS (subject, preview and opener wording) is injected by the generator from tools/email_variants.json\n\nconst h = (t) => '<h1 style=\"margin:0 0 16px 0;font-family:' + FONT + ';font-size:24px;line-height:1.3;font-weight:700;color:' + NAVY + ';\" class=\"dm-text\">' + t + '</h1>';\nconst p = (t) => '<p style=\"margin:0 0 16px 0;font-family:' + FONT + ';font-size:16px;line-height:1.6;color:' + NAVY + ';\" class=\"dm-text\">' + t + '</p>';\nconst link = (href, label) => '<a href=\"' + href + '\" style=\"color:' + NAVY + ';text-decoration:underline;font-weight:700;\" class=\"dm-link\">' + label + '</a>';\nconst btn = (href, label) =>\n  '<table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:8px 0 24px 0;\"><tr>' +\n  '<td align=\"center\" bgcolor=\"' + NAVY + '\" class=\"dm-btn\" style=\"background-color:' + NAVY + ';border-radius:999px;border:2px solid ' + NAVY + ';\">' +\n  '<a href=\"' + href + '\" class=\"dm-btn-link\" style=\"display:inline-block;padding:14px 28px;font-family:' + FONT + ';font-size:16px;line-height:1.2;font-weight:700;color:#FFFFFF;text-decoration:none;border-radius:999px;\">' + label + '</a>' +\n  '</td></tr></table>';\nconst bullets = (items) => '<ul style=\"margin:0 0 16px 0;padding:0 0 0 22px;font-family:' + FONT + ';font-size:16px;line-height:1.6;color:' + NAVY + ';\" class=\"dm-text\">' +\n  items.map((s) => '<li style=\"margin:0 0 6px 0;\">' + esc(s.t) + '</li>').join('') + '</ul>';\nconst stuckBlocks = (items) => items.map((s) =>\n  '<table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" style=\"margin:0 0 14px 0;\"><tr>' +\n  '<td width=\"4\" bgcolor=\"' + ORANGE + '\" style=\"background-color:' + ORANGE + ';font-size:0;line-height:0;\">&nbsp;</td>' +\n  '<td style=\"padding:2px 0 2px 14px;font-family:' + FONT + ';\">' +\n  '<div style=\"font-size:16px;line-height:1.4;font-weight:700;color:' + NAVY + ';\" class=\"dm-text\">' + esc(s.t) + '</div>' +\n  '<div style=\"font-size:15px;line-height:1.55;color:' + SLATE + ';\" class=\"dm-muted\">' + esc(s.d) + '</div>' +\n  '</td></tr></table>').join('');\nconst sign = p('Talk soon,<br><strong>The Mills Global team</strong><br><span style=\"color:' + SLATE + ';\" class=\"dm-muted\">inquiry@themillsglobal.com &middot; +63 917 712 9000</span>');\n\nfunction shell(preheader, inner) {\n  return '<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">' +\n    '<meta name=\"color-scheme\" content=\"light dark\"><meta name=\"supported-color-schemes\" content=\"light dark\"><title>The Mills Global</title>' +\n    '<style>:root{color-scheme:light dark;supported-color-schemes:light dark;}' +\n    '@media (prefers-color-scheme: dark){.dm-page{background-color:#181A24 !important;}.dm-card{background-color:#212431 !important;}.dm-text{color:#F5F5F5 !important;}.dm-muted{color:#D6D7D7 !important;}' +\n    '.dm-link{color:#F5F5F5 !important;}.dm-btn{background-color:#F5F5F5 !important;border-color:#F5F5F5 !important;}.dm-btn-link{color:#212431 !important;}}' +\n    '[data-ogsc] .dm-text{color:#F5F5F5 !important;}[data-ogsc] .dm-muted{color:#D6D7D7 !important;}[data-ogsc] .dm-link{color:#F5F5F5 !important;}' +\n    '[data-ogsb] .dm-card{background-color:#212431 !important;}[data-ogsb] .dm-page{background-color:#181A24 !important;}' +\n    '@media (max-width:620px){.wrap{width:100% !important;}.pad{padding:24px 20px !important;}}</style></head>' +\n    '<body style=\"margin:0;padding:0;background-color:' + PAPER + ';\" class=\"dm-page\" bgcolor=\"' + PAPER + '\">' +\n    '<div style=\"display:none;max-height:0;overflow:hidden;opacity:0;font-size:1px;line-height:1px;color:' + PAPER + ';\">' + esc(preheader) + '&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>' +\n    '<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"' + PAPER + '\" class=\"dm-page\" style=\"background-color:' + PAPER + ';\"><tr><td align=\"center\" style=\"padding:24px 12px;\">' +\n    '<table role=\"presentation\" class=\"wrap\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:600px;max-width:600px;\">' +\n    '<tr><td bgcolor=\"' + NAVY + '\" style=\"background-color:' + NAVY + ';padding:22px 32px;border-radius:16px 16px 0 0;\">' +\n    '<img src=\"' + LOGO + '\" alt=\"The Mills Global\" width=\"150\" style=\"display:block;border:0;height:auto;color:#FFFFFF;font-family:' + FONT + ';font-size:18px;font-weight:700;\">' +\n    '<div style=\"width:150px;margin:7px 0 0 0;font-family:' + FONT + ';font-size:9px;line-height:9px;letter-spacing:2.1px;white-space:nowrap;color:#F5F5F5;text-transform:uppercase;\">Trade without limits<sup style=\"font-size:10px;line-height:0;letter-spacing:0;vertical-align:baseline;position:relative;top:-3px;\">&reg;</sup></div></td></tr>' +\n    '<tr><td bgcolor=\"' + ORANGE + '\" style=\"background-color:' + ORANGE + ';height:4px;font-size:0;line-height:0;\">&nbsp;</td></tr>' +\n    '<tr><td class=\"pad dm-card\" bgcolor=\"#FFFFFF\" style=\"background-color:#FFFFFF;padding:32px;\">' + inner + '</td></tr>' +\n    '<tr><td class=\"pad dm-card\" bgcolor=\"#FFFFFF\" style=\"background-color:#FFFFFF;padding:0 32px 28px 32px;border-radius:0 0 16px 16px;\">' +\n    '<p style=\"margin:0;border-top:1px solid #D6D7D7;padding-top:16px;font-family:' + FONT + ';font-size:13px;line-height:1.6;color:' + SLATE + ';\" class=\"dm-muted\">' +\n    'You are getting this because you asked for the ' + esc(out.guide_title) + '. Not useful? Reply &ldquo;stop&rdquo; and we will stop the follow-ups. ' +\n    '<a href=\"' + SITE + 'legal-privacy-policy.html\" style=\"color:' + SLATE + ';text-decoration:underline;\" class=\"dm-muted\">Privacy policy</a><br>' +\n    'The Mills Global &middot; Level 24 Philippine Stock Exchange Tower, 5th Ave. cor. 28th St., BGC, Taguig City</p>' +\n    '</td></tr></table></td></tr></table></body></html>';\n}\n\nconst numbered = (items) => '<ol style=\"margin:0 0 16px 0;padding:0 0 0 22px;font-family:' + FONT + ';font-size:16px;line-height:1.6;color:' + NAVY + ';\" class=\"dm-text\">' +\n  items.map((s) => '<li style=\"margin:0 0 6px 0;\">' + esc(s.t) + '</li>').join('') + '</ol>';\nconst cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);\nconst sign2 = p('<span style=\"display:block;\">' + esc(out.sender_name || 'The Mills Global team') + '</span><span style=\"color:' + SLATE + ';\" class=\"dm-muted\">The Mills Global</span>');\n\nconst fillv = (t, co2) => t.replace('{lead}', lead).replace('{tail}', hasFirst ? ', ' + firstLc : '').replace('{short}', out.short).replace('{topic}', T).replace('{co}', co2);\nconst V1 = VARIANTS.e1[out.v % VARIANTS.e1.length], V2 = VARIANTS.e2[out.v % VARIANTS.e2.length];\nconst V3 = VARIANTS.e3[out.v % VARIANTS.e3.length], T2 = VARIANTS.e2tail[out.v % VARIANTS.e2tail.length];\nconst coPlain = out.company || 'your team';\n\nconst EMAILS = {\n  1: {\n    subject: fillv(V1.subject, coPlain),\n    pre: fillv(V1.pre, coPlain),\n    body: p('Hi ' + esc(first) + ',') +\n      p(esc(cap(out.scene)) + '... sound familiar?') +\n      p(esc(V1.line)) +\n      btn(out.pdf_url, 'Download the checklist') +\n      p('Three things to check first:') + numbered(out.stuck) +\n      p('Skim it with your own shipment in mind. If something looks off, hit reply and send me ' + esc(out.send) + '. I will tell you what I would check first.') + sign2\n  },\n  2: {\n    subject: fillv(V2.subject, coPlain),\n    pre: fillv(V2.pre, coPlain),\n    body: p('Hi ' + esc(first) + ',') + p(esc(V2.open)) +\n      '<p style=\"margin:0 0 16px 0;font-family:' + FONT + ';font-size:18px;line-height:1.5;font-weight:700;color:' + NAVY + ';\" class=\"dm-text\">' + esc(out.check) + '</p>' +\n      p(esc(fillv(T2, coPlain))) +\n      p('<strong>Here is why it matters:</strong> ' + esc(out.stuck[0].d)) +\n      p('Not sure about ' + co + '? Reply with ' + esc(out.send) + ' and I will tell you where I would look first.') + sign2\n  },\n  3: {\n    subject: fillv(V3.subject, coPlain),\n    pre: fillv(V3.pre, coPlain),\n    body: p('Hi ' + esc(first) + ',') +\n      p(esc(V3.open)) +\n      p('Here is the thing about ' + esc(T) + '... it is usually much easier to sort out before the cargo moves than after it is sitting at the port.') +\n      p('If ' + co + ' has something coming up, grab a time and we will go through it together. No pitch deck, no pressure:') +\n      btn(out.book_url, 'Book a time') +\n      p('And if now is not the time, totally fine. The checklist is yours to keep.') + sign2 +\n      '<p style=\"margin:0 0 8px 0;font-family:' + FONT + ';font-size:15px;line-height:1.55;color:' + SLATE + ';\" class=\"dm-muted\"><strong>P.S.</strong> Wrong person? Just tell me who handles this and I will take it from there.</p>'\n  }\n};\nfor (const n of [1, 2, 3]) {\n  out['subject' + n] = EMAILS[n].subject;\n  out['html' + n] = shell(EMAILS[n].pre, EMAILS[n].body);\n}\nreturn [{ json: out }];\n"
       },
-      "id": "7986a74a-9137-45e8-b971-d57c479b1f64",
+      "id": "87bac65e-d045-499b-942a-2665ec20324a",
       "name": "Prepare lead",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -57,7 +57,7 @@
           },
           "conditions": [
             {
-              "id": "850bd2d3-86be-4872-ae71-fbf05eab5ed1",
+              "id": "daf54a7e-80c3-4ece-a94e-28f056c5d3aa",
               "leftValue": "={{ $json.valid }}",
               "rightValue": "",
               "operator": {
@@ -71,7 +71,7 @@
         },
         "options": {}
       },
-      "id": "edd70a2a-dd2a-411a-973f-592ff410d1ef",
+      "id": "d72a38f5-838e-47f3-bad3-c978df59486c",
       "name": "Valid request?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
@@ -92,7 +92,7 @@
           "replyTo": "inquiry@themillsglobal.com"
         }
       },
-      "id": "3c7bd722-ed7b-45f8-993a-1c96e20bc1e3",
+      "id": "2c4c09d1-0933-4ea0-b235-c6d2d4867e21",
       "name": "Email 1 - checklist (now)",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,
@@ -106,7 +106,7 @@
         "amount": 3,
         "unit": "days"
       },
-      "id": "9fff3905-d5f3-46fd-8dc4-dea4b3b3048d",
+      "id": "088f0f93-dfa2-407b-8548-84e3eba2b295",
       "name": "Wait 3 days",
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
@@ -114,7 +114,7 @@
         960,
         0
       ],
-      "webhookId": "b190cdc9-d636-4381-acd3-fd4eefad3027"
+      "webhookId": "a25bbe18-827f-4cbd-a31d-29ebea139c5b"
     },
     {
       "parameters": {
@@ -122,7 +122,7 @@
         "operation": "get",
         "leadId": "={{ $('Prepare lead').item.json.lead_id }}"
       },
-      "id": "b326ac03-d4be-4797-8da7-5b64a89e24fd",
+      "id": "75876bae-4f32-4777-8cf8-a839681aeabf",
       "name": "Check lead in Zoho (day 3)",
       "type": "n8n-nodes-base.zohoCrm",
       "typeVersion": 1,
@@ -141,7 +141,7 @@
           },
           "conditions": [
             {
-              "id": "d5d83718-2f41-47a6-b65d-d605f6c157cd",
+              "id": "7542b8fb-cd59-42b9-99c6-1b747ac83bd6",
               "leftValue": "={{ $json.Lead_Status === 'Not Contacted' && !$json.Email_Opt_Out }}",
               "rightValue": "",
               "operator": {
@@ -155,7 +155,7 @@
         },
         "options": {}
       },
-      "id": "17e990ab-b403-4baa-9bdd-e5d7a3a962d8",
+      "id": "7bea64db-a6ea-4525-8f78-1502195bea63",
       "name": "Still not contacted? (day 3)",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
@@ -176,7 +176,7 @@
           "replyTo": "inquiry@themillsglobal.com"
         }
       },
-      "id": "f9c9912b-68fb-4153-93b6-0b3780301b0c",
+      "id": "4067d81a-7d4e-4841-9520-b8b6004e9569",
       "name": "Email 2 - quick check (day 3)",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,
@@ -190,7 +190,7 @@
         "amount": 4,
         "unit": "days"
       },
-      "id": "89a72f3b-3ef5-4631-8be5-7e330580c38f",
+      "id": "3fa07411-92fb-43ac-a2ee-ca43d64f5b4c",
       "name": "Wait 4 more days",
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
@@ -198,7 +198,7 @@
         1920,
         0
       ],
-      "webhookId": "fe749466-aa3c-4445-821a-73a5a1ed2894"
+      "webhookId": "fab33e14-b7f5-4fdb-86d1-f174b8cea85c"
     },
     {
       "parameters": {
@@ -206,7 +206,7 @@
         "operation": "get",
         "leadId": "={{ $('Prepare lead').item.json.lead_id }}"
       },
-      "id": "b590f35d-2110-404a-ac42-e32eb2d19f2f",
+      "id": "5b674a56-6c0b-4075-ab73-95a549bc3c7a",
       "name": "Check lead in Zoho (day 7)",
       "type": "n8n-nodes-base.zohoCrm",
       "typeVersion": 1,
@@ -225,7 +225,7 @@
           },
           "conditions": [
             {
-              "id": "1de269c6-e495-47e7-a1ff-fb4210232f9e",
+              "id": "ec232c51-c3cb-4559-83fe-f9930fdbbb8b",
               "leftValue": "={{ $json.Lead_Status === 'Not Contacted' && !$json.Email_Opt_Out }}",
               "rightValue": "",
               "operator": {
@@ -239,7 +239,7 @@
         },
         "options": {}
       },
-      "id": "2a57dfb2-9035-4fb6-9b63-a808dd74977f",
+      "id": "7b88ca1b-5475-409c-aa96-a77d4775956c",
       "name": "Still not contacted? (day 7)",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
@@ -260,7 +260,7 @@
           "replyTo": "inquiry@themillsglobal.com"
         }
       },
-      "id": "a5166c1b-7590-48f2-a0e8-f4bce3aaecb2",
+      "id": "b3a68f70-e137-476d-ae5e-7404c72b4aa8",
       "name": "Email 3 - closing the loop (day 7)",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,

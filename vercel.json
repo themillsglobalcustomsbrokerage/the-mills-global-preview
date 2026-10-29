@@ -1,8 +1,169 @@
 {
   "redirects": [
-    { "source": "/services/international-freight-forwarding(/)?", "destination": "/services-mills-logistics.html", "permanent": true },
-    { "source": "/services/permits-and-licensing(/)?", "destination": "/services-mills-permits.html", "permanent": true },
-    { "source": "/services/customs-disputes-and-legal-remedies(/)?", "destination": "/services-mills-customs.html", "permanent": true },
-    { "source": "/services/tariff-and-customs-consultancy(/)?", "destination": "/services-mills-customs.html", "permanent": true }
+    {
+      "source": "/services/international-freight-forwarding(/)?",
+      "destination": "/services-mills-logistics.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/permits-and-licensing(/)?",
+      "destination": "/services-mills-permits.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/customs-disputes-and-legal-remedies(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/tariff-and-customs-consultancy(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/warehousing(/)?",
+      "destination": "/services-mills-logistics.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/peza-shipments(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/crating-services(/)?",
+      "destination": "/services-mills-packaging.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/import-and-export-clearance(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/business-consultancy(/)?",
+      "destination": "/services-mills-advisory.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/customs-related-cases(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/importers-exporters-accreditation(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/services(/)?",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/speakers/importers-exporters-accreditation(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/speakers/warehousing(/)?",
+      "destination": "/services-mills-logistics.html",
+      "permanent": true
+    },
+    {
+      "source": "/speakers/customs-disputes-and-legal-remedies(/)?",
+      "destination": "/services-mills-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/about(/)?",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/careers(/)?",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/location(/)?",
+      "destination": "/location.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us(/)?",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/inquire-now(/)?",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/book-a-call(/)?",
+      "destination": "/book-a-call.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy(/)?",
+      "destination": "/legal-privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions(/)?",
+      "destination": "/legal-website-terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/learning-pavilion(/)?",
+      "destination": "/learning-pavilion.html",
+      "permanent": true
+    },
+    {
+      "source": "/crossy-customs(/)?",
+      "destination": "/crossy-customs.html",
+      "permanent": true
+    },
+    {
+      "source": "/team/vanessa-cairo(/)?",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/news(/)?",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
+      "source": "/post-categories/news-updates(/)?",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
+      "source": "/posts/ad-interlim-cyber-intelligence-section(/)?",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
+      "source": "/posts/trump-urges-ukraine-to-negotiate-drops-ceasefire-demand-after-putin-talks(/)?",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:slug([^./]+)(/)?",
+      "destination": "/articles/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/news/:slug([^./]+)(/)?",
+      "destination": "/news/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/posts/:slug([^./]+)(/)?",
+      "destination": "/news/:slug.html",
+      "permanent": true
+    }
   ]
 }
