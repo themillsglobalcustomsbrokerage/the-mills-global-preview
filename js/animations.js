@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const easedProgress = easeOutQuart(progress);
                         const currentVal = easedProgress * target;
                         
-                        let displayVal = isInt ? Math.round(currentVal).toString() : currentVal.toFixed(1);
+                        let displayVal = isInt ? Math.round(currentVal).toLocaleString('en-US') : currentVal.toFixed(1);
                         
                         el.textContent = `${prefix}${displayVal}${suffix}`;
                         
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             requestAnimationFrame(step);
                         } else {
                             // Ensure final value is exact
-                            el.textContent = `${prefix}${isInt ? target : target.toFixed(1)}${suffix}`;
+                            el.textContent = `${prefix}${isInt ? target.toLocaleString('en-US') : target.toFixed(1)}${suffix}`;
                         }
                     };
                     
@@ -114,6 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const company = (data.get('company') || '').toString().trim();
             const email = (data.get('email') || '').toString().trim();
             const message = (data.get('message') || '').toString().trim();
+            const phone = (data.get('phone') || '').toString().trim();
+            const choice = (data.get('service_choice') || '').toString().trim();
             const service = contactForm.getAttribute('data-service');
             const attr = window.mtgAttribution ? window.mtgAttribution() : {};
             const adSource = Object.keys(attr).map((k) => `${k}=${attr[k]}`).join('; ');
@@ -126,6 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 service ? `Service: ${service}` : null,
                 `Name: ${name}`,
                 company ? `Company: ${company}` : null,
+                choice ? `Needs help with: ${choice}` : null,
+                phone ? `Contact number: ${phone}` : null,
                 `Reply-to email: ${email}`,
                 adSource ? `Ad source: ${adSource}` : null
             ].filter(Boolean);

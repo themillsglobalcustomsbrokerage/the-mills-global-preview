@@ -271,7 +271,7 @@ TAIL_SCRIPTS = '''  <script src="../js/vendor/lenis.min.js"></script>
   <script src="../js/smooth.js?v=1"></script>
   <script src="../js/cursor.js?v=7"></script>
   <script src="../js/analytics.js"></script>
-  <script src="../js/animations.js?v=5"></script>'''
+  <script src="../js/animations.js?v=7"></script>'''
 GTM_NOSCRIPT = '''  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3QFNL94" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'''
 PHONE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
 CAL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'
@@ -436,7 +436,8 @@ def main():
     json.dump(index, open('content/posts.json', 'w'), ensure_ascii=False, indent=1)
 
     # sitemap: site pages plus every published post
-    urls = sorted(f for f in glob.glob('*.html'))
+    # pages marked noindex (the ad landing page) stay out of the sitemap
+    urls = sorted(f for f in glob.glob('*.html') if 'name="robots" content="noindex' not in open(f, encoding='utf-8').read())
     urls += sorted(glob.glob('articles/*.html')) + sorted(glob.glob('news/*.html'))
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
         f"  <url><loc>{SITE}/{'' if f == 'index.html' else f}</loc></url>\n" for f in urls) + '</urlset>\n')
@@ -482,7 +483,7 @@ def main():
     b = re.sub(r'<h1 class="service-hero__title">.*?</h1>', '<h1 class="service-hero__title">Philippine Trade &amp; Customs: Guides and News</h1>', b, count=1, flags=re.S)
     b = re.sub(r'<p class="service-hero__subtitle">.*?</p>', '<p class="service-hero__subtitle">Practical guides on permits, customs, duties and compliance, plus the latest news from the Bureau of Customs and Philippine trade.</p>', b, count=1, flags=re.S)
     if 'js/blog.js' not in b:
-        b = b.replace('  <script src="js/animations.js?v=5"></script>', '  <script src="js/animations.js"></script>\n  <script src="js/blog.js"></script>', 1)
+        b = b.replace('  <script src="js/animations.js?v=7"></script>', '  <script src="js/animations.js"></script>\n  <script src="js/blog.js"></script>', 1)
     if 'css/lead-magnet.css' not in b:
         pass
     open('blog.html', 'w').write(b)
