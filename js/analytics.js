@@ -78,14 +78,14 @@
     }
 
     function pageType() {
-        var f = window.location.pathname.split('/').pop() || 'index.html';
-        if (f === '' || f === 'index.html') return 'home';
+        var f = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
+        if (f === '' || f === 'index') return 'home';
         if (f.indexOf('services-mills-') === 0) return 'service';
-        if (f === 'industries.html') return 'industries_hub';
+        if (f === 'industries') return 'industries_hub';
         if (f.indexOf('industries-') === 0) return 'industry';
         if (f.indexOf('legal-') === 0) return 'legal';
         if (f.indexOf('blog') === 0) return 'blog';
-        return f.replace('.html', '').replace(/-/g, '_');
+        return f.replace(/-/g, '_');
     }
 
     window.mtgTrack = function (name, params) {

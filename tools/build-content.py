@@ -432,7 +432,7 @@ def main():
 
     index = [{'t': p['type'], 's': p['slug'], 'title': p['title'], 'summary': p['summary'], 'cat': p['cat'],
               'catSlug': p['catSlug'], 'date': p['date'], 'dateLabel': p['dateLabel'], 'mins': p['mins'], 'img': p['img'],
-              'url': f"{'articles' if p['type'] == 'article' else 'news'}/{p['slug']}.html"} for p in posts]
+              'url': f"{'articles' if p['type'] == 'article' else 'news'}/{p['slug']}"} for p in posts]
     json.dump(index, open('content/posts.json', 'w'), ensure_ascii=False, indent=1)
 
     # sitemap: site pages plus every published post
@@ -440,7 +440,7 @@ def main():
     urls = sorted(f for f in glob.glob('*.html') if 'name="robots" content="noindex' not in open(f, encoding='utf-8').read())
     urls += sorted(glob.glob('articles/*.html')) + sorted(glob.glob('news/*.html'))
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
-        f"  <url><loc>{SITE}/{'' if f == 'index.html' else f}</loc></url>\n" for f in urls) + '</urlset>\n')
+        f"  <url><loc>{SITE}/{'' if f == 'index.html' else f[:-5]}</loc></url>\n" for f in urls) + '</urlset>\n')
 
     # category counts for the filters
     cats = {}
@@ -521,3 +521,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # links, canonicals and the sitemap use extensionless URLs (files stay .html on disk)
+    import subprocess, sys
+    subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clean-urls.py')], check=True)

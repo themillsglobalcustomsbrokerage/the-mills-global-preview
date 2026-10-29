@@ -8,10 +8,10 @@ def x(t): return t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;
 idx = open('index.html', encoding='utf-8').read()
 # order and names come from the site's own navigation
 navs = re.findall(r'<div class="nav__dropdown nav__dropdown--wide">(.*?)</div>', idx, re.S)
-def links(block, prefix): return [(m.group(1), clean(m.group(2))) for m in re.finditer(r'<a href="(' + prefix + r'[^"]+\.html)">(.*?)</a>', block)]
+def links(block, prefix): return [(m.group(1), clean(m.group(2))) for m in re.finditer(r'<a href="(' + prefix + r'[^"]+?)(?:\.html)?">(.*?)</a>', block)]
 services = links(navs[0], 'services-'); industries = links(navs[1], 'industries-')
 slides = {clean(t): clean(d) for t, d in re.findall(r'service-slide__title">(.*?)</h3>\s*<p class="service-slide__text">(.*?)</p>', idx, re.S)}
-def hero(f): return clean(re.search(r'service-hero__subtitle">(.*?)</p>', open(f, encoding='utf-8').read(), re.S).group(1))
+def hero(f): return clean(re.search(r'service-hero__subtitle">(.*?)</p>', open(f if f.endswith('.html') else f + '.html', encoding='utf-8').read(), re.S).group(1))
 
 body = []
 def p(text='', style=None, runs=None, num=False):
