@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Rewrites the 'Teams we support' lines and the three 'Common Challenges' descriptions on all 16 industry pages:
 each states the customer's goal or the cost of the problem, what we do, and the outcome. Titles are unchanged."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from industry_slugs import ind
 import re, os, html
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 D = {
@@ -135,7 +138,7 @@ D = {
 }
 n = 0
 for slug, (teams, stuck) in D.items():
-    f = f'industries-{slug}.html'; h = open(f).read(); o = h
+    f = f'industries-{ind(slug)}.html'; h = open(f).read(); o = h
     a = h.find('Teams we support'); b = h.find('id="common-challenges"') if h.find('id="common-challenges"') > a else h.find('Regulatory Focus')
     # teams block lies between "Who We Help" and the next section
     end = h.find('</section>', a)

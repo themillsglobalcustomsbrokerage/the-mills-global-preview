@@ -104,12 +104,12 @@
 
 .lp-tags li {
   padding: 10px 18px;
-  border: 1px solid var(--color-border-dark, rgba(33, 36, 49, 0.18));
+  border: 1px solid var(--color-border-dark, rgba(31, 50, 68, 0.18));
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
-  color: #212431;
-  background: rgba(33, 36, 49, 0.04);
+  color: #1F3244;
+  background: rgba(31, 50, 68, 0.04);
 }
 
 /* The big number */
@@ -142,7 +142,7 @@
 
 /* Minimal footer */
 .lp-footer {
-  background: #1A1D29;
+  background: #192938;
   padding: var(--space-2xl) 0;
   font-size: 13px;
   line-height: 1.7;
@@ -199,7 +199,7 @@
   font-size: clamp(22px, 2.4vw, 30px);
   line-height: 1.15;
   letter-spacing: -0.01em;
-  color: var(--color-bg-dark, #212431);
+  color: var(--color-bg-dark, #1F3244);
 }
 
 .lp-recognized {
@@ -282,10 +282,10 @@
 /* Testimonials on the light section */
 .lp-quotes--light .lp-quote {
   background: #fff;
-  border: 1px solid rgba(33, 36, 49, 0.1);
+  border: 1px solid rgba(31, 50, 68, 0.1);
 }
 
-.lp-quotes--light .lp-quote blockquote { color: #212431; }
+.lp-quotes--light .lp-quote blockquote { color: #1F3244; }
 .lp-quotes--light .lp-quote figcaption { color: #4F5D75; }
 .lp-proof .marquee { margin-top: var(--space-xl); }
 
@@ -341,12 +341,12 @@
 .lp-tags--center { justify-content: center; margin-top: var(--space-2xl); }
 
 /* Steps on the light section */
-.lp-how .how-steps__title { color: #212431; }
+.lp-how .how-steps__title { color: #1F3244; }
 .lp-how .how-steps__text { color: #4F5D75; }
 
 /* Hero background photo under a dark blue wash (the same dark-image treatment as the other pages) */
 .lp-hero::before {
-  background: linear-gradient(180deg, rgba(22, 30, 58, 0.82) 0%, rgba(26, 36, 70, 0.74) 45%, rgba(20, 26, 48, 0.94) 100%);
+  background: linear-gradient(180deg, rgba(30, 49, 66, 0.82) 0%, rgba(36, 59, 80, 0.74) 45%, rgba(26, 41, 56, 0.94) 100%);
 }
 
 /* No side picture: the copy and the numbers stack on the background photo */

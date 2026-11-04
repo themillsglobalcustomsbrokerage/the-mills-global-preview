@@ -4,6 +4,9 @@
    n8n/lead-magnet-industries.json    capture workflow, 16 industry checklists
    n8n/followups/followup-<slug>.json one email series per service / industry (Email 1 now, Email 2 day 3, Email 3 day 7)
 The email HTML lives in tools/email-builder.js (brand palette, dark-mode safe, WCAG AA)."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from industry_slugs import ind
 import re, json, uuid, os, html
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 js = open('js/lead-magnet.js').read()
@@ -44,7 +47,7 @@ KINDS = [
 
 
 def page_facts(slug, kind):
-    f = ('services-mills-%s.html' % slug) if kind == 'service' else ('industries-%s.html' % slug[len('industry-'):])
+    f = ('services-mills-%s.html' % slug) if kind == 'service' else ('industries-%s.html' % ind(slug[len('industry-'):]))
     h = open(f).read()
     sub = re.search(r'service-hero__subtitle[^>]*>(.*?)</p>', h, re.S)
     stuck = re.findall(r'<li><strong>(.*?)</strong><span>(.*?)</span></li>', h[h.find('stuck-list'):h.find('stuck-list') + 3000], re.S) if 'stuck-list' in h else []

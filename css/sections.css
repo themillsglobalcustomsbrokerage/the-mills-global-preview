@@ -38,8 +38,8 @@
   --color-text-light: var(--color-text-dark);
   --color-text-muted: var(--color-text-muted-on-light);
   --color-card-bg: var(--color-surface-light);
-  --color-card-bg-alt: rgba(33, 36, 49, 0.03);
-  --color-surface-alt: rgba(33, 36, 49, 0.05);
+  --color-card-bg-alt: rgba(31, 50, 68, 0.03);
+  --color-surface-alt: rgba(31, 50, 68, 0.05);
   --color-accent-soft: rgba(234, 92, 31, 0.08);
   --color-border: var(--color-border-light);
   --color-divider: var(--color-divider-light);
@@ -198,7 +198,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(33,36,49,0.35) 0%, rgba(17,19,28,0.78) 100%);
+  background: linear-gradient(180deg, rgba(31,50,68,0.35) 0%, rgba(17,27,37,0.78) 100%);
   transition: opacity 0.45s ease;
 }
 

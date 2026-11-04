@@ -352,12 +352,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const grids = document.querySelectorAll('.service-feature-grid');
     const icon = '<svg viewBox="0 0 48 32" width="44" height="30" fill="none" aria-hidden="true">' +
         '<rect x="1" y="3" width="46" height="24" rx="3" fill="#EA5C1F"/>' +
-        '<g stroke="#212431" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round">' +
+        '<g stroke="#1F3244" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round">' +
         '<line x1="9" y1="7" x2="9" y2="23"/><line x1="16" y1="7" x2="16" y2="23"/>' +
         '<line x1="23" y1="7" x2="23" y2="23"/><line x1="30" y1="7" x2="30" y2="23"/>' +
         '<line x1="37" y1="7" x2="37" y2="23"/></g>' +
-        '<rect x="1" y="3" width="46" height="24" rx="3" stroke="#212431" stroke-opacity="0.55" stroke-width="1.5"/>' +
-        '<rect x="3" y="27" width="6" height="3" rx="1" fill="#212431"/><rect x="39" y="27" width="6" height="3" rx="1" fill="#212431"/></svg>';
+        '<rect x="1" y="3" width="46" height="24" rx="3" stroke="#1F3244" stroke-opacity="0.55" stroke-width="1.5"/>' +
+        '<rect x="3" y="27" width="6" height="3" rx="1" fill="#1F3244"/><rect x="39" y="27" width="6" height="3" rx="1" fill="#1F3244"/></svg>';
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const smooth = (f) => f * f * (3 - 2 * f);
 

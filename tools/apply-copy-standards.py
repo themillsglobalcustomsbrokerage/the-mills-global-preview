@@ -120,8 +120,8 @@ def headings(h):
     N = title_case(name)
     h = h.replace(f'Teams we support in {name}.', f'Teams we support in {N}.')
     h = h.replace(f'Why {name} shipments usually get stuck.', f'Why {N} shipments usually get stuck.')
-    art = 'an' if N[0].lower() in 'aeiou' else 'a'
-    h = re.sub(r'How The Mills handles an? ' + re.escape(name) + r' shipment\.', f'How The Mills handles {art} {N} shipment.', h)
+    # "How The Mills handles <industry> shipments." (no article, so every industry name reads naturally)
+    h = re.sub(r'How The Mills handles (?:an? )?' + re.escape(name) + r' shipments?\.', f'How The Mills handles {N} shipments.', h)
     return h
 
 

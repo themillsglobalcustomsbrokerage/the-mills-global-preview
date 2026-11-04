@@ -19,8 +19,8 @@ head = re.sub(r'(<meta (?:property="og:title"|name="twitter:title") content=")[^
 head = re.sub(r'(<meta (?:property="og:description"|name="twitter:description") content=")[^"]*', r'\g<1>' + DESC, head)
 head = head.replace('https://themillsglobal.com/book-a-call.html', URL)
 head = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', '', head, flags=re.S)
-head = head.replace('<link rel="stylesheet" href="css/service-page.css?v=3">',
-                    '<link rel="stylesheet" href="css/service-page.css?v=3">\n  <link rel="stylesheet" href="css/content.css?v=4">\n  <link rel="stylesheet" href="css/landing.css?v=9">')
+head = head.replace('<link rel="stylesheet" href="css/service-page.css?v=4">',
+                    '<link rel="stylesheet" href="css/service-page.css?v=4">\n  <link rel="stylesheet" href="css/content.css?v=7">\n  <link rel="stylesheet" href="css/landing.css?v=10">')
 gtm = re.search(r'<!-- Google Tag Manager \(noscript\) -->.*?<!-- End Google Tag Manager \(noscript\) -->', book, re.S).group(0)
 
 def ico(path): return f'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{path}</svg>'
@@ -159,7 +159,7 @@ scripts = """<script src="js/vendor/lenis.min.js"></script>
   <script src="js/smooth.js?v=1"></script>
   <script src="js/cursor.js?v=7"></script>
   <script src="js/analytics.js"></script>
-  <script src="js/animations.js?v=7"></script>
+  <script src="js/animations.js?v=8"></script>
   <script src="js/cal-embed.js" defer></script>"""
 page = f"""{head}
 </head>

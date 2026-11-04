@@ -76,3 +76,23 @@ collections:
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
       - { label: "Draft (keep unpublished)", name: draft, widget: boolean, default: false, required: false }
       - { label: Body, name: body, widget: markdown, hint: "Use Heading 2 and Heading 3 for sections. Link to other articles as /articles/their-slug." }
+  - name: settings
+    label: Weekly Exchange Rate
+    files:
+      - name: exchange_rate
+        label: Customs exchange rate (update every Friday)
+        file: content/exchange-rate.json
+        fields:
+          - { label: Currency pair, name: pair, widget: string, default: "USD to PHP" }
+          - { label: "BSP reference rate (pesos per US dollar)", name: rate, widget: string, hint: "Type it with 4 decimals, as in the bulletin, e.g. 63.8520" }
+          - { label: "Friday the rate was set", name: set_on, widget: string, pattern: ['^\\d{4}-\\d{2}-\\d{2}$', "Use YYYY-MM-DD, and pick a Friday"], hint: "Example: 2026-11-06. The page shows it applying from the next day (Saturday) until the following Friday." }
+          - { label: Source, name: source, widget: string, default: "Bangko Sentral ng Pilipinas (BSP) Reference Exchange Rate Bulletin" }
+          - { label: Source link, name: source_url, widget: string, default: "https://www.bsp.gov.ph/" }
+          - label: Currency table (Phil. Peso equivalent from the bulletin)
+            name: currencies
+            widget: list
+            fields:
+              - { label: Country, name: country, widget: string }
+              - { label: Code, name: code, widget: string }
+              - { label: Peso equivalent, name: php, widget: string, hint: "As printed in the bulletin, e.g. 85.4404" }
+          - { label: Note for staff, name: note, widget: text, required: false }

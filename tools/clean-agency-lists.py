@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Rebuilds the 'agencies and controls that usually apply' list on each industry page so it names agencies only
 (no rules, processes or services), each spelled out in full."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from industry_slugs import ind
 import re, os, html
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 g = {'__file__': os.path.abspath('tools/apply-copy-standards.py')}
@@ -27,7 +30,7 @@ AG = {
 }
 n = 0
 for slug, items in AG.items():
-    f = f'industries-{slug}.html'; h = open(f).read()
+    f = f'industries-{ind(slug)}.html'; h = open(f).read()
     s2 = h.find('Regulatory Focus'); s3 = h.find('Common Challenges')
     block = h[s2:s3]
     first = re.search(r'<li class="audience-list__item">(<svg.*?</svg>)', block, re.S)

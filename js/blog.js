@@ -105,3 +105,43 @@
         render();
     }).catch(function () { /* the first 12 posts stay in the HTML */ });
 })();
+
+/* Weekly customs exchange rate: refresh from content/exchange-rate.json (so a CMS edit shows without a rebuild)
+   and flag the card if the week it covers has ended. */
+(function () {
+    'use strict';
+    var card = document.getElementById('exchange-rate');
+    if (!card) return;
+    var DAY = 86400000;
+    function short(t) { return new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }); }
+    function setText(id, t) { var el = document.getElementById(id); if (el) el.textContent = t; }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function manilaToday() {
+        var p = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Manila', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+        return Date.parse(p + 'T00:00:00Z');
+    }
+    function table(rows) {
+        return '<table class="fx__table"><thead><tr><th>Country</th><th>Currency</th><th>Peso equivalent</th></tr></thead><tbody>' +
+            rows.map(function (c) { return '<tr><td>' + esc(c.country) + '</td><td>' + esc(c.code) + '</td><td>' + esc(c.php) + '</td></tr>'; }).join('') +
+            '</tbody></table>';
+    }
+    function render(d) {
+        var set = Date.parse(d.set_on + 'T00:00:00Z');
+        if (isNaN(set)) return;
+        var start = set + DAY, end = set + 7 * DAY;
+        var y1 = new Date(start).getUTCFullYear(), y2 = new Date(end).getUTCFullYear();
+        setText('fxRange', y1 === y2 ? short(start) + ' - ' + short(end) + ', ' + y2 : short(start) + ', ' + y1 + ' - ' + short(end) + ', ' + y2);
+        setText('fxRate', d.rate);
+        if (d.currencies && d.currencies.length) {
+            var half = Math.ceil(d.currencies.length / 2), t = document.getElementById('fxTables');
+            if (t) t.innerHTML = table(d.currencies.slice(0, half)) + table(d.currencies.slice(half));
+        }
+        var stale = document.getElementById('fxStale');
+        if (stale) stale.hidden = manilaToday() <= end;
+    }
+    var end0 = Date.parse((card.getAttribute('data-end') || '') + 'T00:00:00Z');
+    if (!isNaN(end0)) { var st = document.getElementById('fxStale'); if (st) st.hidden = manilaToday() <= end0; }
+    if (window.fetch) {
+        fetch('content/exchange-rate.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) { if (d) render(d); }).catch(function () {});
+    }
+})();

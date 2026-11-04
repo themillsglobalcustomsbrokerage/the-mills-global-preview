@@ -1,8 +1,8 @@
 // ---- Email builder: Mills brand palette, WCAG AA contrast, dark-mode safe ----
-// Brand: navy #212431, slate #4F5D75, paper #F5F5F5, orange #EA5C1F (decoration only: it fails AA for text on white/paper).
+// Brand: navy #1F3244, slate #4F5D75, paper #F5F5F5, orange #EA5C1F (decoration only: it fails AA for text on white/paper).
 // Text: navy on white 15.4:1, slate on white 6.7:1. Button: white on navy 15.4:1. Dark mode: paper on navy 14.2:1.
 // The header band is already navy with a white logo, so it survives Gmail/Outlook inversion unchanged.
-const NAVY = '#212431', SLATE = '#4F5D75', PAPER = '#F5F5F5', ORANGE = '#EA5C1F';
+const NAVY = '#1F3244', SLATE = '#4F5D75', PAPER = '#F5F5F5', ORANGE = '#EA5C1F';
 const FONT = "Arial, Helvetica, sans-serif";
 const LOGO = SITE + 'assets/images/brand/mills-logo-horizontal-white.png';
 const hasCo = !!out.company, hasFirst = !!out.first_name;
@@ -36,10 +36,10 @@ function shell(preheader, inner) {
   return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark"><title>The Mills Global</title>' +
     '<style>:root{color-scheme:light dark;supported-color-schemes:light dark;}' +
-    '@media (prefers-color-scheme: dark){.dm-page{background-color:#181A24 !important;}.dm-card{background-color:#212431 !important;}.dm-text{color:#F5F5F5 !important;}.dm-muted{color:#D6D7D7 !important;}' +
-    '.dm-link{color:#F5F5F5 !important;}.dm-btn{background-color:#F5F5F5 !important;border-color:#F5F5F5 !important;}.dm-btn-link{color:#212431 !important;}}' +
+    '@media (prefers-color-scheme: dark){.dm-page{background-color:#172532 !important;}.dm-card{background-color:#1F3244 !important;}.dm-text{color:#F5F5F5 !important;}.dm-muted{color:#D6D7D7 !important;}' +
+    '.dm-link{color:#F5F5F5 !important;}.dm-btn{background-color:#F5F5F5 !important;border-color:#F5F5F5 !important;}.dm-btn-link{color:#1F3244 !important;}}' +
     '[data-ogsc] .dm-text{color:#F5F5F5 !important;}[data-ogsc] .dm-muted{color:#D6D7D7 !important;}[data-ogsc] .dm-link{color:#F5F5F5 !important;}' +
-    '[data-ogsb] .dm-card{background-color:#212431 !important;}[data-ogsb] .dm-page{background-color:#181A24 !important;}' +
+    '[data-ogsb] .dm-card{background-color:#1F3244 !important;}[data-ogsb] .dm-page{background-color:#172532 !important;}' +
     '@media (max-width:620px){.wrap{width:100% !important;}.pad{padding:24px 20px !important;}}</style></head>' +
     '<body style="margin:0;padding:0;background-color:' + PAPER + ';" class="dm-page" bgcolor="' + PAPER + '">' +
     '<div style="display:none;max-height:0;overflow:hidden;opacity:0;font-size:1px;line-height:1px;color:' + PAPER + ';">' + esc(preheader) + '&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>' +

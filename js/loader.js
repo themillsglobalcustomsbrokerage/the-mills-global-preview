@@ -24,7 +24,7 @@
 
     var css = '' +
         '#millsLoader{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;' +
-        'background:linear-gradient(90deg,#4A6BA3 0%,#2F3B5C 30%,#212431 58%,#212431 100%);transition:opacity .5s ease,visibility .5s ease}' +
+        'background:linear-gradient(90deg,#4A6BA3 0%,#355573 30%,#1F3244 58%,#1F3244 100%);transition:opacity .5s ease,visibility .5s ease}' +
         '#millsLoader.is-leaving{opacity:0;visibility:hidden}' +
         '#millsLoader .ml-lockup{width:clamp(220px,24vw,320px)}' +
         '#millsLoader video{display:block;width:100%;height:auto;mix-blend-mode:screen;pointer-events:none}' +

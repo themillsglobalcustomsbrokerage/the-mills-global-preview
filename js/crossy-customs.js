@@ -30,7 +30,7 @@
         officer: 'assets/images/game/officer.png',
         barrel: 'assets/images/game/barrel.png'
     };
-    var FALLBACK = { truck: '#EA5C1F', forklift: '#4F5D75', officer: '#212431', barrel: '#EA5C1F' };
+    var FALLBACK = { truck: '#EA5C1F', forklift: '#4F5D75', officer: '#1F3244', barrel: '#EA5C1F' };
     var sprites = {};
     var loaded = 0;
     var TOTAL = Object.keys(SPRITE_URLS).length;
@@ -71,7 +71,7 @@
 
     var PALETTE = {
         grid: 'rgba(79, 93, 117, 0.16)',
-        topBand: 'rgba(33, 36, 49, 0.82)',
+        topBand: 'rgba(31, 50, 68, 0.82)',
         startBand: 'rgba(234, 92, 31, 0.10)',
         label: '#F5F5F5'
     };
@@ -211,7 +211,7 @@
     function render() {
         ctx.clearRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
         if (state === 'loading') {
-            ctx.fillStyle = '#212431';
+            ctx.fillStyle = '#1F3244';
             ctx.fillRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
             ctx.fillStyle = '#EA5C1F';
             ctx.font = 'bold 18px sans-serif';

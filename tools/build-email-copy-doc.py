@@ -114,7 +114,7 @@ Send Tuesday to Thursday, mornings in Manila time where the tool allows. The ser
 
 ## Design
 
-The HTML shell (brand colors with accessible contrast, dark-mode safe, single column) is in `tools/email-builder.js`. Its built-in wording is an earlier draft and is superseded by the copy below; drop this copy into the shell. Navy `#212431` text and buttons on white, slate `#4F5D75` for secondary text, orange `#EA5C1F` only as decoration (it fails the contrast minimum for text).
+The HTML shell (brand colors with accessible contrast, dark-mode safe, single column) is in `tools/email-builder.js`. Its built-in wording is an earlier draft and is superseded by the copy below; drop this copy into the shell. Navy `#1F3244` text and buttons on white, slate `#4F5D75` for secondary text, orange `#EA5C1F` only as decoration (it fails the contrast minimum for text).
 
 ---
 """)

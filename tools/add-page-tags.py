@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Adds the 'Tagged ...' keyword line at the bottom of each page (SEO), as on the reference site Jill shared.
 Idempotent: replaces an existing block."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from industry_slugs import ind
 import re, glob, os, html
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 COMMON = ['#TheMillsGlobal', 'Customs Broker Philippines', 'Customs Clearance Philippines', 'Port of Manila Customs Clearance']
@@ -61,7 +64,7 @@ TARGET = {}
 for s, ks in SERVICE.items():
     for k in ks: TARGET[k] = f'services-mills-{s}.html'
 for s, ks in INDUSTRY.items():
-    for k in ks: TARGET[k] = f'industries-{s}.html'
+    for k in ks: TARGET[k] = f'industries-{ind(s)}.html'
 for k in COMMON: TARGET[k] = 'index.html' if k.startswith('#') else 'index.html#services'
 TARGET['Customs Broker Philippines'] = 'services-mills-customs.html'
 TARGET['Customs Clearance Philippines'] = 'services-mills-customs.html'

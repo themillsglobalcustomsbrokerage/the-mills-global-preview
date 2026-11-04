@@ -266,12 +266,12 @@ def chrome():
 
 
 NAV, FOOT = chrome()
-HEAD_SCRIPTS = '''  <script src="../js/loader.js?v=11"></script>'''
+HEAD_SCRIPTS = '''  <script src="../js/loader.js?v=12"></script>'''
 TAIL_SCRIPTS = '''  <script src="../js/vendor/lenis.min.js"></script>
   <script src="../js/smooth.js?v=1"></script>
   <script src="../js/cursor.js?v=7"></script>
   <script src="../js/analytics.js"></script>
-  <script src="../js/animations.js?v=7"></script>'''
+  <script src="../js/animations.js?v=8"></script>'''
 GTM_NOSCRIPT = '''  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3QFNL94" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'''
 PHONE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
 CAL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'
@@ -337,10 +337,10 @@ def post_page(p, posts):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=29">
-  <link rel="stylesheet" href="../css/sections.css?v=5">
-  <link rel="stylesheet" href="../css/service-page.css?v=3">
-  <link rel="stylesheet" href="../css/content.css?v=4">
+  <link rel="stylesheet" href="../css/base.css?v=30">
+  <link rel="stylesheet" href="../css/sections.css?v=6">
+  <link rel="stylesheet" href="../css/service-page.css?v=4">
+  <link rel="stylesheet" href="../css/content.css?v=7">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/brand/favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
@@ -408,6 +408,46 @@ def post_page(p, posts):
 '''
 
 
+def fx_section():
+    """Weekly customs exchange rate card for the news page. The BSP rate set on a Friday applies from the Saturday after
+    until the following Friday (Customs Memorandum Order 14-2002). Edit content/exchange-rate.json (or use the staff CMS)."""
+    import datetime
+    d = json.load(open('content/exchange-rate.json', encoding='utf-8'))
+    set_on = datetime.date.fromisoformat(d['set_on'])
+    start, end, nxt = set_on + datetime.timedelta(days=1), set_on + datetime.timedelta(days=7), set_on + datetime.timedelta(days=7)
+    nxt_start = nxt + datetime.timedelta(days=1)
+    f = lambda x: f"{x.strftime('%A')}, {x.day} {x.strftime('%B %Y')}"
+    short = lambda x: f"{x.strftime('%b')} {x.day}"
+    rng = f"{short(start)} - {short(end)}, {end.year}" if start.year == end.year else f"{short(start)}, {start.year} - {short(end)}, {end.year}"
+    cur = d['currencies']
+    half = (len(cur) + 1) // 2
+    def table(rows):
+        body = ''.join(f'<tr><td>{escape(c["country"])}</td><td>{escape(c["code"])}</td><td>{escape(c["php"])}</td></tr>' for c in rows)
+        return ('<table class="fx__table"><thead><tr><th>Country</th><th>Currency</th><th>Peso equivalent</th></tr></thead>'
+                f'<tbody>{body}</tbody></table>')
+    return f'''
+  <section class="section section--dark fx" id="exchange-rate" data-end="{end.isoformat()}">
+    <div class="container">
+      <div class="fx__grid">
+        <aside class="fx__panel">
+          <p class="fx__bsp">Bangko Sentral ng Pilipinas</p>
+          <h2 class="fx__title">Exchange Rate Bulletin</h2>
+          <p class="fx__eff">Effective: <span id="fxRange">{rng}</span></p>
+          <p class="fx__stale" id="fxStale" hidden>This rate may be out of date. A new rate is published every Friday, so check the latest BSP bulletin.</p>
+          <p class="fx__note">*According to Customs Memorandum Order No. 14-2002, issued on March 9, 2002, the BSP&rsquo;s exchange rate published every Friday is adopted for the following week, from Saturday to Friday. In cases where the BSP does not publish an exchange rate on a Friday, the most recent rate prior to that Friday is applied.</p>
+        </aside>
+        <div class="fx__main">
+          <p class="fx__rate">1 USD = <strong id="fxRate">{escape(str(d['rate']))}</strong> PHP</p>
+          <div class="fx__tables" id="fxTables">{table(cur[:half])}{table(cur[half:])}</div>
+          <p class="fx__source">Source: <a href="{escape(d['source_url'])}" rel="noopener" target="_blank">{escape(d['source'])}</a>. For information only. Confirm the rate applied to your entry with your customs broker.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+'''
+
+
+
 def main():
     articles = read_posts('article')
     news = read_posts('news')
@@ -452,7 +492,7 @@ def main():
     a = b.index('</header>') + len('</header>')
     e = b.index('<footer class="footer">')
     first = '\n\n        '.join(card(p) for p in posts[:12])
-    listing = f'''
+    listing = fx_section() + f'''
 
   <section class="section section--paper" id="posts">
     <div class="container">
@@ -483,7 +523,7 @@ def main():
     b = re.sub(r'<h1 class="service-hero__title">.*?</h1>', '<h1 class="service-hero__title">Philippine Trade &amp; Customs: Guides and News</h1>', b, count=1, flags=re.S)
     b = re.sub(r'<p class="service-hero__subtitle">.*?</p>', '<p class="service-hero__subtitle">Practical guides on permits, customs, duties and compliance, plus the latest news from the Bureau of Customs and Philippine trade.</p>', b, count=1, flags=re.S)
     if 'js/blog.js' not in b:
-        b = b.replace('  <script src="js/animations.js?v=7"></script>', '  <script src="js/animations.js"></script>\n  <script src="js/blog.js"></script>', 1)
+        b = b.replace('  <script src="js/animations.js?v=8"></script>', '  <script src="js/animations.js"></script>\n  <script src="js/blog.js?v=3"></script>', 1)
     if 'css/lead-magnet.css' not in b:
         pass
     open('blog.html', 'w').write(b)

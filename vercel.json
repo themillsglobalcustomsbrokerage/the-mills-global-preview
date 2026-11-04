@@ -130,6 +130,66 @@
       "source": "/posts/:slug([^./]+)(/)?",
       "destination": "/news/:slug",
       "permanent": true
+    },
+    {
+      "source": "/industries-construction(/)?",
+      "destination": "/industries-construction-and-infrastructure",
+      "permanent": true
+    },
+    {
+      "source": "/industries-renewable-energy(/)?",
+      "destination": "/industries-renewable-energy-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/industries-mining(/)?",
+      "destination": "/industries-mining-and-minerals",
+      "permanent": true
+    },
+    {
+      "source": "/industries-manufacturing(/)?",
+      "destination": "/industries-industrial-manufacturing",
+      "permanent": true
+    },
+    {
+      "source": "/industries-chemicals(/)?",
+      "destination": "/industries-chemicals-and-dangerous-goods",
+      "permanent": true
+    },
+    {
+      "source": "/industries-marine(/)?",
+      "destination": "/industries-marine-and-offshore",
+      "permanent": true
+    },
+    {
+      "source": "/industries-aviation(/)?",
+      "destination": "/industries-aviation-and-aerospace",
+      "permanent": true
+    },
+    {
+      "source": "/industries-healthcare(/)?",
+      "destination": "/industries-healthcare-and-pharmaceuticals",
+      "permanent": true
+    },
+    {
+      "source": "/industries-electronics-telecom(/)?",
+      "destination": "/industries-electronics-and-semiconductors",
+      "permanent": true
+    },
+    {
+      "source": "/industries-agriculture(/)?",
+      "destination": "/industries-agriculture-and-fisheries",
+      "permanent": true
+    },
+    {
+      "source": "/industries-food-beverage(/)?",
+      "destination": "/industries-fast-moving-consumer-goods",
+      "permanent": true
+    },
+    {
+      "source": "/industries-retail(/)?",
+      "destination": "/industries-retail-and-e-commerce",
+      "permanent": true
     }
   ]
 }
