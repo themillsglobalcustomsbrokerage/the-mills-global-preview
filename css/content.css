@@ -685,11 +685,11 @@ button.content-filter:hover {
 .fx__rate {
   margin: 0 0 var(--space-lg);
   text-align: center;
-  font-size: clamp(30px, 5vw, 60px);
+  font-size: clamp(24px, 3.4vw, 42px);
   line-height: 1.1;
   color: var(--color-text-light);
 }
-.fx__rate strong { font-weight: 700; }
+.fx__rate strong { font-weight: 400; }
 
 .fx__tables { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
 

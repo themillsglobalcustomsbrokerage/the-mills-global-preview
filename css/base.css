@@ -635,6 +635,22 @@ a {
   padding-bottom: 0.06em;
 }
 
+.footer__wordmark-track {
+  display: flex;
+  width: max-content;
+  animation: footer-marquee 120s linear infinite;
+}
+
+.footer__wordmark-track span { flex: none; padding-right: 0.9em; }
+
+@keyframes footer-marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__wordmark-track { animation: none; }
+}
+
 /* ============================================ */
 /* IMAGE PLACEHOLDERS                           */
 /* Drop a file at the data-img path and it      */
