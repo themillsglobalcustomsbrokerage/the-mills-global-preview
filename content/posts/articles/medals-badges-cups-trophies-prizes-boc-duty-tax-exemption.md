@@ -1,7 +1,7 @@
 ---
 title: "Medals, Badges, Cups, and Other Small Goods Bestowed as Trophies or Prizes"
 date: 2026-05-22
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn how the BOC treats medals, badges, cups, and other small goods bestowed as trophies or prizes under Philippine customs law. Discover the requirements, exemptions, and process for duty and tax-free importation."
 image: "/assets/images/blog/article-medals-badges-cups-trophies-prizes-boc-duty-tax-exemption.jpg"
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "Understanding Tariff Classification in the Philippines"
 date: 2026-04-03
-category: "Tariff & Classification"
+category: "Tariff and Classification"
 summary: "How tariff classification works in the Philippines - HS codes, duty rates, common issues, and compliance risks importers should know."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f72a730304658fbc86d3_69cf12f4a1e2cd34b8bdeb9d_17%2520-%2520Understanding%2520Tariff%2520Classification%2520in%2520the%2520Philippines.webp"
 featured: false

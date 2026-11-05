@@ -1,7 +1,7 @@
 ---
 title: "Client Profile Registration System (CPRS) Guide"
 date: 2026-05-18
-category: "Accreditation & Registration"
+category: "Accreditation and Registration"
 summary: "Learn how to apply in the Client Profile Registration System (CPRS) with this complete guide about the requirements and process of registration."
 image: "/assets/images/blog/article-client-profile-registration-system-cprs-guide.jpg"
 featured: false

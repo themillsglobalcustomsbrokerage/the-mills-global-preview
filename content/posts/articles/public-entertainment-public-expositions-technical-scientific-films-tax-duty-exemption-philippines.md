@@ -1,5 +1,5 @@
 ---
-title: "Goods for Public Entertainment and Display in Public Expositions & Technical and Scientific Films"
+title: "Goods for Public Entertainment and Display in Public Expositions and Technical and Scientific Films"
 date: 2026-05-22
 category: "Customs Procedures"
 summary: "Learn who may avail of conditional tax and duty exemption for goods used in public entertainment, exhibitions, public expositions, and technical or scientific films in the Philippines under CAO 06-2020."

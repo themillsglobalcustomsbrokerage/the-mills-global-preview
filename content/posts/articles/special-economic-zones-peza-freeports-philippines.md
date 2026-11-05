@@ -308,7 +308,7 @@ Import documentation refers to the preparation, submission, and verification of 
 
 
 
-## Step 3: Importer Registration & Accreditation
+## Step 3: Importer Registration and Accreditation
 
 
 
@@ -335,7 +335,7 @@ Depending on the type of goods:
 
 
 
-**Agencies & Documents:**
+**Agencies and Documents:**
 
 
 
@@ -398,7 +398,7 @@ Depending on the type of goods:
 
 
 
-## Step 7: Submission & Verification of Documents
+## Step 7: Submission and Verification of Documents
 
 
 
@@ -424,7 +424,7 @@ Depending on the type of goods:
 
 
 
-## Step 8: Inspection & Clearance
+## Step 8: Inspection and Clearance
 
 
 

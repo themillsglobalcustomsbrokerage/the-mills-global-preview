@@ -1,7 +1,7 @@
 ---
 title: "Import Duties and Taxes in the Philippines Explained"
 date: 2026-04-03
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "How import duties, VAT, and other taxes are calculated in the Philippines and how to estimate your total importation costs."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f72875c38f7e794a2798_69cf12d2b1140b455b5a1a75_13%2520-%2520Import%2520Duties%2520and%2520Taxes%2520in%2520the%2520Philippines%2520Explained.webp"
 featured: false

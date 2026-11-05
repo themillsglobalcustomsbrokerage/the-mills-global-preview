@@ -1,7 +1,7 @@
 ---
 title: "Bureau of Customs Accreditation Requirements"
 date: 2026-04-03
-category: "Accreditation & Registration"
+category: "Accreditation and Registration"
 summary: "Requirements and process for registering as an importer with the Bureau of Customs in the Philippines, including NRI accreditation."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f727d9b93f96c027263f_69cf12deb29adfd4190b5704_14%2520-%2520Bureau%2520of%2520Customs%2520Accreditation%2520Requirements.webp"
 featured: false

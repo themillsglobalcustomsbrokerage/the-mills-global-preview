@@ -1,7 +1,7 @@
 ---
 title: "How to Avail Duty Exemptions for Sea and Air Stores"
 date: 2026-05-22
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn how to get tax exemptions for sea and air stores. Understand the rules for vessel supplies and passenger consumption under the CMTA."
 image: "/assets/images/blog/article-tax-exempt-sea-air-stores-vessel-supplies.jpg"
 featured: false

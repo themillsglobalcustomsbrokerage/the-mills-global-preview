@@ -147,7 +147,7 @@ Customs clearance for renewable energy (RE) equipment in the Philippines allows 
 - DOE Endorsement - Confirm eligibility and non-availability locally
 - Shipment Documentation - Ensure documents are under the RE developer’s name
 - Import Entry Filing - Submit entry to BOC (E2M system)
-- Assessment & Examination - Customs verifies compliance
+- Assessment and Examination - Customs verifies compliance
 - Duty-Free Availment - Apply 0% duty under RA 9513
 - Cargo Release - Issuance of Authority to Release Imported Goods (ATRIG)
 

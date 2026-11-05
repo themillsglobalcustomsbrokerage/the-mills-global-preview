@@ -40,7 +40,7 @@ Food imports are regulated by multiple agencies depending on the product:
 - BPI (plants, fruits, vegetables)
 - BAI / NMIS (meat, animal products)
 - BFAR (fish, seafood)
-- Bureau of Customs (BOC): clearance & duties
+- Bureau of Customs (BOC): clearance and duties
 
 
 
@@ -126,8 +126,8 @@ At arrival:
 
 
 
-- Submit all permits & documents
-- Pay duties & taxes
+- Submit all permits and documents
+- Pay duties and taxes
 - Inspection by authorities
 
 

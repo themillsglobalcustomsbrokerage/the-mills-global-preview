@@ -1,7 +1,7 @@
 ---
 title: "Trade Compliance Risk Management"
 date: 2026-04-25
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "Learn how to manage trade compliance risks in the Philippines, including customs regulations, audits, and penalties."
 image: "/assets/images/blog/article-trade-compliance-risk-philippines.jpg"
 featured: false

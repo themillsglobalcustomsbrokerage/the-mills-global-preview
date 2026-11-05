@@ -1,7 +1,7 @@
 ---
 title: "Import Cost Planning and Forecasting"
 date: 2026-04-25
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn how to plan and forecast import costs in the Philippines, including duties, taxes, and logistics expenses."
 image: "/assets/images/blog/article-import-cost-planning-philippines.jpg"
 featured: false

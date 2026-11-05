@@ -1,7 +1,7 @@
 ---
 title: "Regulatory Risk Analysis for Importers"
 date: 2026-04-25
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "Master regulatory risk analysis to safeguard your importing business. Learn how to identify compliance risks, avoid penalties, and strengthen your global trade strategy with this practical guide."
 image: "/assets/images/blog/article-regulatory-risk-analysis-importers-guide.jpg"
 featured: false

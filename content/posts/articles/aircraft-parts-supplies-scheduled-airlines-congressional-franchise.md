@@ -1,7 +1,7 @@
 ---
 title: "Aircraft, Parts, Supplies, Etc. of Scheduled Airlines With Congressional Franchise"
 date: 2026-05-22
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn the customs duty and tax exemptions for aircraft, parts, supplies, and equipment imported by scheduled airlines with a congressional franchise in the Philippines."
 image: "/assets/images/blog/article-aircraft-parts-supplies-scheduled-airlines-congressional-franchise.jpg"
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "BOC Registration and Accreditation Process"
 date: 2026-04-03
-category: "Accreditation & Registration"
+category: "Accreditation and Registration"
 summary: "How to register and get accredited with the Bureau of Customs in the Philippines - requirements, types, and what to expect."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f72605f691180e7032f1_69ce19091464853a766ee6f8_1%2520-%2520BOC%2520to%2520Extend%2520Importer.jpeg"
 featured: false

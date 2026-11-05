@@ -1,7 +1,7 @@
 ---
 title: "HS Code Classification Guide Philippines"
 date: 2026-04-03
-category: "Tariff & Classification"
+category: "Tariff and Classification"
 summary: "Complete guide to HS Code classification in the Philippines - how codes are structured, why they matter, and how to avoid costly misclassification."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f727aa611e87c5bbbf26_69cf112f2b6bd226ba02996e_29%2520-%2520HS%2520Code%2520Classification%2520Guide%2520Philippines.webp"
 featured: false

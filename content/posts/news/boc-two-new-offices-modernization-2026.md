@@ -1,7 +1,7 @@
 ---
 title: "BOC Creates Two New Offices to Advance Customs Modernization"
 date: 2026-07-21
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "BOC has created a dedicated Project Management Office and reorganized its Customs Policy and Issuance Office in 2026. Here's what the restructuring means for importers and brokers."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/6a5f8b5f8bf9da7882195756_6a5f8639d2598952fbedb184_1%2520-%2520BOC%2520Creates%2520Two%2520New%2520Offices%2520to%2520Advance%2520Customs%2520Modernization.jpeg"
 featured: false

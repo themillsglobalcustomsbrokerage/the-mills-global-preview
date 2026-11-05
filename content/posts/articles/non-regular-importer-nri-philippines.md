@@ -1,7 +1,7 @@
 ---
 title: "Non-Regular Importer (NRI) Process Philippines"
 date: 2026-04-03
-category: "Accreditation & Registration"
+category: "Accreditation and Registration"
 summary: "Complete guide to Non-Regular Importer (NRI) accreditation in the Philippines for one-time and occasional importers."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f7291d19cda39fee809e_69cf1109f3e3dea48b0e0fa8_32%2520-%2520Non-Regular%2520Importer%2520(NRI)%2520Process%2520Philippines.webp"
 featured: false

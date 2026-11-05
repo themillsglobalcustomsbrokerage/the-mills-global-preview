@@ -22,9 +22,9 @@ SERVICES = {'entry': 'Mills Entry', 'permits': 'Mills Permits', 'customs': 'Mill
             'dangerous-goods': 'Mills Dangerous Goods', 'logistics': 'Mills Logistics', 'packaging': 'Mills Packaging',
             'insurance': 'Mills Insurance', 'time-critical': 'Mills Time Critical', 'advisory': 'Mills Advisory', 'projects': 'Mills Projects'}
 INDUSTRIES = {'industry-construction': 'Construction', 'industry-renewable-energy': 'Renewable Energy', 'industry-data-centers': 'Data Centers',
-              'industry-chemicals': 'Chemicals', 'industry-food-beverage': 'Food & Beverage', 'industry-manufacturing': 'Manufacturing',
+              'industry-chemicals': 'Chemicals', 'industry-food-beverage': 'Food and Beverage', 'industry-manufacturing': 'Manufacturing',
               'industry-automotive': 'Automotive', 'industry-healthcare': 'Healthcare', 'industry-agriculture': 'Agriculture',
-              'industry-electronics-telecom': 'Electronics & Telecom', 'industry-marine': 'Marine', 'industry-aviation': 'Aviation',
+              'industry-electronics-telecom': 'Electronics and Telecom', 'industry-marine': 'Marine', 'industry-aviation': 'Aviation',
               'industry-retail': 'Retail', 'industry-cold-chain': 'Cold Chain', 'industry-mining': 'Mining', 'industry-freight-forwarders': 'Freight Forwarders'}
 assert len(INDUSTRIES) == 16 and all(k in G for k in INDUSTRIES), set(INDUSTRIES) - set(G)
 # Plain-language topic used in subject lines and sentences ("your ___ checklist", "Want us to look at Acme's ___?")

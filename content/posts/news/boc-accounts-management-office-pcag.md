@@ -1,7 +1,7 @@
 ---
 title: "BOC Realigns Accounts Management Office Under Post-Clearance Audit Group"
 date: 2026-07-21
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "BOC has moved its Accounts Management Office under the Post-Clearance Audit Group (PCAG) to strengthen risk management. Here's what the realignment means for importer accreditation."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/6a5f8b6725def7bda77ad7cb_6a5f863913182b7bf6de5bd5_6%2520-%2520Boc%2520Accounts%2520Management%2520Office%2520Pcag.png"
 featured: false

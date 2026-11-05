@@ -1,7 +1,7 @@
 ---
 title: "Importation Costs Breakdown Philippines"
 date: 2026-04-03
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Complete breakdown of importation costs in the Philippines - duties, VAT, port charges, and how to compute your total landed cost."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f728ccf130f3f7b2aabd_69cf10389698e11d02f46482_36%2520-%2520Importation%2520Costs%2520Breakdown%2520Philippines.webp"
 featured: false

@@ -36,25 +36,25 @@ os.makedirs('articles', exist_ok=True)
 os.makedirs('news', exist_ok=True)
 
 ARTICLE_CATS = {
-    'duties-taxes-fees': 'Duties, Taxes & Fees', 'compliance-regulations': 'Compliance & Regulations',
+    'duties-taxes-fees': 'Duties, Taxes and Fees', 'compliance-regulations': 'Compliance and Regulations',
     'customs-procedures': 'Customs Procedures', 'importation-guides': 'Importation Guides',
     'industry-guides': 'Industry Guides', 'trade-strategy': 'Trade Strategy',
-    'accreditation-registration': 'Accreditation & Registration', 'documentation': 'Documentation',
-    'tariff-classification': 'Tariff & Classification', 'import-permits-agencies': 'Import Permits & Agencies',
+    'accreditation-registration': 'Accreditation and Registration', 'documentation': 'Documentation',
+    'tariff-classification': 'Tariff and Classification', 'import-permits-agencies': 'Import Permits and Agencies',
     '': 'Trade Agreements',
 }
 NEWS_CATS = {
     'news-updates': 'Market News', 'cmc': 'BOC Issuances', 'cao': 'BOC Issuances', 'cmo': 'BOC Issuances',
-    'compliance-regulations': 'Compliance & Regulations', 'industry-guides': 'Industry', 'customs-procedures': 'Customs',
-    'duties-taxes-fees': 'Duties, Taxes & Fees', '': 'Market News',
+    'compliance-regulations': 'Compliance and Regulations', 'industry-guides': 'Industry', 'customs-procedures': 'Customs',
+    'duties-taxes-fees': 'Duties, Taxes and Fees', '': 'Market News',
 }
 FALLBACK_IMG = {
-    'Duties, Taxes & Fees': 'assets/images/pexels-customs.jpg', 'Compliance & Regulations': 'assets/images/pexels-permits.jpg',
+    'Duties, Taxes and Fees': 'assets/images/pexels-customs.jpg', 'Compliance and Regulations': 'assets/images/pexels-permits.jpg',
     'Customs Procedures': 'assets/images/pexels-customs.jpg', 'Customs': 'assets/images/pexels-customs.jpg',
     'Importation Guides': 'assets/images/pexels-entry.jpg', 'Industry Guides': 'assets/images/pexels-logistics.jpg',
     'Industry': 'assets/images/pexels-logistics.jpg', 'Trade Strategy': 'assets/images/pexels-advisory-2.jpg',
-    'Accreditation & Registration': 'assets/images/pexels-entry.jpg', 'Documentation': 'assets/images/pexels-permits.jpg',
-    'Tariff & Classification': 'assets/images/pexels-customs.jpg', 'Import Permits & Agencies': 'assets/images/pexels-permits.jpg',
+    'Accreditation and Registration': 'assets/images/pexels-entry.jpg', 'Documentation': 'assets/images/pexels-permits.jpg',
+    'Tariff and Classification': 'assets/images/pexels-customs.jpg', 'Import Permits and Agencies': 'assets/images/pexels-permits.jpg',
     'Trade Agreements': 'assets/images/pexels-advisory-2.jpg', 'Market News': 'assets/images/pexels-marine.jpg',
     'BOC Issuances': 'assets/images/pexels-customs.jpg',
 }
@@ -520,7 +520,7 @@ def main():
 
   '''
     b = b[:a] + listing + b[e:]
-    b = re.sub(r'<h1 class="service-hero__title">.*?</h1>', '<h1 class="service-hero__title">Philippine Trade &amp; Customs: Guides and News</h1>', b, count=1, flags=re.S)
+    b = re.sub(r'<h1 class="service-hero__title">.*?</h1>', '<h1 class="service-hero__title">Philippine Trade and Customs: Guides and News</h1>', b, count=1, flags=re.S)
     b = re.sub(r'<p class="service-hero__subtitle">.*?</p>', '<p class="service-hero__subtitle">Practical guides on permits, customs, duties and compliance, plus the latest news from the Bureau of Customs and Philippine trade.</p>', b, count=1, flags=re.S)
     if 'js/blog.js' not in b:
         b = b.replace('  <script src="js/animations.js?v=8"></script>', '  <script src="js/animations.js"></script>\n  <script src="js/blog.js?v=3"></script>', 1)
@@ -544,7 +544,7 @@ def main():
     guides = [p for p in articles if p['cat'] in ('Importation Guides', 'Industry Guides')]
     guides.sort(key=lambda p: p['date'], reverse=True)
     latest = sorted(articles, key=lambda p: p['date'], reverse=True)
-    if '<!-- GUIDES & PLAYBOOKS' in lp: lp = fill(lp, '<!-- GUIDES & PLAYBOOKS', guides[:3])
+    if '<!-- GUIDES and PLAYBOOKS' in lp: lp = fill(lp, '<!-- GUIDES and PLAYBOOKS', guides[:3])
     if '<!-- LATEST ARTICLES' in lp: lp = fill(lp, '<!-- LATEST ARTICLES', latest[:3])
     open('learning-pavilion.html', 'w').write(lp)
 

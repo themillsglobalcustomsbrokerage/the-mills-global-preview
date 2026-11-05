@@ -1,7 +1,7 @@
 ---
 title: "Customs Audit and Post Clearance Audit Philippines"
 date: 2026-04-03
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "How the Post-Clearance Audit (PCA) works in the Philippines, what records to keep, and how to prepare for a BOC audit."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f7278e51f664db4cf362_69cf10f8eaedfbc2ccbd9426_34%2520-%2520Customs%2520Audit%2520and%2520Post%2520Clearance%2520Audit%2520Philippines.webp"
 featured: false

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Puts every list of services and industries in the agreed order (Oct 2026):
-   services: Mills Projects last; industries: Construction, Renewable Energy, Data Centers, Chemicals, Food & Beverage first,
+   services: Mills Projects last; industries: Construction, Renewable Energy, Data Centers, Chemicals, Food and Beverage first,
    Freight Forwarders last. Idempotent."""
 import re, glob, os
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))

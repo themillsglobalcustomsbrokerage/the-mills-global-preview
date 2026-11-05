@@ -1,7 +1,7 @@
 ---
 title: "Demurrage and Detention Management"
 date: 2026-05-18
-category: "Shipping & Logistics"
+category: "Shipping and Logistics"
 summary: "Learn how effective demurrage and detention management helps businesses minimize shipping delays, reduce extra charges, and streamline coordination in global logistics."
 image: "/assets/images/blog/article-demurrage-detention-management.jpg"
 featured: false

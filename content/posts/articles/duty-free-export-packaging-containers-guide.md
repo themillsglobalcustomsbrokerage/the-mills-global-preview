@@ -1,7 +1,7 @@
 ---
 title: "How to Import Export Containers and Packaging Duty-Free"
 date: 2026-05-22
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn how to import containers and packaging for export goods like cement and fresh fruits without paying duties. Understand the security and six-month rule."
 image: "/assets/images/blog/article-duty-free-export-packaging-containers-guide.jpg"
 featured: false

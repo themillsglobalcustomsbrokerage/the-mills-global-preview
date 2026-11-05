@@ -112,17 +112,17 @@ why = f"""<section class="section section--dark">
     </div>
   </section>"""
 
-steps = [("Call &amp; Assessment", "Tell us your cargo, shipment type, and destination on the call."),
-         ("Planning &amp; Documentation", "We map the right freight and customs plan and prepare the paperwork."),
-         ("Customs Clearance &amp; Freight", "Licensed brokers manage clearance, permits, and duty planning."),
-         ("Delivery &amp; Support", "Your shipment is delivered on schedule, with support that continues after.")]
+steps = [("Call and Assessment", "Tell us your cargo, shipment type, and destination on the call."),
+         ("Planning and Documentation", "We map the right freight and customs plan and prepare the paperwork."),
+         ("Customs Clearance and Freight", "Licensed brokers manage clearance, permits, and duty planning."),
+         ("Delivery and Support", "Your shipment is delivered on schedule, with support that continues after.")]
 HERE = '<span class="lp-here">You Are Here</span>'
 def step_html(i, t, d):
     cls = ' how-steps__item--here' if i == 0 else ''
     badge = HERE if i == 0 else ''
     return f'<li class="how-steps__item{cls}">{badge}<span class="how-steps__num">0{i+1}</span><h3 class="how-steps__title">{t}</h3><p class="how-steps__text">{d}</p></li>'
 steps_html = ''.join(step_html(i, t, d) for i, (t, d) in enumerate(steps))
-services = ["LCL &amp; FCL Freight Forwarding", "Import &amp; Export Clearance", "Permits &amp; Licensing", "PEZA Shipments", "Tariff &amp; Customs Consultancy", "Business &amp; Legal Consultancy", "Customs Disputes &amp; Legal Remedies", "Crating &amp; Warehousing"]
+services = ["LCL and FCL Freight Forwarding", "Import and Export Clearance", "Permits and Licensing", "PEZA Shipments", "Tariff and Customs Consultancy", "Business and Legal Consultancy", "Customs Disputes and Legal Remedies", "Crating and Warehousing"]
 how = f"""<section class="section section--paper lp-how">
     <div class="container">
       <div class="services-intro" style="text-align:center; align-items:center;">

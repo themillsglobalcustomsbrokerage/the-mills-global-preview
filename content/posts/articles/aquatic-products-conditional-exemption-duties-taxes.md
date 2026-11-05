@@ -1,7 +1,7 @@
 ---
 title: "Aquatic Products"
 date: 2026-05-22
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn about aquatic products, how they are classified in customs, and under what conditions they may be exempted or conditionally exempted from duties and taxes."
 image: "/assets/images/blog/article-aquatic-products-conditional-exemption-duties-taxes.jpg"
 featured: false

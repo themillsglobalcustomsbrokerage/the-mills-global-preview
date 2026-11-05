@@ -1,7 +1,7 @@
 ---
 title: "Customs Valuation Adjustments (Royalties, Assists, etc.)"
 date: 2026-05-18
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Understand how royalties, assists, and other adjustments affect customs valuation and importation costs in the Philippines."
 image: "/assets/images/blog/article-customs-valuation-adjustments-royalties-assists.jpg"
 featured: false

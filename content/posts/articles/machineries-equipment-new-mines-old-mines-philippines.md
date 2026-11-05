@@ -1,7 +1,7 @@
 ---
 title: "Machineries, Equipment, Etc. of New Mines and Old Mines"
 date: 2026-05-22
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "Learn the customs duty and tax exemptions for machineries, equipment, spare parts, and supplies of new mines and old mines under Philippine importation laws."
 image: "/assets/images/blog/article-machineries-equipment-new-mines-old-mines-philippines.jpg"
 featured: false

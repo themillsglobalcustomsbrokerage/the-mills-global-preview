@@ -1,7 +1,7 @@
 ---
 title: "Understanding Duties, Taxes, and Fees in Importation"
 date: 2026-04-03
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "The difference between duties, taxes, and fees in Philippine importation and how they affect your total landed cost and compliance."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f72a16077934f9ba7238_69cf11d684e8c7955fc0f0df_27%2520-%2520Understanding%2520Duties%2520Taxes%2520and%2520Fees%2520in%2520Importation.webp"
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "Import Permits and Government Agencies in the Philippines"
 date: 2026-04-03
-category: "Import Permits & Agencies"
+category: "Import Permits and Agencies"
 summary: "Which government agencies regulate imports in the Philippines and what permits are required for different types of goods."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f72843a5d52683e8f2f3_69cf12ec4aa968ab49571191_15%2520-%2520Import%2520Permits%2520and%2520Government%2520Agencies%2520in%2520the%2520Philippines.webp"
 featured: false

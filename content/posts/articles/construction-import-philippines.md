@@ -45,13 +45,13 @@ Misclassification is one of the most common compliance pitfalls. For example, cl
 
 
 
-**Product Standards and Certification (DTI & Other Agencies)**
+**Product Standards and Certification (DTI and Other Agencies)**
 
 
 
 - Mandatory Certification: Certain construction materials like steel bars, cement, and electrical wires must comply with Philippine National Standards (PNS).
 - Import Commodity Clearance (ICC): Issued by the Department of Trade and Industry (DTI) for regulated products. Without ICC, goods cannot be released from customs.
-- Testing & Inspection: Materials may need to undergo laboratory testing to verify compliance with safety and quality standards.
+- Testing and Inspection: Materials may need to undergo laboratory testing to verify compliance with safety and quality standards.
 - Other Agencies: Depending on the product, agencies like the Department of Environment and Natural Resources (DENR) or Department of Public Works and Highways (DPWH) may impose additional requirements.
 
 
@@ -105,7 +105,7 @@ Beyond invoices and packing lists, importers must prepare:
 - Certificate of Origin - required for preferential tariff treatment under trade agreements.
 - ICC Certificate - for regulated construction materials.
 - Import Entry Declaration - filed electronically with BOC.
-- Delivery Receipts & Purchase Orders - often requested during customs audits.
+- Delivery Receipts and Purchase Orders - often requested during customs audits.
 
 
 

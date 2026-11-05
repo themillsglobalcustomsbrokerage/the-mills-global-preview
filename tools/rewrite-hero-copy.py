@@ -4,7 +4,7 @@ Replaces each page's old subtitle everywhere it is repeated (hub cards, contact 
 import re, glob, os, html
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 NEW = {
- 'services-mills-entry': ('Market Entry & Import Readiness', "Set up the right company structure, registrations and permits before you buy, so your first shipment is ready to clear on arrival, on time and without costly surprises."),
+ 'services-mills-entry': ('Market Entry and Import Readiness', "Set up the right company structure, registrations and permits before you buy, so your first shipment is ready to clear on arrival, on time and without costly surprises."),
  'services-mills-permits': (None, "We work out which agencies must approve your product, prepare and file every permit and registration, and match each one to your shipment, so regulated cargo is not held for missing paperwork."),
  'services-mills-customs': (None, "We classify, value and file your customs entries and manage the release, so your cargo clears correctly the first time, with accurate duties and no avoidable holds."),
  'services-mills-marine': (None, "We handle registration, port and customs requirements for vessels, yachts and marine equipment as one process, and rush critical spares to a waiting vessel."),

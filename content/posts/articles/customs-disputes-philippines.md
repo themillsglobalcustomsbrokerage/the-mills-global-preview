@@ -1,7 +1,7 @@
 ---
 title: "Customs Disputes and Resolution"
 date: 2026-04-25
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "A guide to resolving customs disputes in the Philippines, including common causes of disputes, the formal protest process, and how to work with the Bureau of Customs toward resolution."
 image: "/assets/images/blog/article-customs-disputes-philippines.jpg"
 featured: false
@@ -84,7 +84,7 @@ Understanding and managing compliance risks can prevent disputes and guide resol
 
 
 
-**Compliance Mitigation & Dispute Resolution**
+**Compliance Mitigation and Dispute Resolution**
 
 
 
@@ -144,7 +144,7 @@ Tariff Classification
 
 
 
-**Origin & Prohibited Goods**
+**Origin and Prohibited Goods**
 
 
 
@@ -153,7 +153,7 @@ Tariff Classification
 
 
 
-**Documentation & Data Integrity**
+**Documentation and Data Integrity**
 
 
 

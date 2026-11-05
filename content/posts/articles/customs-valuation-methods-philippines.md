@@ -1,7 +1,7 @@
 ---
 title: "Customs Valuation Methods in the Philippines"
 date: 2026-04-03
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "The six customs valuation methods used in the Philippines under CMTA and how they determine the dutiable value of imported goods."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f72734d2f7344a486198_69cf11cfe3fa5c3a78980665_28%2520-%2520Customs%2520Valuation%2520Methods%2520in%2520the%2520Philippines.webp"
 featured: false

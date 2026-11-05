@@ -31,18 +31,18 @@ collections:
         name: category
         widget: select
         options:
-          - "Duties, Taxes & Fees"
-          - "Compliance & Regulations"
+          - "Duties, Taxes and Fees"
+          - "Compliance and Regulations"
           - "Customs Procedures"
           - "Importation Guides"
           - "Industry Guides"
           - "Trade Strategy"
-          - "Accreditation & Registration"
+          - "Accreditation and Registration"
           - "Documentation"
-          - "Tariff & Classification"
-          - "Import Permits & Agencies"
+          - "Tariff and Classification"
+          - "Import Permits and Agencies"
           - "Trade Agreements"
-          - "Shipping & Logistics"
+          - "Shipping and Logistics"
       - { label: Summary, name: summary, widget: text, hint: "One or two sentences. Shown on cards and in Google results." }
       - { label: Cover image, name: image, widget: image, required: false, hint: "Landscape, at least 1200 px wide. Leave empty to use a default image." }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }
@@ -67,10 +67,10 @@ collections:
         options:
           - "Market News"
           - "BOC Issuances"
-          - "Compliance & Regulations"
+          - "Compliance and Regulations"
           - "Industry"
           - "Customs"
-          - "Duties, Taxes & Fees"
+          - "Duties, Taxes and Fees"
       - { label: Summary, name: summary, widget: text, hint: "One or two sentences. Shown on cards and in Google results." }
       - { label: Cover image, name: image, widget: image, required: false, hint: "Landscape, at least 1200 px wide. Leave empty to use a default image." }
       - { label: Featured, name: featured, widget: boolean, default: false, required: false }

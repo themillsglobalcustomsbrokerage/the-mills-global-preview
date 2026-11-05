@@ -1,7 +1,7 @@
 ---
 title: "BOC Seizes PHP7.7-M in Misdeclared Farm Goods at Port of Manila"
 date: 2026-07-21
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "BOC seized over PHP7.7 million in misdeclared agricultural goods at the Port of Manila. Here's what the case shows about declaration accuracy and penalties for importers."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/6a5f8b69aec253e2c54b8dcf_6a5f863a78baf562b1aee480_7%2520-%2520Boc%2520Seizure%2520Misdeclared%2520Farm%2520Goods%2520Manila.png"
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "Penalties and Seizures in Philippine Customs"
 date: 2026-04-03
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "Penalties, surcharges, and seizure procedures imposed by the Bureau of Customs for importation violations in the Philippines."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f7293c3080632ed6816f_69cf11110237021730d90681_30%2520-%2520Penalties%2520and%2520Seizures%2520in%2520Philippine%2520Customs.webp"
 featured: false

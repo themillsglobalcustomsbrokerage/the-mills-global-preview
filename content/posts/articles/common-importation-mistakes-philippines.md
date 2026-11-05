@@ -1,7 +1,7 @@
 ---
 title: "Common Compliance Mistakes in Importation"
 date: 2026-04-03
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "Common import compliance mistakes in the Philippines that lead to penalties, delays, and shipment issues - and how to avoid them."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/69d1f727ee41dce35fe29717_69cf12159bcc3bb6a20cfe78_19%2520-%2520Common%2520Compliance%2520Mistakes%2520in%2520Importation.webp"
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "BOC and PCCBI to Review 25-Year-Old Customs Brokerage Fee Order"
 date: 2026-07-21
-category: "Duties, Taxes & Fees"
+category: "Duties, Taxes and Fees"
 summary: "BOC and the Philippine Chamber of Customs Brokers have agreed to review and update CAO 01-2001, the 25-year-old order governing licensed customs broker fees."
 image: "https://cdn.prod.website-files.com/69407b1b2cb9c8b9ecb570cd/6a5f8b6a92a2f8a96e82c8dd_6a5f863b29707f9728b3ba63_8%2520-%2520Boc%2520Pccbi%2520Brokerage%2520Fee%2520Order%2520Review.jpeg"
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "Trade Remedy Measures: Protecting Domestic Industries in Global Trade"
 date: 2026-05-18
-category: "Compliance & Regulations"
+category: "Compliance and Regulations"
 summary: "Learn about trade remedy measures in the Philippines, including anti-dumping duties, safeguard measures, and countervailing duties. Understand how these tools protect domestic industries and ensure fair trade."
 image: "/assets/images/blog/article-trade-remedy-measures-explained.jpg"
 featured: false
