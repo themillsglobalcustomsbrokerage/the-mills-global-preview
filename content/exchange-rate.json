@@ -1,26 +1,90 @@
 {
   "pair": "USD to PHP",
-  "rate": "63.8520",
-  "set_on": "2026-10-30",
-  "source": "Bangko Sentral ng Pilipinas (BSP) Reference Exchange Rate Bulletin, 30 October 2026",
+  "rate": "63.1430",
+  "set_on": "2026-11-06",
+  "source": "Bangko Sentral ng Pilipinas (BSP) Reference Exchange Rate Bulletin, 6 November 2026",
   "source_url": "https://www.bsp.gov.ph/",
   "currencies": [
-    {"country": "Japan", "code": "JPY", "php": "0.4050"},
-    {"country": "United Kingdom", "code": "GBP", "php": "85.4404"},
-    {"country": "Hong Kong", "code": "HKD", "php": "8.1384"},
-    {"country": "Switzerland", "code": "CHF", "php": "77.4903"},
-    {"country": "Canada", "code": "CAD", "php": "45.6379"},
-    {"country": "Singapore", "code": "SGD", "php": "49.9038"},
-    {"country": "Australia", "code": "AUD", "php": "44.8752"},
-    {"country": "Bahrain", "code": "BHD", "php": "169.2565"},
-    {"country": "Saudi Arabia", "code": "SAR", "php": "17.0150"},
-    {"country": "Brunei", "code": "BND", "php": "49.7096"},
-    {"country": "Indonesia", "code": "IDR", "php": "0.0035"},
-    {"country": "Thailand", "code": "THB", "php": "1.8947"},
-    {"country": "UAE", "code": "AED", "php": "17.3851"},
-    {"country": "Europe", "code": "EUR", "php": "71.3865"},
-    {"country": "Korea", "code": "KRW", "php": "0.0477"},
-    {"country": "China", "code": "CNY", "php": "9.5857"}
+    {
+      "country": "Japan",
+      "code": "JPY",
+      "php": "0.4005"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBP",
+      "php": "84.9400"
+    },
+    {
+      "country": "Hong Kong",
+      "code": "HKD",
+      "php": "8.0528"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHF",
+      "php": "77.3338"
+    },
+    {
+      "country": "Canada",
+      "code": "CAD",
+      "php": "45.0506"
+    },
+    {
+      "country": "Singapore",
+      "code": "SGD",
+      "php": "49.4270"
+    },
+    {
+      "country": "Australia",
+      "code": "AUD",
+      "php": "43.7518"
+    },
+    {
+      "country": "Bahrain",
+      "code": "BHD",
+      "php": "167.4215"
+    },
+    {
+      "country": "Saudi Arabia",
+      "code": "SAR",
+      "php": "16.8238"
+    },
+    {
+      "country": "Brunei",
+      "code": "BND",
+      "php": "49.2343"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDR",
+      "php": "0.0035"
+    },
+    {
+      "country": "Thailand",
+      "code": "THB",
+      "php": "1.8899"
+    },
+    {
+      "country": "UAE",
+      "code": "AED",
+      "php": "17.1916"
+    },
+    {
+      "country": "Europe",
+      "code": "EUR",
+      "php": "70.8464"
+    },
+    {
+      "country": "Korea",
+      "code": "KRW",
+      "php": "0.0465"
+    },
+    {
+      "country": "China",
+      "code": "CNY",
+      "php": "9.4696"
+    }
   ],
   "note": "Every Friday, copy the Phil. Peso equivalents from the BSP Reference Exchange Rate Bulletin and set 'set_on' to that Friday. The page works out the Saturday start and the following Friday end by itself."
 }
