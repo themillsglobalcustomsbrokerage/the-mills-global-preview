@@ -1,59 +1,59 @@
 {
   "pair": "USD to PHP",
-  "rate": "63.1430",
-  "set_on": "2026-11-06",
-  "source": "Bangko Sentral ng Pilipinas (BSP) Reference Exchange Rate Bulletin, 6 November 2026",
+  "rate": "63.5590",
+  "set_on": "2026-11-13",
+  "source": "Bangko Sentral ng Pilipinas (BSP) Reference Exchange Rate Bulletin, 13 November 2026",
   "source_url": "https://www.bsp.gov.ph/",
   "currencies": [
     {
       "country": "Japan",
       "code": "JPY",
-      "php": "0.4005"
+      "php": "0.3976"
     },
     {
       "country": "United Kingdom",
       "code": "GBP",
-      "php": "84.9400"
+      "php": "84.1013"
     },
     {
       "country": "Hong Kong",
       "code": "HKD",
-      "php": "8.0528"
+      "php": "8.1022"
     },
     {
       "country": "Switzerland",
       "code": "CHF",
-      "php": "77.3338"
+      "php": "76.1094"
     },
     {
       "country": "Canada",
       "code": "CAD",
-      "php": "45.0506"
+      "php": "44.5871"
     },
     {
       "country": "Singapore",
       "code": "SGD",
-      "php": "49.4270"
+      "php": "49.4123"
     },
     {
       "country": "Australia",
       "code": "AUD",
-      "php": "43.7518"
+      "php": "43.2710"
     },
     {
       "country": "Bahrain",
       "code": "BHD",
-      "php": "167.4215"
+      "php": "168.5915"
     },
     {
       "country": "Saudi Arabia",
       "code": "SAR",
-      "php": "16.8238"
+      "php": "16.9360"
     },
     {
       "country": "Brunei",
       "code": "BND",
-      "php": "49.2343"
+      "php": "49.2209"
     },
     {
       "country": "Indonesia",
@@ -63,27 +63,27 @@
     {
       "country": "Thailand",
       "code": "THB",
-      "php": "1.8899"
+      "php": "1.8754"
     },
     {
       "country": "UAE",
       "code": "AED",
-      "php": "17.1916"
+      "php": "17.3044"
     },
     {
       "country": "Europe",
       "code": "EUR",
-      "php": "70.8464"
+      "php": "70.2708"
     },
     {
       "country": "Korea",
       "code": "KRW",
-      "php": "0.0465"
+      "php": "0.0476"
     },
     {
       "country": "China",
       "code": "CNY",
-      "php": "9.4696"
+      "php": "9.5227"
     }
   ],
   "note": "Every Friday, copy the Phil. Peso equivalents from the BSP Reference Exchange Rate Bulletin and set 'set_on' to that Friday. The page works out the Saturday start and the following Friday end by itself."
