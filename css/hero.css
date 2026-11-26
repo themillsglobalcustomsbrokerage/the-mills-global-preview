@@ -115,7 +115,7 @@
 }
 
 .hero-slide__eyebrow {
-  font-family: var(--font-mono);
+  font-family: 'Lexend', var(--font-sans);
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
