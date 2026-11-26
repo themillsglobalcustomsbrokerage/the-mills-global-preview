@@ -78,7 +78,7 @@
     }
 
     function pageType() {
-        var f = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
+        var f = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '').replace(/^(zh|ja|ko|fil)$/, 'index');
         if (f === '' || f === 'index') return 'home';
         if (f.indexOf('services-mills-') === 0) return 'service';
         if (f === 'industries') return 'industries_hub';

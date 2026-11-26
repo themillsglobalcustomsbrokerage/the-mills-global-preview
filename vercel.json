@@ -191,5 +191,11 @@
       "destination": "/industries-retail-and-e-commerce",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/:lang(zh|ja|ko|fil)/:dir(css|js|assets|content)/:path*",
+      "destination": "/:dir/:path*"
+    }
   ]
 }

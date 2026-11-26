@@ -1,0 +1,32 @@
+/* Translated pages (zh, ja, ko, fil): fonts and spacing that suit each script.
+   Plus Jakarta Sans and Lexend have no CJK glyphs, so each language names the system fonts it should fall back to. */
+html[lang="zh-CN"] { --font-sans: 'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; --font-body: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', Tahoma, sans-serif; }
+html[lang="ja"] { --font-sans: 'Plus Jakarta Sans', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif; --font-body: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', Tahoma, sans-serif; }
+html[lang="ko"] { --font-sans: 'Plus Jakarta Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; --font-body: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', Tahoma, sans-serif; }
+
+html[lang="zh-CN"] body, html[lang="ja"] body, html[lang="ko"] body { line-height: 1.75; }
+
+/* Tight Latin tracking and wide label spacing look wrong on CJK characters */
+html[lang="zh-CN"] h1, html[lang="zh-CN"] h2, html[lang="zh-CN"] h3,
+html[lang="ja"] h1, html[lang="ja"] h2, html[lang="ja"] h3,
+html[lang="ko"] h1, html[lang="ko"] h2, html[lang="ko"] h3 { letter-spacing: 0; line-height: 1.35; }
+
+html[lang="zh-CN"] .section__eyebrow, html[lang="zh-CN"] .hero-slide__eyebrow,
+html[lang="ja"] .section__eyebrow, html[lang="ja"] .hero-slide__eyebrow,
+html[lang="ko"] .section__eyebrow, html[lang="ko"] .hero-slide__eyebrow { font-family: var(--font-sans); letter-spacing: 0.06em; text-transform: none; }
+
+/* Korean breaks between words, not between syllables */
+html[lang="ko"] body { word-break: keep-all; }
+html[lang="ja"] body, html[lang="zh-CN"] body { line-break: strict; }
+html[lang="ja"] body { word-break: auto-phrase; }
+
+/* Balanced line breaks keep one-character widows off the headlines */
+html[lang="zh-CN"] h1, html[lang="zh-CN"] h2, html[lang="zh-CN"] h3, html[lang="zh-CN"] .why-headline,
+html[lang="ja"] h1, html[lang="ja"] h2, html[lang="ja"] h3, html[lang="ja"] .why-headline,
+html[lang="ko"] h1, html[lang="ko"] h2, html[lang="ko"] h3, html[lang="ko"] .why-headline { text-wrap: balance; }
+
+/* CJK characters are wider than Latin letters, so the big headings step down a size */
+html[lang="zh-CN"] .hero-slide__heading, html[lang="ja"] .hero-slide__heading, html[lang="ko"] .hero-slide__heading { font-size: clamp(30px, 3.9vw, 52px); }
+html[lang="zh-CN"] .services-intro__heading, html[lang="ja"] .services-intro__heading, html[lang="ko"] .services-intro__heading,
+html[lang="zh-CN"] .why-headline, html[lang="ja"] .why-headline, html[lang="ko"] .why-headline { font-size: clamp(26px, 3.1vw, 40px); }
+html[lang="zh-CN"] .service-hero__title, html[lang="ja"] .service-hero__title, html[lang="ko"] .service-hero__title { font-size: clamp(26px, 3.4vw, 42px); }

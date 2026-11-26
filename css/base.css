@@ -1558,3 +1558,22 @@ html.cursor-texty .mills-cursor-dot {
   margin-top: 8px;
 }
 
+
+/* Language switcher (desktop dropdown reuses the nav dropdown; this keeps it inside the right edge) */
+.nav__dropdown--right {
+  left: auto;
+  right: 0;
+  min-width: 170px;
+  transform: translate(0, 6px);
+}
+
+.nav__item--dropdown:hover .nav__dropdown--right,
+.nav__item--dropdown:focus-within .nav__dropdown--right {
+  transform: translate(0, 0);
+}
+
+.nav__item--lang .nav__link-btn { gap: 6px; display: flex; }
+.lang__globe { width: 16px; height: 16px; flex: none; }
+.nav__dropdown a[aria-current="true"],
+.nav__mobile-sublist a[aria-current="true"] { color: var(--color-accent); }
+.nav__mobile-group summary .lang__globe { margin-right: 8px; vertical-align: -3px; }
