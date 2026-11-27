@@ -17,9 +17,9 @@ MIN_COVER = 0.97
 BATCH = 110
 
 LANGS = {
-    'zh':  dict(html='zh-CN', hreflang='zh-Hans', locale='zh_CN', name='简体中文', short='中文', aria='语言'),
-    'ja':  dict(html='ja', hreflang='ja', locale='ja_JP', name='日本語', short='日本語', aria='言語'),
-    'ko':  dict(html='ko', hreflang='ko', locale='ko_KR', name='한국어', short='한국어', aria='언어'),
+    'zh':  dict(html='zh-CN', hreflang='zh-Hans', locale='zh_CN', name='简体中文', short='中文', aria='语言', en='Chinese'),
+    'ja':  dict(html='ja', hreflang='ja', locale='ja_JP', name='日本語', short='日本語', aria='言語', en='Japanese'),
+    'ko':  dict(html='ko', hreflang='ko', locale='ko_KR', name='한국어', short='한국어', aria='언어', en='Korean'),
     'fil': dict(html='fil', hreflang='fil', locale='fil_PH', name='Filipino', short='FIL', aria='Wika'),
 }
 EN = dict(html='en', hreflang='en', locale='en_PH', name='English', short='EN', aria='Language')
@@ -177,6 +177,11 @@ def translate_page(src, lang, d, live, slug):
     return ''.join(out), miss
 
 
+def label(c):
+    """A language's own name, with its English name beside it when the script is not Latin."""
+    return c['name'] + (f'<small class="lang__en" lang="en">{c["en"]}</small>' if 'en' in c else '')
+
+
 def picker(cur, slug, live_by_lang):
     """Desktop <li> and mobile <details> language switchers, as marker-wrapped blocks."""
     cfg = EN if cur == 'en' else LANGS[cur]
@@ -191,7 +196,7 @@ def picker(cur, slug, live_by_lang):
     if len(items) < 2:
         return '', ''
     links = ''.join(f'<a href="{h}" hreflang="{c["hreflang"]}" lang="{c["html"]}"'
-                    + (' aria-current="true"' if code == cur else '') + f'>{c["name"]}</a>' for code, c, h in items)
+                    + (' aria-current="true"' if code == cur else '') + f'>{label(c)}</a>' for code, c, h in items)
     globe = ('<svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
              'stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>'
              '<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>')

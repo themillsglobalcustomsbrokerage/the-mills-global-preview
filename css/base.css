@@ -1577,3 +1577,6 @@ html.cursor-texty .mills-cursor-dot {
 .nav__dropdown a[aria-current="true"],
 .nav__mobile-sublist a[aria-current="true"] { color: var(--color-accent); }
 .nav__mobile-group summary .lang__globe { margin-right: 8px; vertical-align: -3px; }
+.nav__item--lang .nav__dropdown a { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.lang__en { font-size: 11px; font-weight: 400; color: var(--color-text-muted); }
+.nav__mobile-sublist .lang__en { margin-left: 8px; }
